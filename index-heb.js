@@ -319,11 +319,11 @@ function go2(a=location.hash){
 	function removehtag(hiliteTag){//
 		
 		
-		let arr = document.getElementsByClassName(highliting);//document.getElementsByTagName(hiliteTag);// remove highlighting //console.log("removehtag ",arr);
+		let arr = document.getElementsByClassName("highliting");//document.getElementsByTagName(hiliteTag);// remove highlighting //console.log("removehtag ",arr);
 		while(arr.length && (el = arr[0])) {let parent = el.parentNode;
 					parent.replaceChild(el.firstChild, el);
 					parent.normalize();}
-					
+	document.getElementById("searchItem").value='';				
 	};								
 	function unfold(n,oc={}){if(oc.length){
 		let e=document.querySelectorAll(".content-inner")[n],
@@ -354,9 +354,9 @@ function go2(a=location.hash){
 	  while(res.childNodes[0]) res.removeChild(res.childNodes[0]);
 	  document.getElementById("searchmsg").textContent='';
 	  if(alsov){
-		  console.log("alsov in cleaning ");
+		//  console.log("alsov in cleaning ");
 		removehtag( "highliting");//  removehtag( "MARK");//document.getElementById("searchItem").value||
-	  document.getElementById("searchItem").value='';
+	  //document.getElementById("searchItem").value='';
   }
 	  return res;}
 	  		
