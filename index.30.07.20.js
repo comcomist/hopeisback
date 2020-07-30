@@ -316,34 +316,16 @@ function go2(a=location.hash){
 			   if(tag1!=='a'&&tag3!=="<di")   //   &&tag3!=="<la" and why having 
 			       r.push(i);}//// filling r with  found v  only if the tag is not of link	     
 	    return r;}	  // else console.log(i," was not pushed tag3=", tag3);			  //console.log("occurrencesOf  - r:",r);
-	function removehtag(hiliteTag){//
-		
-		
-		let arr = document.getElementsByClassName("highliting");//document.getElementsByTagName(hiliteTag);// remove highlighting //console.log("removehtag ",arr);
+	function removehtag(hiliteTag){let arr = document.getElementsByTagName(hiliteTag);// remove highlighting //console.log("removehtag ",arr);
 		while(arr.length && (el = arr[0])) {let parent = el.parentNode;
 					parent.replaceChild(el.firstChild, el);
-					parent.normalize();}
-	document.getElementById("searchItem").value='';				
-	};								
-	function unfold(n,oc={}){if(oc.length){
-		let e=document.querySelectorAll(".content-inner")[n],
-		    v=document.getElementById("searchItem").value;
-		//style.color
-		e.innerHTML=e.innerHTML.split(v).join('<span  class="highliting" style="background-color:#ff6;">'+v+'</span>');
-//		e.innerHTML=e.innerHTML.split('<span style="background-color:#FF0000;">'+v+'</span>').join(v);
-	//	console.log(e.innerHTML);
-			/*
+					parent.normalize();}};								
+	function unfold(n,oc={}){if(oc.length){	
 		let highlight = new Highlight(document.querySelectorAll(".content-inner")[n]); // id of the element to parse
-		//highlight.setMatchType("right");
 		highlight.apply(document.getElementById("searchItem").value);
-		  //console.log("unfold: n=",n);
-		  */
-		} 
-		goto(document.querySelectorAll(".content-inner")[n]); 
-	 } 
+		} goto(document.querySelectorAll(".content-inner")[n]);  } 
 	function resultb(n,r,i={},l=0){let bu = document.createElement("button");
 			bu.innerHTML= l.toString(); // r.toString()+here we should have number of results in the element
-			//console.log("bu.innerHTML=",bu.innerHTML);
 		//	bu.onmouseover=marked;// on hover;
 			bu.type		="button";	
 //			bu.background-color ='purple';				
@@ -354,9 +336,9 @@ function go2(a=location.hash){
 	  while(res.childNodes[0]) res.removeChild(res.childNodes[0]);
 	  document.getElementById("searchmsg").textContent='';
 	  if(alsov){
-		//  console.log("alsov in cleaning ");
-		removehtag( "highliting");//  removehtag( "MARK");//document.getElementById("searchItem").value||
-	  //document.getElementById("searchItem").value='';
+		  console.log("alsov in cleaning ");
+		  removehtag( "MARK");//document.getElementById("searchItem").value||
+	  document.getElementById("searchItem").value='';
   }
 	  return res;}
 	  		
@@ -371,7 +353,7 @@ function go2(a=location.hash){
 		  return t;	 } 
 		  else cleaning(true);;
 		  }
-	/*	  
+		  
 function Highlight(id, tag){////https://www.the-art-of-web.com/javascript/search-highlight/  Original JavaScript code by Chirp Internet: www.chirp.com.au // Please acknowledge use of this code by including this header.
   let targetNode = id;//document.getElementById(id) || document.body;
   let hiliteTag = tag || "MARK";
@@ -389,36 +371,18 @@ function Highlight(id, tag){////https://www.the-art-of-web.com/javascript/search
 										 return endRegExp; };
   this.setBreakRegExp = function(regex) {breakRegExp = regex;
 										return breakRegExp;  };
-  this.setMatchType = function(type){
-	switch(type){
-      
-      case "left": 
-        this.openLeft = false;  this.openRight = true;
-         break;
-      
-      case "right":
-        this.openLeft = true;   this.openRight = false;
-        break;
-      
-      case "open": 
-        this.openLeft = this.openRight = true; 
-        break;
-      default:   
-        this.openLeft = this.openRight = false;    
-      
-      } 
-       };
+  this.setMatchType = function(type){switch(type){
+      case "left": this.openLeft = false;  this.openRight = true;break;
+      case "right":this.openLeft = true;   this.openRight = false;break;
+      case "open": this.openLeft = this.openRight = true; break;
+      default:        this.openLeft = this.openRight = false;    }  };
   this.setRegex = function(input){
-    
-    //input = input.replace(endRegExp, "");
-    //input = input.replace(breakRegExp, "|");
+    input = input.replace(endRegExp, "");
+    input = input.replace(breakRegExp, "|");
     input = input.replace(/^\||\|$/g, "");
-    
     if(input) { let       re = "(" + input + ")";
-      
-      //if(!this.openLeft)  re = "\\b" + re;
-      //if(!this.openRight) re = re + "\\b";
-      
+      if(!this.openLeft)  re = "\\b" + re;
+      if(!this.openRight) re = re + "\\b";
       matchRegExp = new RegExp(re, "i");
       return matchRegExp; }
     return false;  };
@@ -451,16 +415,13 @@ function Highlight(id, tag){////https://www.the-art-of-web.com/javascript/search
 					parent.replaceChild(el.firstChild, el);
 					parent.normalize();    }  };
   
-  this.apply = function(input){
-	   console.log("apply: input=",input);
-	   this.remove();// start highlighting at target node
-    if(input === undefined || !(input = input.replace(/(^\s+|\s+$)/g, ""))) 
-                          return;    
+  this.apply = function(input){ this.remove();// start highlighting at target node
+    if(input === undefined || !(input = input.replace(/(^\s+|\s+$)/g, ""))) return;    
     if(this.setRegex(input)) 
        this.hiliteWords(targetNode);    
     return matchRegExp;};
 }// end of Highlight
-*/
+
 //////////// calendar
 /* https://www.cssscript.com/create-simple-event-calendar-javascript-caleandar-js/
 
