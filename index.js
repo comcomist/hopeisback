@@ -312,24 +312,111 @@ function go2(a=location.hash){
 		for(ontag=0,l=v.length,el=e.length,i=0;i<el;){i=e.indexOf(v,i+l);
 			   if(i===-1)break; 			// console.log("occurrencesOf  - r,i:",r,i);
 			   ontag=e.lastIndexOf('<',i);//		console.log(x,i);
-			   let tag1=e[ontag+1], tag3=e.substr([ontag+1],3);
-			   if(tag1!=='a'&&tag3!=="<di")   //   &&tag3!=="<la" and why having 
-			       r.push(i);}//// filling r with  found v  only if the tag is not of link	     
+			   let tag1=e[ontag+1],// tag2=e.substr([ontag+1],2),
+			    tag3=e.substr([ontag+1],3);
+			   if(tag1!=='a'&&tag3!=="<di" )   //   &&tag3!=="<la" and why having 
+			      {//if(e.substr([ontag+1],2)=="<a") 
+					 // console.log(e.substr([ontag+1],2));
+			       r.push(i);}
+			       
+			       }//// filling r with  found v  only if the tag is not of link	     
 	    return r;}	  // else console.log(i," was not pushed tag3=", tag3);			  //console.log("occurrencesOf  - r:",r);
+
+/*
+   function removeElementsByClass(className){//highliting
+    var elements = document.getElementsByClassName(className);
+    while(elements.length > 0)      elements[0].parentNode.removeChild(elements[0]);}	
+    */
+    
 	function removehtag(hiliteTag){//
 		
 		
 		let arr = document.getElementsByClassName("highliting");//document.getElementsByTagName(hiliteTag);// remove highlighting //console.log("removehtag ",arr);
-		while(arr.length && (el = arr[0])) {let parent = el.parentNode;
+		//while(arr.length > 0)      arr[0].parentNode.removeChild(elements[0]);
+		
+		while(arr.length && (el = arr[0])		) {let parent = el.parentNode;
 					parent.replaceChild(el.firstChild, el);
-					parent.normalize();}
-	document.getElementById("searchItem").value='';				
-	};								
+					parent.normalize();
+					}
+					 
+	document.getElementById("searchItem").value='';	
+	location.reload(); 			
+	};	
+	
+							
+	
+	
 	function unfold(n,oc={}){if(oc.length){
 		let e=document.querySelectorAll(".content-inner")[n],
-		    v=document.getElementById("searchItem").value;
+		    v=document.getElementById("searchItem").value,
+		    
+		    s=e.innerHTML.split(v);
+		    /*
+		    	   var n='';for(l=s.length,i=0;i<l;i++)
+		 //if(s[i].tagName==="P") 
+		   //
+		   if(s[i][0]==='/')
+		    console.log(	i+"<i,s[i][0]"	+  s[i][0]+s[i][1]+s[i][2]);
+//else 		   
+		   
+		   */
+		   	e.innerHTML=s.join('<span  class="highliting" style="background-color:#ff6;">'+v+'</span>');
+		   
+		    // (text|simple)(?![^<]*>|[^<>]*</)//https://stackoverflow.com/questions/18621568/regex-replace-text-outside-html-tags
+		    
+		    //(?:>)(?:\s*|([^><]+))(?:<)
+		   
+		   //get  element by class="highliting"
+		   //.remove();
+		   //e.innerHTML.removehtag
+		   /*
+		   var n='';
+		   for(l=s.length,i=0;i<l;i++)
+		   if(s[i].nodeType==1)
+		    {console.log("yes "+s[i]);
+				//n+=s[i]+'<span  class="highliting" style="background-color:#ff6;">'+v+'</span>';
+		   }
+		   else  
+		   {//console.log("not "+s[i]);
+			 //  n+=s[i]+v;
+		   }
+		  
+		   e.innerHTML=n;//https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType#Node_type_constants					  	
+		  */
+		  //e.innerHTML=s.join('<span  class="highliting" style="background-color:#ff6;">'+v+'</span>');
+		  
+				
+	
+	} 
+		goto(document.querySelectorAll(".content-inner")[n]); 
+	 } 
+	
+	//+= as join
+		//e.innerHTML=s.join('<span  class="highliting" style="background-color:#ff6;">'+v+'</span>');
+	
+		    //lst=;
 		//style.color
-		e.innerHTML=e.innerHTML.split(v).join('<span  class="highliting" style="background-color:#ff6;">'+v+'</span>');
+		
+		// (@"^(?!.*<[^>]+>)
+		
+		    //input = input.replace(endRegExp, "");
+    //input = input.replace(breakRegExp, "|");
+//    input = input.replace(/^\||\|$/g, "");
+
+/*
+
+		let endRegExp = new RegExp('^[^\\w]+|[^\\w]+$', "g");// characters to strip from start and end of the input string 
+        let breakRegExp = new RegExp('[^\\w\'-]+', "g");// characters used to break up the input string into words
+        this.setEndRegExp = function(regex) {  endRegExp = regex;	 return endRegExp; };
+        this.setBreakRegExp = function(regex) {breakRegExp = regex;return breakRegExp;  };
+*/
+		
+//		e.innerHTML=s.join('<span  class="highliting" style="background-color:#ff6;">'+v+'</span>');
+	////
+	//	e.innerHTML=e.innerHTML.split(v).join('<span  class="highliting" style="background-color:#ff6;">'+v+'</span>');
+////
+	//	e.innerHTML=e.innerHTML.split('<span  class="highliting" style="background-color:#ff6;">'+v+'</span>').join(v);
+
 //		e.innerHTML=e.innerHTML.split('<span style="background-color:#FF0000;">'+v+'</span>').join(v);
 	//	console.log(e.innerHTML);
 			/*
@@ -338,9 +425,7 @@ function go2(a=location.hash){
 		highlight.apply(document.getElementById("searchItem").value);
 		  //console.log("unfold: n=",n);
 		  */
-		} 
-		goto(document.querySelectorAll(".content-inner")[n]); 
-	 } 
+		
 	function resultb(n,r,i={},l=0){let bu = document.createElement("button");
 			bu.innerHTML= l.toString(); // r.toString()+here we should have number of results in the element
 			//console.log("bu.innerHTML=",bu.innerHTML);
