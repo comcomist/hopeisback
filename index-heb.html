@@ -257,9 +257,11 @@ href="https://translate.google.com/translate?hl=&amp;sl=auto&amp;tl=en&amp;u=htt
     </div>
     <!-- 2nd section could be here. -->
     <div align="center">
-      <div> <input id="searchItem" oninput="findit(this.value)"
-          placeholder="search" type="text"> <span id="searchmsg"
-          onclick="cleaning()" style="cursor:pointer"></span> </div>
+      <div> 
+		  <input id="searchItem" oninput="findit(this.value)"
+          placeholder="search" type="text"> 
+          <span id="searchmsg"   onclick="cleaning()" style="cursor:pointer"></span> <div id="searchresults"></div>
+      </div>
     </div>
     <!-- 
     <div class="dropdown" style="float: right;"> <button
