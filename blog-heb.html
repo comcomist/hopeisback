@@ -45,6 +45,29 @@
     <meta http-equiv="cache-control" content="no-transform">
     <meta http-equiv="expires" content="0">
     <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
+    <script>
+
+
+function timeSince(date) {
+  var seconds = Math.floor((new Date() - date) / 1000);
+  var interval = seconds / 31536000;
+  if (interval > 1)     return Math.floor(interval) + " years"; 
+  interval = seconds / 2592000;
+  if (interval > 1)     return Math.floor(interval) + " months";
+  interval = seconds / 86400;
+  if (interval > 1)     return Math.floor(interval) + " days";
+  interval = seconds / 3600;
+  if (interval > 1)     return Math.floor(interval) + " hours";
+  interval = seconds / 60;
+  if (interval > 1)     return Math.floor(interval) + " minutes";
+                        return Math.floor(seconds)  + " seconds";
+}
+//getTime() ??
+//var aDay = 24*60*60*1000;
+//console.log(timeSince(new Date(Date.now()-aDay)));
+//console.log(timeSince(new Date(Date.now()-aDay*2)));
+
+</script>
   </head>
   <body onfocus="go2()" contenteditable="false">
     <section class="page-header">&nbsp; <a
@@ -78,7 +101,7 @@ src="index_files/Screenshot_2020-03-28_03-06-43.png"
     
      --> <a href="javascript:void(0);" onclick="go('registering');"> <img
             src="index_files/contactus.png" alt="Start by Contact"
-            title="Start by Contact" height="42" width="42" border="0"></a>
+            title="Start by Contact" width="42" height="42" border="0"></a>
         <a href="javascript:void(0);"
           onclick="go('publishhouseplatform');"> <img
             alt="Creators-Platform-of-Artist-and-Devlopers"
@@ -88,7 +111,7 @@ src="index_files/Screenshot_2020-03-28_03-06-43.png"
             publish house platform of the creative class owned only by
             Scomcoms, each of which equal owners are inventors,
             developers, artists and/or founders, while the non equal
-            ones are investors/producers." height="42" width="42"
+            ones are investors/producers." width="42" height="42"
             border="0"></a> <a href="javascript:void(0);"
           onclick="go('greencomcom');"> <img alt="Citizens Green
             Platform Preventing Climates eXtinction"
@@ -97,23 +120,25 @@ src="index_files/Citizens-Green-Platform-Preventing-Climates-eXtinction.png"
             eXtinction. Convincing citizens to participate in green
             energy campaign by profitng as green comcom owners. Green
             companies becoming ScomComs can shift public opinion toward
-            green issues specially in their neighborhood. " height="42"
-            width="42" border="0"></a> <a
+            green issues specially in their neighborhood. " width="42"
+            height="42" border="0"></a> <a
           href="https://hopeisback.com/lang.html"> <img
             src="index_files/lang.png" alt="translations"
-            title="translations" height="42" width="42" border="0"></a>
+            title="translations" width="42" height="42" border="0"></a>
         <a href="https://hopeisback.com/index.xml"> <img alt="Citizens
             Green Platform Preventing Climates eXtinction"
             src="index_files/rss.png" title="the hopeisback rss and
-            channels. " height="42" width="42" border="0"></a> <a
+            channels. " width="42" height="42" border="0"></a> <a
           href="https://t.me/joinchat/Gb7q5lLa-2DWLMrL"> </a><a
-          href="https://t.me/joinchat/Gb7q5lLa-2DWLMrL"><img
+          href="https://t.me/joinchat/xlDaV5d9EJFkNTQ0"><img
             src="index_files/telegram.png" alt="Our channel on telegram"
-            title="Our channel on telegram" height="42" width="42"
-            border="0"></a> <a href="https://twitter.com/hopeisbackn">
-        </a><a href="https://twitter.com/hopeisbackn"><img alt="twitter"
+            title="Our channel on telegram" moz-do-not-send="true"
+            width="42" height="42" border="0"></a> <a
+          href="https://twitter.com/hopeisbackn"> </a><a
+          href="https://twitter.com/hopeisbackn"><img alt="twitter"
             src="index_files/twitter.png" title="HopeIsBack in twitter
-            (of its thinker)" height="42" width="42" border="0"></a>&nbsp;
+            (of its thinker)" width="42" height="42" border="0"></a>&nbsp;
+
 
 
 
@@ -137,10 +162,10 @@ src="index_files/Citizens-Green-Platform-Preventing-Climates-eXtinction.png"
         <a href="https://www.facebook.com/pg/HopeIsBackNet/events/"> </a><a
           href="https://www.facebook.com/groups/hopeisback.heb.0"><img
             src="index_files/f.png" alt="Our facebook page" title="Our
-            facebook page" height="42" width="42" border="0"></a> <a
+            facebook page" width="42" height="42" border="0"></a> <a
           href="https://chat.whatsapp.com/HfAeGgFDrtbDXkAkLthdin"><img
             src="index_files/whatsup.png" alt="Our facebook page"
-            title="Our whatsup 1st group page" height="42" width="42"
+            title="Our whatsup 1st group page" width="42" height="42"
             border="0"></a> </label>
       <div class="fcontent content-inner">
         <li><a href="javascript:void(0);" onclick="go('analysis');"> ני</a></li>
@@ -188,53 +213,29 @@ href="https://translate.google.com/translate?hl=&amp;sl=auto&amp;tl=en&amp;u=htt
       <section class="main-content">
         <div class="content-inner">
           <h1 id="hopeisback-network-foundations" style="direction: rtl;
-            text-align: center;">ב. <br>
-          </h1>
-          נ, <br>
-          <br>
-          
-     <div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
+            text-align: center;"> </h1>
+          <div class="flding" id="comcomIntroduction"> <input
+              id="icomcomIntroduction" class="toggle" type="checkbox"> <label
+              for="icomcomIntroduction" class="lbl-toggle"> <i><strong>מבוא:</strong></i>
+            </label>
+            <div class="fcontent content-inner" "entry-content"="">
+              <p> <span id="datetime"></span></p>
+              <script>var dt = new Date();
+document.getElementById("datetime").innerHTML=dt.toLocaleString();</script>
+              123 </div>
+          </div>
+          <p style=";text-align:right;direction:rtl"> </p>
+        </div>
+      </section>
     </div>
-    <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-    </div>
-  </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    </div>
-    <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div>
-    </div>
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p>Some text..</p>
-    </div>
-  </div>
-</div>     
-          
-          <div class="flding" id="solution"> <input id="isolution"
-              class="toggle" checked="checked" type="checkbox">&nbsp;
-            <div class="fcontent content-inner">&nbsp;<i><b>על ידי
-                  פתרונות הומניטריים של תנועת אנשים בין קבוצות בהן
-                  לחבריהן יש כוח שווה כאשר תנועת האנשם <a
-                    href="https://hopeisback.com/index-heb.html#liquidunion">מזיזה</a>
-                  או <a
-                    href="https://hopeisback.com/index-heb.html#comcomized">מעריכה
+    <div class="flding" id="solution"> <input id="isolution"
+        class="toggle" checked="checked" type="checkbox">&nbsp;
+      <div class="fcontent content-inner">&nbsp;<i><b>על ידי פתרונות
+            הומניטריים של תנועת אנשים בין קבוצות בהן לחבריהן יש כוח שווה
+            כאשר תנועת האנשם <a
+              href="https://hopeisback.com/index-heb.html#liquidunion">מזיזה</a>
+            או <a
+              href="https://hopeisback.com/index-heb.html#comcomized">מעריכה
 
 
 
@@ -284,25 +285,24 @@ href="https://translate.google.com/translate?hl=&amp;sl=auto&amp;tl=en&amp;u=htt
 
 
 
-                    מחדש</a> תקציבים</b></i>, בכדי להגיע ל<b>מסה הקירטית</b>
-              הדרושה להשגת מטרותנו בהספקת צרכינו,
-              <ul>
-                <ul>
-                  <li>תוך מניעת שחיתות בארגוננו, על ידי שמירת ריבונות
-                    והעצמת האנשים הפרטיים וכן תוך שמירת זהות והתנהגות
-                    הקבוצות הקטנות המרכיבות אותנו. &nbsp; <br>
-                  </li>
-                </ul>
-              </ul>
-              <ul>
-                <li>אנחנו מתארגנים ב<i>אופן נזילי</i> ו<i>אחדותנו מגוונת</i>
-                  <br>
-                </li>
-                <ul>
-                  <li>בהתנהלותנו כקבוצות רכישת שרותים ומוצרים ובחברות
-                    קטנות אשר אוחזות <a
-                      href="https://hopeisback.com/index-heb.html#scomcomsplatform">פלטופרמות
 
+              מחדש</a> תקציבים</b></i>, בכדי להגיע ל<b>מסה הקירטית</b>
+        הדרושה להשגת מטרותנו בהספקת צרכינו,
+        <ul>
+          <ul>
+            <li>תוך מניעת שחיתות בארגוננו, על ידי שמירת ריבונות והעצמת
+              האנשים הפרטיים וכן תוך שמירת זהות והתנהגות הקבוצות הקטנות
+              המרכיבות אותנו. &nbsp; <br>
+            </li>
+          </ul>
+        </ul>
+        <ul>
+          <li>אנחנו מתארגנים ב<i>אופן נזילי</i> ו<i>אחדותנו מגוונת</i> <br>
+          </li>
+          <ul>
+            <li>בהתנהלותנו כקבוצות רכישת שרותים ומוצרים ובחברות קטנות
+              אשר אוחזות <a
+                href="https://hopeisback.com/index-heb.html#scomcomsplatform">פלטופרמות
 
 
 
@@ -351,704 +351,483 @@ href="https://translate.google.com/translate?hl=&amp;sl=auto&amp;tl=en&amp;u=htt
 
 
 
-                      יעודיות</a>, תוך ארגון מחודש של היישויות המשפטיות
-                    באמצעותן בדרך כלל אנחנו מצויים/מיוצגים ובפעילות
-                    גומלין מתמדת המאפשרת איגוף תיקצובי עוקף מוקדי שחיתות
-                    תוך הצמדת תקציבים באופן שוטף להשתתפות המשתתפים.</li>
-                </ul>
-                <li>התארגנותנו מבוזרת, צבעונית ונוזלית ובכדי לתמוך
-                  בהתארגנויות כאלו נייצר ברשת התקווה החוזרת גם רשת
-                  קרנות. ברשת התקווה החוזרת <a
-                    href="https://hopeisback.com/">הגלובלית</a>, אנחנו,<a
+
+
+                יעודיות</a>, תוך ארגון מחודש של היישויות המשפטיות
+              באמצעותן בדרך כלל אנחנו מצויים/מיוצגים ובפעילות גומלין
+              מתמדת המאפשרת איגוף תיקצובי עוקף מוקדי שחיתות תוך הצמדת
+              תקציבים באופן שוטף להשתתפות המשתתפים.</li>
+          </ul>
+          <li>התארגנותנו מבוזרת, צבעונית ונוזלית ובכדי לתמוך בהתארגנויות
+            כאלו נייצר ברשת התקווה החוזרת גם רשת קרנות. ברשת התקווה
+            החוזרת <a href="https://hopeisback.com/">הגלובלית</a>,
+            אנחנו,<a
 href="file:///var/sid-root/a/github/processing/index-heb-f01.html#statute">
-                    רשת התקווה חוזרת</a> , נמצאים כעת בשלב הפתיחה של
-                  לוקליזציה של קרנות התקווה החוזרת. </li>
-                <li>זו השיטה, לא טעות- אך אצלנו, איתנו ודרכנו התקווה
-                  חוזרת, כשאנחנו, האנשים, יכולים לפתור ולהציל עצמנו
-                  מהשימוש הציני בדיון הציבורי כשבעלי התקשורת ובעלי
-                  המדיות החברתיות הם מסחריים המייצרים תעמולה כוזבת
-                  התומכת בהקפאת המונופלים הריווחים לבעלי התקשורת כך
-                  שהדיון הציבורי <br>
-                </li>
-                <ul>
-                  <li>לעולם לא יהיה מספק או מעמיק ויתמלא ספינים, צנזורה
-                    ושרלטנות ממכרת של דיכוי ומניעת סממניים ללא מרפא, <br>
-                  </li>
-                  <li>תוך התשה, כתישה והמסללה, עד הטמעת הפחדה קיומית
-                    והרתעתית, על ידי הפעלת אוכפי רשויות פרטיים, משטרתיים
-                    וצבאיים החורגים בהתדמה וללא בקורת מסמכותם,</li>
-                  <ul>
-                    <li>כמו למשל בתופעות הנלוות לצננת הקורונילית 19:</li>
-                    <ul>
-                      <li>&nbsp;אנחנו בוחרים לדייק באופני הניסוח ולהקפיד
-                        על הפרדה בין מגפת הצננת אשר היא בריאותית-רפואית
-                        לבין בהלת הצננת אשר היא חברתית-כלכלית.</li>
-                      <li>&nbsp;בהלת הצננת מופעלת תוך הקרסה, התרסה
-                        וקיצון בסגר העולמי החדש על ידי תקשורת קנויה
-                        וחסרת מחשבה עצמאית <br>
-                      </li>
-                      <ul>
-                        <li>המדגישה מספרים פשוטים במקום שיעורם בהקשרם
-                          (למשל בהצגת גידול מספר הנשאים ולא את שיעורם
-                          מגידול מספר הנבדקים), <br>
-                        </li>
-                        <ul>
-                          <li>לשרות ממשלות פופוליסטייות המרסקות זכויות
-                            אדם, דמוקרטיה ועסקים <br>
-                          </li>
-                          <li>גם על ידי ערוב משטרה וצבא (כל צבא מדינה
-                            הפועל נגד אזרחי המדינה הוא אשר מימשלו הוא
-                            אויב עמה) ועם תופעות אכיפה החורגות מסמכות
-                            ואכזריות סדידסטיות ו/או גזעניות, למשל
-                            בארה"ב, בישראל ובברזיל.. </li>
-                        </ul>
-                      </ul>
-                    </ul>
-                  </ul>
-                </ul>
-              </ul>
-              <b>לסיכום:</b> מעבר להפגנות, אשר תמיד מתמוססות
-              ומתפוגגות&nbsp; כל עוד לא הפילו את הדיקטטורות, אנחנו
-              יכולים להתארגן במבנים כלכלים-חברתיים שיביאו לנו תוצאות
-              חיוביות לאורך זמן בהצטברותנו למסה הקריטית הממשת את צרכינו,
-              גם כך שבמקרים המתאימים לנו, נצא שוב ושוב להפגנות המשרתות
-              את מטרותנו:<br>
+              רשת התקווה חוזרת</a> , נמצאים כעת בשלב הפתיחה של לוקליזציה
+            של קרנות התקווה החוזרת. </li>
+          <li>זו השיטה, לא טעות- אך אצלנו, איתנו ודרכנו התקווה חוזרת,
+            כשאנחנו, האנשים, יכולים לפתור ולהציל עצמנו מהשימוש הציני
+            בדיון הציבורי כשבעלי התקשורת ובעלי המדיות החברתיות הם
+            מסחריים המייצרים תעמולה כוזבת התומכת בהקפאת המונופלים
+            הריווחים לבעלי התקשורת כך שהדיון הציבורי <br>
+          </li>
+          <ul>
+            <li>לעולם לא יהיה מספק או מעמיק ויתמלא ספינים, צנזורה
+              ושרלטנות ממכרת של דיכוי ומניעת סממניים ללא מרפא, <br>
+            </li>
+            <li>תוך התשה, כתישה והמסללה, עד הטמעת הפחדה קיומית והרתעתית,
+              על ידי הפעלת אוכפי רשויות פרטיים, משטרתיים וצבאיים החורגים
+              בהתדמה וללא בקורת מסמכותם,</li>
+            <ul>
+              <li>כמו למשל בתופעות הנלוות לצננת הקורונילית 19:</li>
               <ul>
-                <li>ארועי התקווה חוזרת <a
-                    href="https://edensgarden.hopeisback.com/index-heb">בפלטפורמת
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    גינות עדן</a> נפתחים בכדי ללמוד למצוא ולהתארגן
-                  באופני התארגנות חדשות ארוכות טווח ונזילות המאפשרות
-                  לקבוצות שונות לשמור על ציביון הקבוצות וזהות וריבונות
-                  היחידים בהתארגנותם למסה הקריטית הדרושה להורדת מחירים
-                  עבורם תוך דאגה לעסקים הקטנים וליצרנים ומגדלים תוך
-                  דילוג על אוכלי החינם אשר בינהם.</li>
-              </ul>
-            </div>
-          </div>
-          <center style=";text-align:right;direction:rtl"></center>
-          <div class="flding" id="statute"> <input id="istatute"
-              class="toggle" checked="checked" type="checkbox">&nbsp;
-            <div class="fcontent content-inner">
-              <ul style=";text-align:right;direction:rtl">
-                <li style=";text-align:right;direction:rtl"> בסיס זה
-                  עשוי לתרום רק <b>לפתרונות הומניטאריים המבוססים על
-                    תנועה מועילה של אנשים בין קבוצות שבהן יש להם כוח
-                    שווה</b> .
-                  <ul style=";text-align:right;direction:rtl">
-                    <li style=";text-align:right;direction:rtl"> מועצת
-                      המנהלים של HopeIsBack עשויה להוסיף פתרונות ל -6
-                      הפתרונות הראשונים שלה:
-                      <ul style=";text-align:right;direction:rtl">
-                        <li style=";text-align:right;direction:rtl"> את
-                          <a href="javascript:void(0);"
-                            onclick="go('comcomized');">ההסכם המשותף </a>
-                          של בעלות שווה (שנועד למנוע השתלטות על ידי
-                          תאגידים ענק, תוך מתן חדר לשתף פעולה עם כמה
-                          עסקים "נורמלי עושה) - הנה כמה דוגמאות של
-                          פתרונות קונקרטיים:" חיבור אנשים "הוא משהו
-                          בבעלות אותם לא על ידי החברה ענק כמו בפייסבוק,
-                          לשכנע את האזרחים להשתתף בקמפיין אנרגיה ירוקה
-                          כמו בעלי חברות ירוקות או ביצוע כל חילוץ /
-                          הפרטה מחזור עם התושבים כמו שחקנים במקום כמה
-                          חברות ענק, </li>
-                        <li style=";text-align:right;direction:rtl"> <a
-                            href="javascript:void(0);"
-                            onclick="go('liquidunion');">מודל איחוד
-                            נוזלי</a> של חלוקה הוגנת (לעומת נוזלי /
-                          נציג- דמוקרטיה לספר איך להחליט לייצר או לשרת,
-                          האיחוד הנוזלי הוא על איך להתארגן כדי לקבל
-                          ולבחור בין שירותים ומוצרים) - <b>לשעבר:</b>
-                          האזרחים תשלום עבור תחנת טלוויזיה ניתן לבצע
-                          עבור האיחוד נוזלי שיש פרויקטים כגון בידור,
-                          חקירה, חינוך, תרבות, אמנות פיתוח, וכו ', שבו
-                          כל אחד מהם פרויקטים יש ערוצי שלה ממומן
-                          פרופורציונלי למספר המשתתפים בערוץ, כך גם את
-                          הקולות של גם מיעוטים ולא בוחרים יישמעו, </li>
-                        <li style=";text-align:right;direction:rtl"> <a
-                            href="javascript:void(0);"
-                            onclick="go('qdolphin');">דפדפן Qdolphin</a>
-                          , דפדפן עבור אנשים חכמים פיתח מוגבל לספק
-                          חוויית המשתמש המתקדמת יישום אינטרנט מוגדר על
-                          ידי qt / QML עם תכונת ההצפנה: 3fish1kbit במצב
-                          ctr ידי מפתח kdf2 הקשר, בהפקת 4k קבצים, כל אחד
-                          מהם בעל מקש חזק אחר לחיזוק הטבעת החלשה ביותר
-                          של כל שרשרת הביטחון להיות קוד האדם, </li>
-                        <li style=";text-align:right;direction:rtl"> את
-                          <a
-href="https://translate.googleusercontent.com/translate_c?depth=1&amp;rurl=translate.google.com&amp;sl=auto&amp;sp=nmt4&amp;tl=iw&amp;u=http://hopeisback.com/&amp;xid=17259,15700023,15700043,15700186,15700191,15700256,15700259,15700262&amp;usg=ALkJrhiLKVkDbABZjchXAvLQuKhPjCloog#Rcoin"
-                            target="_top">Solidarcoin / Rcoin</a> , </li>
-                        <li style=";text-align:right;direction:rtl"> <a
-href="https://translate.googleusercontent.com/translate_c?depth=1&amp;rurl=translate.google.com&amp;sl=auto&amp;sp=nmt4&amp;tl=iw&amp;u=http://hopeisback.com/&amp;xid=17259,15700023,15700043,15700186,15700191,15700256,15700259,15700262&amp;usg=ALkJrhiLKVkDbABZjchXAvLQuKhPjCloog#Hagpl"
-                            target="_top">רישיון ההומניטרי</a> </li>
-                        <li style=";text-align:right;direction:rtl"> את
-                          <a
-href="https://translate.googleusercontent.com/translate_c?depth=1&amp;rurl=translate.google.com&amp;sl=auto&amp;sp=nmt4&amp;tl=iw&amp;u=http://hopeisback.com/&amp;xid=17259,15700023,15700043,15700186,15700191,15700256,15700259,15700262&amp;usg=ALkJrhiLKVkDbABZjchXAvLQuKhPjCloog#iiaom"
-                            target="_top">זהות קריפטו iiaom</a> . </li>
-                      </ul>
-                    </li>
-                    <li style=";text-align:right;direction:rtl"> כל זה
-                      נעשה <b>לפתרון</b> בעיות שהועלו בגלל הגידול המהיר
-                      בתנועה של מוצרים, שירותים, הון, כסף ומידע, תוך
-                      חסימת אנשים - <b>תופעה בעייתית גלובלית המייצרת
-                        פסיביות או תוקפנות גבוהות יותר ומלחמות נוספות</b>
-                      . </li>
-                  </ul>
+                <li>&nbsp;אנחנו בוחרים לדייק באופני הניסוח ולהקפיד על
+                  הפרדה בין מגפת הצננת אשר היא בריאותית-רפואית לבין בהלת
+                  הצננת אשר היא חברתית-כלכלית.</li>
+                <li>&nbsp;בהלת הצננת מופעלת תוך הקרסה, התרסה וקיצון בסגר
+                  העולמי החדש על ידי תקשורת קנויה וחסרת מחשבה עצמאית <br>
                 </li>
-              </ul>
-            </div>
-          </div>
-          <div class="flding" id="comcomized"> <input id="icomcomized"
-              class="toggle" checked="checked" type="checkbox">&nbsp;
-            <div class="fcontent content-inner">
-              <div class="entry-content"
-                style=";text-align:right;direction:rtl">
-                <p style="text-align:
-                  right;;text-align:right;direction:rtl"><br>
-                </p>
-                <p style="text-align:
-                  center;;text-align:right;direction:rtl"> </p>
-                <div class="flding" id="comcomIntroduction"> <input
-                    id="icomcomIntroduction" class="toggle"
-                    type="checkbox"> <label for="icomcomIntroduction"
-                    class="lbl-toggle"> <i><strong>מבוא:</strong></i> </label>
-                  <div class="fcontent content-inner" "entry-content"="">
-                    רישיון בעלות אחיזת מניות שיוויונית (מניות עמיתים) זה
-                    מיועד לאחיזה רבת משתתפים תוך הגנה מפני השתלטות
-                    מניפוליסית של הגדולים מכדי ליפול על חברות קטנות, גם
-                    כך שהקטנות תחזקנה בחברות גדולות יותר ותוך שמירה על
-                    ניידות והדדיות הבעלים בתהליך יצירת המסה הקריטית של
-                    שווי נכסהם ו/או מספרם, מסה אשר דרושה להשגת מטרות
-                    בעליי הנכסים. <br>
-                    הרישיון נועד לשמש כנייר לקמוס המאבחן את אלו אשר בכל
-                    זאת&nbsp; יתאבו להתמכר לכוחות ההרסניים הגדולים מכדי
-                    ליפול בכך שעבורם החוזה מגביל, ומכך מועורובותם לא
-                    תתאפשר מלכלתחילה וזאת בכדי למנוע מצבים כמו זה של <span
-                      class="css-901oao css-16my406 r-1qd0xha r-ad9z0x
-                      r-bcqeeo r-qvutc0"><span class="css-901oao
-                        css-16my406 r-1qd0xha r-ad9z0x r-bcqeeo
-                        r-qvutc0"><span class="css-901oao css-16my406
-                          r-1qd0xha r-ad9z0x r-bcqeeo r-qvutc0"></span></span></span>בריאן
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    אקטון שמכר את משתמשי וואצאפ לפיסבוק ואחר כך בייסוריו
-                    ייסד את סיגנל.<br>
-                    כלומר, הרישיון תוכנן במיוחד כנגד שחקנים גדולים וכנגד
-                    אלו אשר מתיימרים באופן זמני או חלקי בלבד להגשים את
-                    סיבת הקיום המוכרזת על ידם, לרוב על פי הכרזת מטרות
-                    וקריטיוניי הכניסה. <br>
-                    <p></p>
-                  </div>
-                </div>
-                <p style=";text-align:right;direction:rtl"> <i><b>רישיון
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                      הבעלות:</b></i><br>
-                </p>
-                <p style=";text-align:right;direction:rtl">ברישיון בעלות
-                  זה, הביטוי "קומקום" מציין בעלות ביזורית הנגזרת מהקיצור
-                  האנגלי comcom המציין common company, כאשר הרישיון מקנה
-                  הכרה קהילתית בבעלות על הנכסים המוקנים על פי הרישיון
-                  הנ"ל אשר מתוקף שוב ושוב תוך שימוש בנוהל הביזורי
-                  לתרשומת הבעלות וחילופייה על חזקות באשר הן, כך ש<br>
-                </p>
-                <ol>
-                  <li>הבעלות היא על נכסים אשר ערכם הכולל מחושב על פי ערך
-                    מניות הקומקום,</li>
-                  <li>&nbsp;ערך הנזק המינימלי של אי קיום התחיבויות
-                    הבעלות יחושב מול כל אחד מהבעלים האחרים בנפרד ונגזר
-                    משווי הקומקום,&nbsp;</li>
-                  <li>הסכם בעלות הקומקום אינו ניתן לשינוי, אלא על ידי
-                    רוב מיוחס בקומקום המוסכם ומוכרז בהסכם הבעלות כרוב
-                    המוסמך הנדרש לשינוי ההסכם</li>
-                  <li>וכל קונה או מוכר מניות קומקום מתחייב בעצם בעלותו
-                    לקיים את תנאי הקומקום בכל יצירת או העברת בעלות, כאשר<br>
-                  </li>
-                </ol>
                 <ul>
-                  <li>הבעלות מותרת לבעל-רגיל או לבעל-עמית בלבד, כאשר
-                    בעל-עמית מורשה להיות רק בן אדם או קומקום, אשר
-                    בבעלותו מספר מניות זהה לכל בעל-עמית אחר באותו
-                    קומקום,</li>
-                  <li>בכל מקרה של כמה שכבות אחיזה בקומקום מותרת לבעלים
-                    רק עמדת חזקה אחת,</li>
-                  <li>לקומקום יש את זכות הראשונים לקניית מניותיה וכל אחד
-                    מבעליה חייב להתאים לקריטריונים שלה,</li>
-                  <li>בכל קומקום, שיעור החזקה מכלל הקומוקום של כל
-                    העמיתים יחדיו הוא "d", כאשר d*m=c*v ו d*i=c*n, היכן
-                    ש</li>
-                  <ul>
-                    <li>המשתנה "d"הוא מספר חיובי קטן או שווה לאחד המציין
-                      את ביזורויות הקומקום,</li>
-                    <li>המשתנה "c" הוא המספר השלם של הבעלים העמיתים
-                      בקומקום, מספר אשר מוחלט באופן עצמאי ברוב מוסמך על
-                      ידי העמיתים בלבד,</li>
-                    <li>המשתנה "i" מציין את מספר מניות הקומקום, אשר תמיד
-                      גם שווה למספר בעלי הקומקום היחידנים, כלאמר כל
-                      הבעלים דרך כל שכבות החזקה עד לבני אדם יחידים,</li>
-                    <li>המשתנה "n" הוא המספר הרציונלי של מניות אשר
-                      בבעלות כל בעל-עמית בקומקום,</li>
-                    <li>המשתנה "m" הוא שווי שוק של הקומקום,</li>
-                    <li>המשתנה "v" הוא ערך בעלות עמית, אשר השינויים בו
-                      מחושבים על פי תלילות השינוי בו השווה להפרש הערכים
-                      ביחס לערך הקודם, כאשר תחום גבולות התלילות מוסכם
-                      ברוב על ידי בעלי העמית בקומקום,</li>
-                  </ul>
-                  <li>סיווג הקומוקום מוכרע רק פעם אחת בהיוצרותו <br>
+                  <li>המדגישה מספרים פשוטים במקום שיעורם בהקשרם (למשל
+                    בהצגת גידול מספר הנשאים ולא את שיעורם מגידול מספר
+                    הנבדקים), <br>
                   </li>
                   <ul>
-                    <li>כאחד מהארבעה: <br>
+                    <li>לשרות ממשלות פופוליסטייות המרסקות זכויות אדם,
+                      דמוקרטיה ועסקים <br>
                     </li>
-                    <ul>
-                      <li><b>סטטי</b>, כאשר "d"&nbsp; הקומקום קבוע או <b>דינמי</b>,
-                        כאשר ה "d" ניתן לשינוי <br>
-                      </li>
-                      <li>ו <b>נעול,</b> כאשר חילוף הבעלות עליו אסורה
-                        או <b>פתוח</b>, כאשר חילוף הבעלות עליו מותרת <br>
-                      </li>
-                    </ul>
-                    <li>וכך שכל בעלי הקומקום היחידנים הם החוברים בה
-                      (כלאמר כל הבעלים דרך כל שכבות בעלות הקומקום אשר
-                      מספרם כמספר מניות הקומקום) וכאשר הקומקום <i>נעול
-                        או דינמי</i>, כל חובר בקומקום חייב להיות תחילה
-                      בעל-עמית בו ואם לא יצא החובר יכול החובר לזחור
-                      לחזור למעמד בעל-עמית<br>
-                    </li>
-                  </ul>
-                  <li>וצורת ההחלטה בכל קומקום צריכה להיות שקופה לבעליה
-                    וחייבת לכלול:</li>
-                  <ul>
-                    <li>סף יחוס העמיתים (המגדיר את הרשות העצמאית בקומקום
-                      של העמיתים, מה הסף שדרוש לרוב מוסמך) המחליט לגבי
-                      כל מדיניות גם ביחס למספר העמיתים ווגם ביחס למספר
-                      המניות שבידי כל עמית.</li>
-                    <li> המדיום - איך הבעלים נפגשים</li>
-                    <li>&nbsp;וההודעה המוקדמת - השעה והמידע שיימסר מראש.<br>
-                    </li>
+                    <li>גם על ידי ערוב משטרה וצבא (כל צבא מדינה הפועל
+                      נגד אזרחי המדינה הוא אשר מימשלו הוא אויב עמה) ועם
+                      תופעות אכיפה החורגות מסמכות ואכזריות סדידסטיות
+                      ו/או גזעניות, למשל בארה"ב, בישראל ובברזיל.. </li>
                   </ul>
                 </ul>
-              </div>
+              </ul>
+            </ul>
+          </ul>
+        </ul>
+        <b>לסיכום:</b> מעבר להפגנות, אשר תמיד מתמוססות ומתפוגגות&nbsp;
+        כל עוד לא הפילו את הדיקטטורות, אנחנו יכולים להתארגן במבנים
+        כלכלים-חברתיים שיביאו לנו תוצאות חיוביות לאורך זמן בהצטברותנו
+        למסה הקריטית הממשת את צרכינו, גם כך שבמקרים המתאימים לנו, נצא
+        שוב ושוב להפגנות המשרתות את מטרותנו:<br>
+        <ul>
+          <li>ארועי התקווה חוזרת <a
+              href="https://edensgarden.hopeisback.com/index-heb">בפלטפורמת
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              גינות עדן</a> נפתחים בכדי ללמוד למצוא ולהתארגן באופני
+            התארגנות חדשות ארוכות טווח ונזילות המאפשרות לקבוצות שונות
+            לשמור על ציביון הקבוצות וזהות וריבונות היחידים בהתארגנותם
+            למסה הקריטית הדרושה להורדת מחירים עבורם תוך דאגה לעסקים
+            הקטנים וליצרנים ומגדלים תוך דילוג על אוכלי החינם אשר בינהם.</li>
+        </ul>
+      </div>
+    </div>
+    <center style=";text-align:right;direction:rtl"></center>
+    <div class="flding" id="statute"> <input id="istatute"
+        class="toggle" checked="checked" type="checkbox">&nbsp;
+      <div class="fcontent content-inner">
+        <ul style=";text-align:right;direction:rtl">
+          <li style=";text-align:right;direction:rtl"> בסיס זה עשוי
+            לתרום רק <b>לפתרונות הומניטאריים המבוססים על תנועה מועילה
+              של אנשים בין קבוצות שבהן יש להם כוח שווה</b> .
+            <ul style=";text-align:right;direction:rtl">
+              <li style=";text-align:right;direction:rtl"> מועצת המנהלים
+                של HopeIsBack עשויה להוסיף פתרונות ל -6 הפתרונות
+                הראשונים שלה:
+                <ul style=";text-align:right;direction:rtl">
+                  <li style=";text-align:right;direction:rtl"> את <a
+                      href="javascript:void(0);"
+                      onclick="go('comcomized');">ההסכם המשותף </a> של
+                    בעלות שווה (שנועד למנוע השתלטות על ידי תאגידים ענק,
+                    תוך מתן חדר לשתף פעולה עם כמה עסקים "נורמלי עושה) -
+                    הנה כמה דוגמאות של פתרונות קונקרטיים:" חיבור אנשים
+                    "הוא משהו בבעלות אותם לא על ידי החברה ענק כמו
+                    בפייסבוק, לשכנע את האזרחים להשתתף בקמפיין אנרגיה
+                    ירוקה כמו בעלי חברות ירוקות או ביצוע כל חילוץ /
+                    הפרטה מחזור עם התושבים כמו שחקנים במקום כמה חברות
+                    ענק, </li>
+                  <li style=";text-align:right;direction:rtl"> <a
+                      href="javascript:void(0);"
+                      onclick="go('liquidunion');">מודל איחוד נוזלי</a>
+                    של חלוקה הוגנת (לעומת נוזלי / נציג- דמוקרטיה לספר
+                    איך להחליט לייצר או לשרת, האיחוד הנוזלי הוא על איך
+                    להתארגן כדי לקבל ולבחור בין שירותים ומוצרים) - <b>לשעבר:</b>
+                    האזרחים תשלום עבור תחנת טלוויזיה ניתן לבצע עבור
+                    האיחוד נוזלי שיש פרויקטים כגון בידור, חקירה, חינוך,
+                    תרבות, אמנות פיתוח, וכו ', שבו כל אחד מהם פרויקטים
+                    יש ערוצי שלה ממומן פרופורציונלי למספר המשתתפים
+                    בערוץ, כך גם את הקולות של גם מיעוטים ולא בוחרים
+                    יישמעו, </li>
+                  <li style=";text-align:right;direction:rtl"> <a
+                      href="javascript:void(0);"
+                      onclick="go('qdolphin');">דפדפן Qdolphin</a> ,
+                    דפדפן עבור אנשים חכמים פיתח מוגבל לספק חוויית המשתמש
+                    המתקדמת יישום אינטרנט מוגדר על ידי qt / QML עם תכונת
+                    ההצפנה: 3fish1kbit במצב ctr ידי מפתח kdf2 הקשר,
+                    בהפקת 4k קבצים, כל אחד מהם בעל מקש חזק אחר לחיזוק
+                    הטבעת החלשה ביותר של כל שרשרת הביטחון להיות קוד
+                    האדם, </li>
+                  <li style=";text-align:right;direction:rtl"> את <a
+href="https://translate.googleusercontent.com/translate_c?depth=1&amp;rurl=translate.google.com&amp;sl=auto&amp;sp=nmt4&amp;tl=iw&amp;u=http://hopeisback.com/&amp;xid=17259,15700023,15700043,15700186,15700191,15700256,15700259,15700262&amp;usg=ALkJrhiLKVkDbABZjchXAvLQuKhPjCloog#Rcoin"
+                      target="_top">Solidarcoin / Rcoin</a> , </li>
+                  <li style=";text-align:right;direction:rtl"> <a
+href="https://translate.googleusercontent.com/translate_c?depth=1&amp;rurl=translate.google.com&amp;sl=auto&amp;sp=nmt4&amp;tl=iw&amp;u=http://hopeisback.com/&amp;xid=17259,15700023,15700043,15700186,15700191,15700256,15700259,15700262&amp;usg=ALkJrhiLKVkDbABZjchXAvLQuKhPjCloog#Hagpl"
+                      target="_top">רישיון ההומניטרי</a> </li>
+                  <li style=";text-align:right;direction:rtl"> את <a
+href="https://translate.googleusercontent.com/translate_c?depth=1&amp;rurl=translate.google.com&amp;sl=auto&amp;sp=nmt4&amp;tl=iw&amp;u=http://hopeisback.com/&amp;xid=17259,15700023,15700043,15700186,15700191,15700256,15700259,15700262&amp;usg=ALkJrhiLKVkDbABZjchXAvLQuKhPjCloog#iiaom"
+                      target="_top">זהות קריפטו iiaom</a> . </li>
+                </ul>
+              </li>
+              <li style=";text-align:right;direction:rtl"> כל זה נעשה <b>לפתרון</b>
+                בעיות שהועלו בגלל הגידול המהיר בתנועה של מוצרים,
+                שירותים, הון, כסף ומידע, תוך חסימת אנשים - <b>תופעה
+                  בעייתית גלובלית המייצרת פסיביות או תוקפנות גבוהות יותר
+                  ומלחמות נוספות</b> . </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="flding" id="comcomized"> <input id="icomcomized"
+        class="toggle" checked="checked" type="checkbox">&nbsp;
+      <div class="fcontent content-inner">
+        <div class="entry-content"
+          style=";text-align:right;direction:rtl">
+          <p style="text-align: right;;text-align:right;direction:rtl"><br>
+          </p>
+          <p style="text-align: center;;text-align:right;direction:rtl">
+          </p>
+          <div class="flding" id="comcomIntroduction"> <input
+              id="icomcomIntroduction" class="toggle" type="checkbox"> <label
+              for="icomcomIntroduction" class="lbl-toggle"> <i><strong>מבוא:</strong></i>
+            </label>
+            <div class="fcontent content-inner" "entry-content"="">
+              רישיון בעלות אחיזת מניות שיוויונית (מניות עמיתים) זה מיועד
+              לאחיזה רבת משתתפים תוך הגנה מפני השתלטות מניפוליסית של
+              הגדולים מכדי ליפול על חברות קטנות, גם כך שהקטנות תחזקנה
+              בחברות גדולות יותר ותוך שמירה על ניידות והדדיות הבעלים
+              בתהליך יצירת המסה הקריטית של שווי נכסהם ו/או מספרם, מסה
+              אשר דרושה להשגת מטרות בעליי הנכסים. <br>
+              הרישיון נועד לשמש כנייר לקמוס המאבחן את אלו אשר בכל
+              זאת&nbsp; יתאבו להתמכר לכוחות ההרסניים הגדולים מכדי ליפול
+              בכך שעבורם החוזה מגביל, ומכך מועורובותם לא תתאפשר
+              מלכלתחילה וזאת בכדי למנוע מצבים כמו זה של <span
+                class="css-901oao css-16my406 r-1qd0xha r-ad9z0x
+                r-bcqeeo r-qvutc0"><span class="css-901oao css-16my406
+                  r-1qd0xha r-ad9z0x r-bcqeeo r-qvutc0"><span
+                    class="css-901oao css-16my406 r-1qd0xha r-ad9z0x
+                    r-bcqeeo r-qvutc0"></span></span></span>בריאן אקטון
+              שמכר את משתמשי וואצאפ לפיסבוק ואחר כך בייסוריו ייסד את
+              סיגנל.<br>
+              כלומר, הרישיון תוכנן במיוחד כנגד שחקנים גדולים וכנגד אלו
+              אשר מתיימרים באופן זמני או חלקי בלבד להגשים את סיבת הקיום
+              המוכרזת על ידם, לרוב על פי הכרזת מטרות וקריטיוניי הכניסה.
+              <br>
+              <p></p>
             </div>
-            <div class="flding" id="scomcomsplatform"> <input
-                id="iscomcomsplatform" class="toggle" type="checkbox"> <br>
-              <div class="fcontent content-inner">
-                <div class="entry-content"
-                  style=";text-align:right;direction:rtl">
-                  <ul>
-                    <li> בפלטפורמת סקומקום הרווח הוא יחסי לאחזקת המניות
-                      בפלטפורמה,</li>
-                    <li>אך ההחלטות המשמעותיות נעשות על פי הצבעות בהן לכל
-                      סקומקום מבעלי הפלטפורמה או לכל אחד מבעלי סקומקום
-                      יש קול אחד בלבד,</li>
-                    <li>כאשר למייסדים יש&nbsp; זכויות וחובות יתר בהצבעה
-                      בהתאם להגדרות המייסדים, למשל כך שהמייסדת מתקננת <br>
-                    </li>
-                    <ul>
-                      <li>מה הם החלטות משמעותיות,<br>
-                      </li>
-                      <li>מי יכולים להיות בעלי הבעלים <br>
-                      </li>
-                      <li>ומה הם השרותים והמוצרים הנמסרים בין בעלי
-                        הפלטפורמה כספקים או צרכנים. </li>
-                    </ul>
-                  </ul>
-                  <a href="index_files/scocomPlatform.png"><img
-                      src="index_files/scocomPlatform.png" alt=""
-                      height="20%" align="left" width="20%" border="2"></a>ּ<b>דוגמה
-
-
-
-                    (usecase) :</b> הקמת חברה תקשורת/מדיה-חברתית בבעלות
-                  האזרחים, אשר מתכונתה היא פלטפורמת סקומקום, כאשר ערוצי
-                  הפלטפורמה הן סקומקומים קהילתיים. למה?&nbsp;
-                  <ul>
-                    <li>כי אזרחים חייבים להיות הבעלים של חברות
-                      התקשורת,&nbsp;</li>
-                    <ul>
-                      <li>עכשיו, כשכבר ברור לרובנו שזו השיטה ולא איזושהי
-                        טעות,</li>
-                    </ul>
-                    <li>כי חברות התקשורת חייבות להיות כלבי השמירה של
-                      הדמוקרטיה,</li>
-                    <li>כשהדמוקרטיות מדממות ומתעוותות,</li>
-                    <li>כשהדיון הציבורי לעולם לא מספק או מעמיק ומתמלא
-                      ספינים, צנזורה ושרלטנות ממכרת <br>
-                    </li>
-                    <ul>
-                      <li>של דיכוי ומניעת סממנים ללא מרפא, תוך התשה,
-                        כתישה והמסללה, עד הטמעת הפחדה קיומית והרתעתית, <br>
-                      </li>
-                      <li>על ידי הפעלת אוכפי רשויות פרטיים, משטרתיים
-                        וצבאיים החורגים בהתדמה וללא בקורת מסמכותם,</li>
-                    </ul>
-                    <li>כי בימינו בעלי התקשורת ובעלי המדיות החברתיות הם
-                      מסחריים המייצרים תעמולה כוזבת התומכת בהקפאת
-                      המונופלים הריווחים לבעלי התקשורת.<br>
-                    </li>
-                  </ul>
-                  <ul>
-                    <ul>
-                    </ul>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="flding" id="liquidunion"> <input
-                id="iliquidunion" class="toggle" checked="checked"
-                type="checkbox">&nbsp;
-              <div class="fcontent content-inner">
-                <p style=";text-align:right;direction:rtl"><br>
-                </p>
-                <div class="section-inner sectionLayout--insetColumn"
-                  style=";text-align:right;direction:rtl">
-                  <p name="edb2" id="edb2" class="graf graf--p
-                    graf-after--h3"
-                    style=";text-align:right;direction:rtl"> </p>
-                  <p name="9b5c" id="9b5c" class="graf graf--p
-                    graf-after--figure graf--trailing"
-                    style=";text-align:right;direction:rtl"> <b>מבוא</b>:
-                    האיגוד הנוזלי הוא אופן התארגנות בגוף משפטי או פרויקט
-                    של הגוף, אשר מטרתו חלוקת משאבים הוגנת בין משתתפיו. <em
-                      class="markup--em markup--p-em">הגוף המשפטי יכול
-                      גם להיות יישות&nbsp; פדרלית, כגון</em> <span
-                      class="markup--strong markup--p-strong"><em
-                        class="markup--em markup--p-em">מדינה או איחוד</em></span><em
-                      class="markup--em markup--p-em">, כמו ארה"ב,
-                      האיחוד האירופי. <br>
-                      הגוף נועד להיות מפיץ משאבים הוגן לזמן ארוך אשר
-                      יאחד אירגונים עצמאים באופן מתקדם, דמוקרטי וצבעוני,
-                    </em></p>
-                  <figure name="a462" id="a462" class="graf graf--figure
-                    graf-after--p">
-                    <div class="aspectRatioPlaceholder is-locked"
-                      style="max-width: 700px; max-height:
-                      236px;;text-align:right;direction:rtl">
-                      <div class="progressiveMedia js-progressiveMedia
-                        graf-image is-canvasLoaded is-imageLoaded"
-                        data-image-id="0*wGHDWJS3RaUpUQWE.png"
-                        data-width="737" data-height="249"
-                        data-is-featured="true" data-action="zoom"
-                        data-action-value="0*wGHDWJS3RaUpUQWE.png"
-                        data-scroll="native"
-                        style=";text-align:right;direction:rtl"><a
+          </div>
+          <p style=";text-align:right;direction:rtl"> <i><b>רישיון
+                הבעלות:</b></i><br>
+          </p>
+          <p style=";text-align:right;direction:rtl">ברישיון בעלות זה,
+            הביטוי "קומקום" מציין בעלות ביזורית הנגזרת מהקיצור האנגלי
+            comcom המציין common company, כאשר הרישיון מקנה הכרה קהילתית
+            בבעלות על הנכסים המוקנים על פי הרישיון הנ"ל אשר מתוקף שוב
+            ושוב תוך שימוש בנוהל הביזורי לתרשומת הבעלות וחילופייה על
+            חזקות באשר הן, כך ש<br>
+          </p>
+          <ol>
+            <li>הבעלות היא על נכסים אשר ערכם הכולל מחושב על פי ערך מניות
+              הקומקום,</li>
+            <li>&nbsp;ערך הנזק המינימלי של אי קיום התחיבויות הבעלות
+              יחושב מול כל אחד מהבעלים האחרים בנפרד ונגזר משווי
+              הקומקום,&nbsp;</li>
+            <li>הסכם בעלות הקומקום אינו ניתן לשינוי, אלא על ידי רוב
+              מיוחס בקומקום המוסכם ומוכרז בהסכם הבעלות כרוב המוסמך הנדרש
+              לשינוי ההסכם</li>
+            <li>וכל קונה או מוכר מניות קומקום מתחייב בעצם בעלותו לקיים
+              את תנאי הקומקום בכל יצירת או העברת בעלות, כאשר<br>
+            </li>
+          </ol>
+          <ul>
+            <li>הבעלות מותרת לבעל-רגיל או לבעל-עמית בלבד, כאשר בעל-עמית
+              מורשה להיות רק בן אדם או קומקום, אשר בבעלותו מספר מניות
+              זהה לכל בעל-עמית אחר באותו קומקום,</li>
+            <li>בכל מקרה של כמה שכבות אחיזה בקומקום מותרת לבעלים רק עמדת
+              חזקה אחת,</li>
+            <li>לקומקום יש את זכות הראשונים לקניית מניותיה וכל אחד
+              מבעליה חייב להתאים לקריטריונים שלה,</li>
+            <li>בכל קומקום, שיעור החזקה מכלל הקומוקום של כל העמיתים
+              יחדיו הוא "d", כאשר d*m=c*v ו d*i=c*n, היכן ש</li>
+            <ul>
+              <li>המשתנה "d"הוא מספר חיובי קטן או שווה לאחד המציין את
+                ביזורויות הקומקום,</li>
+              <li>המשתנה "c" הוא המספר השלם של הבעלים העמיתים בקומקום,
+                מספר אשר מוחלט באופן עצמאי ברוב מוסמך על ידי העמיתים
+                בלבד,</li>
+              <li>המשתנה "i" מציין את מספר מניות הקומקום, אשר תמיד גם
+                שווה למספר בעלי הקומקום היחידנים, כלאמר כל הבעלים דרך כל
+                שכבות החזקה עד לבני אדם יחידים,</li>
+              <li>המשתנה "n" הוא המספר הרציונלי של מניות אשר בבעלות כל
+                בעל-עמית בקומקום,</li>
+              <li>המשתנה "m" הוא שווי שוק של הקומקום,</li>
+              <li>המשתנה "v" הוא ערך בעלות עמית, אשר השינויים בו מחושבים
+                על פי תלילות השינוי בו השווה להפרש הערכים ביחס לערך
+                הקודם, כאשר תחום גבולות התלילות מוסכם ברוב על ידי בעלי
+                העמית בקומקום,</li>
+            </ul>
+            <li>סיווג הקומוקום מוכרע רק פעם אחת בהיוצרותו <br>
+            </li>
+            <ul>
+              <li>כאחד מהארבעה: <br>
+              </li>
+              <ul>
+                <li><b>סטטי</b>, כאשר "d"&nbsp; הקומקום קבוע או <b>דינמי</b>,
+                  כאשר ה "d" ניתן לשינוי <br>
+                </li>
+                <li>ו <b>נעול,</b> כאשר חילוף הבעלות עליו אסורה או <b>פתוח</b>,
+                  כאשר חילוף הבעלות עליו מותרת <br>
+                </li>
+              </ul>
+              <li>וכך שכל בעלי הקומקום היחידנים הם החוברים בה (כלאמר כל
+                הבעלים דרך כל שכבות בעלות הקומקום אשר מספרם כמספר מניות
+                הקומקום) וכאשר הקומקום <i>נעול או דינמי</i>, כל חובר
+                בקומקום חייב להיות תחילה בעל-עמית בו ואם לא יצא החובר
+                יכול החובר לזחור לחזור למעמד בעל-עמית<br>
+              </li>
+            </ul>
+            <li>וצורת ההחלטה בכל קומקום צריכה להיות שקופה לבעליה וחייבת
+              לכלול:</li>
+            <ul>
+              <li>סף יחוס העמיתים (המגדיר את הרשות העצמאית בקומקום של
+                העמיתים, מה הסף שדרוש לרוב מוסמך) המחליט לגבי כל מדיניות
+                גם ביחס למספר העמיתים ווגם ביחס למספר המניות שבידי כל
+                עמית.</li>
+              <li> המדיום - איך הבעלים נפגשים</li>
+              <li>&nbsp;וההודעה המוקדמת - השעה והמידע שיימסר מראש.<br>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+      <div class="flding" id="scomcomsplatform"> <input
+          id="iscomcomsplatform" class="toggle" type="checkbox"> <br>
+        <div class="fcontent content-inner">
+          <div class="entry-content"
+            style=";text-align:right;direction:rtl">
+            <ul>
+              <li> בפלטפורמת סקומקום הרווח הוא יחסי לאחזקת המניות
+                בפלטפורמה,</li>
+              <li>אך ההחלטות המשמעותיות נעשות על פי הצבעות בהן לכל
+                סקומקום מבעלי הפלטפורמה או לכל אחד מבעלי סקומקום יש קול
+                אחד בלבד,</li>
+              <li>כאשר למייסדים יש&nbsp; זכויות וחובות יתר בהצבעה בהתאם
+                להגדרות המייסדים, למשל כך שהמייסדת מתקננת <br>
+              </li>
+              <ul>
+                <li>מה הם החלטות משמעותיות,<br>
+                </li>
+                <li>מי יכולים להיות בעלי הבעלים <br>
+                </li>
+                <li>ומה הם השרותים והמוצרים הנמסרים בין בעלי הפלטפורמה
+                  כספקים או צרכנים. </li>
+              </ul>
+            </ul>
+            <a href="index_files/scocomPlatform.png"><img
+                src="index_files/scocomPlatform.png" alt="" width="20%"
+                height="20%" align="left" border="2"></a>ּ<b>דוגמה
+              (usecase) :</b> הקמת חברה תקשורת/מדיה-חברתית בבעלות
+            האזרחים, אשר מתכונתה היא פלטפורמת סקומקום, כאשר ערוצי
+            הפלטפורמה הן סקומקומים קהילתיים. למה?&nbsp;
+            <ul>
+              <li>כי אזרחים חייבים להיות הבעלים של חברות התקשורת,&nbsp;</li>
+              <ul>
+                <li>עכשיו, כשכבר ברור לרובנו שזו השיטה ולא איזושהי טעות,</li>
+              </ul>
+              <li>כי חברות התקשורת חייבות להיות כלבי השמירה של
+                הדמוקרטיה,</li>
+              <li>כשהדמוקרטיות מדממות ומתעוותות,</li>
+              <li>כשהדיון הציבורי לעולם לא מספק או מעמיק ומתמלא ספינים,
+                צנזורה ושרלטנות ממכרת <br>
+              </li>
+              <ul>
+                <li>של דיכוי ומניעת סממנים ללא מרפא, תוך התשה, כתישה
+                  והמסללה, עד הטמעת הפחדה קיומית והרתעתית, <br>
+                </li>
+                <li>על ידי הפעלת אוכפי רשויות פרטיים, משטרתיים וצבאיים
+                  החורגים בהתדמה וללא בקורת מסמכותם,</li>
+              </ul>
+              <li>כי בימינו בעלי התקשורת ובעלי המדיות החברתיות הם
+                מסחריים המייצרים תעמולה כוזבת התומכת בהקפאת המונופלים
+                הריווחים לבעלי התקשורת.<br>
+              </li>
+            </ul>
+            <ul>
+              <ul>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="flding" id="liquidunion"> <input id="iliquidunion"
+          class="toggle" checked="checked" type="checkbox">&nbsp;
+        <div class="fcontent content-inner">
+          <p style=";text-align:right;direction:rtl"><br>
+          </p>
+          <div class="section-inner sectionLayout--insetColumn"
+            style=";text-align:right;direction:rtl">
+            <p name="edb2" id="edb2" class="graf graf--p graf-after--h3"
+              style=";text-align:right;direction:rtl"> </p>
+            <p name="9b5c" id="9b5c" class="graf graf--p
+              graf-after--figure graf--trailing"
+              style=";text-align:right;direction:rtl"> <b>מבוא</b>:
+              האיגוד הנוזלי הוא אופן התארגנות בגוף משפטי או פרויקט של
+              הגוף, אשר מטרתו חלוקת משאבים הוגנת בין משתתפיו. <em
+                class="markup--em markup--p-em">הגוף המשפטי יכול גם
+                להיות יישות&nbsp; פדרלית, כגון</em> <span
+                class="markup--strong markup--p-strong"><em
+                  class="markup--em markup--p-em">מדינה או איחוד</em></span><em
+                class="markup--em markup--p-em">, כמו ארה"ב, האיחוד
+                האירופי. <br>
+                הגוף נועד להיות מפיץ משאבים הוגן לזמן ארוך אשר יאחד
+                אירגונים עצמאים באופן מתקדם, דמוקרטי וצבעוני, </em></p>
+            <figure name="a462" id="a462" class="graf graf--figure
+              graf-after--p">
+              <div class="aspectRatioPlaceholder is-locked"
+                style="max-width: 700px; max-height:
+                236px;;text-align:right;direction:rtl">
+                <div class="progressiveMedia js-progressiveMedia
+                  graf-image is-canvasLoaded is-imageLoaded"
+                  data-image-id="0*wGHDWJS3RaUpUQWE.png"
+                  data-width="737" data-height="249"
+                  data-is-featured="true" data-action="zoom"
+                  data-action-value="0*wGHDWJS3RaUpUQWE.png"
+                  data-scroll="native"
+                  style=";text-align:right;direction:rtl"><a
 href="file:///var/sid-root/a/github/processing/hopeisback/index_files/0wGHDWJS3RaUpUQWE.png"><img
-                            class="progressiveMedia-image
-                            js-progressiveMedia-image"
+                      class="progressiveMedia-image
+                      js-progressiveMedia-image"
 data-src="https://cdn-images-1.medium.com/max/1600/0*wGHDWJS3RaUpUQWE.png"
 src="file:///var/sid-root/a/github/processing/hopeisback/index_files/0wGHDWJS3RaUpUQWE.png"
-                            alt="" height="20%" align="left" width="40%"
-                            border="0"></a></div>
-                    </div>
-                  </figure>
-                  <p name="9b5c" id="9b5c" class="graf graf--p
-                    graf-after--figure graf--trailing"
-                    style=";text-align:right;direction:rtl"><em
-                      class="markup--em markup--p-em">בדרך לבניית</em> <span
-                      class="markup--strong markup--p-strong"><em
-                        class="markup--em markup--p-em">המסה קריטי</em></span>
-                    הדרושה למילוי צרכיהם<em class="markup--em
-                      markup--p-em">, תוך הצטרפות לקבוצות המשתתפים
-                      הקטנות בסניפיו ובעת אספקת הצרכים הקבועה שלהם.</em></p>
-                  <figure name="a462" id="a462" class="graf graf--figure
-                    graf-after--p">
-                    <div class="aspectRatioPlaceholder is-locked"
-                      style="max-width: 700px; max-height:
-                      236px;;text-align:right;direction:rtl"> </div>
-                  </figure>
-                  <p name="9b5c" id="9b5c" class="graf graf--p
-                    graf-after--figure graf--trailing"
-                    style=";text-align:right;direction:rtl"> <br>
-                    הגוף נועד לייצוג תיגובי ללא ניטרול והשתלבות ללא
-                    הטמעה בין קבוצות ויחידים שונים, תוך <em
-                      class="markup--em markup--p-em">הגדלתם העצמית
-                      במודל הוגן, משתף ודינמי,&nbsp; ופחות ייצוגי או
-                      היררכי.</em> </p>
-                  <p name="bd35" id="bd35" class="graf graf--p
-                    graf-after--li"
-                    style=";text-align:right;direction:rtl"> </p>
-                  <strong class="markup--strong markup--p-strong"></strong>
-                  <figure name="a462" id="a462" class="graf graf--figure
-                    graf-after--p">
-                    <div class="aspectRatioPlaceholder is-locked"
-                      style="max-width: 700px; max-height:
-                      236px;;text-align:right;direction:rtl"> </div>
-                  </figure>
-                  איגוד נוזלי הוא כל גוף משפטי שיש לו פרויקטים, אשר לכל
-                  אחד מהם סניפים הממומנים באופן יחסי למספר המשתתפים בהם,
-                  כך ש <br>
-                  <ol>
-                    <li>כל <b>פרויקט</b> מוגדר על פי השלושה: <b>תקציבו</b>,
-                      <b>האוכלוסייה</b> ו<b>הצרכים</b> לסיפוק האוכלסיה
-                      אשר בטיפולו,</li>
-                    <li>&nbsp;כל <b><span class="markup--strong
-                          markup--p-strong"><span class="markup--em
-                            markup--p-em">משתתף פרויקט או איוגוד</span></span></b>
-                      הוא אדם מאוכלוסיה, אשר באופן קבוע (על ידי כרטיס
-                      איגוד אישי) בוחר (לעיתים על ידי תשלום מראש) באחד
-                      מהסניפים הקיימים או אשר עם משתתפים נוספים יוצר
-                      סניף פרויקט חדש,</li>
-                  </ol>
-                  <figure name="a462" id="a462" class="graf graf--figure
-                    graf-after--p">
-                    <div class="aspectRatioPlaceholder is-locked"
-                      style="max-width: 700px; max-height:
-                      236px;;text-align:right;direction:rtl"> </div>
-                  </figure>
-                  <ol>
-                    <li>כל <b>חבר</b> איגוד חייב להיות גם משתתף בו,</li>
-                    <li>בכל פרויקט משתתף יכול להשתתף רק בסניף אחד
-                      וברצונו, אך רק לאחר השלמת התחייבויותיו כחבר, יכול
-                      המשתתף להיות גם חבר,</li>
-                    <li>ההצבעת החברים יכולה להיות <br>
-                    </li>
-                    <ol>
-                      <li>רק אחרי שכל המשתתפים קיבלו הודיעה על קיומה
-                        מראש <br>
-                      </li>
-                      <li>ואך ורק <span class="markup--strong
-                          markup--p-strong">על פיזור האיגוד הנוזלי /
-                          הפרויקט או הפעלת תהליך ההדחה נגד ממלאי תפקידים
-                          במועצות</span></li>
-                    </ol>
-                    <li><span class="markup--strong markup--p-strong"></span>כאשר
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                      משתתפי הפרויקט והאיגוד הם הבוחרים את בעלי התפקידים
-                      במועצותיו, בעלי התפקידים מתמנים רק עד פרק זמן
-                      מוגדר מראש על פי כללי האיגוד והמועצות הן:
-                      <figure name="a462" id="a462" class="graf
-                        graf--figure graf-after--p">
-                        <div class="aspectRatioPlaceholder is-locked"
-                          style="max-width: 700px; max-height:
-                          236px;;text-align:right;direction:rtl"> </div>
-                      </figure>
-                    </li>
-                  </ol>
-                  <ul class="postList"
-                    style=";text-align:right;direction:rtl">
-                    <li name="becd" id="becd" class="graf graf--li
-                      graf-after--p"
-                      style=";text-align:right;direction:rtl"> <strong
-                        class="markup--strong markup--li-strong">מועצת
-                        המנהלים</strong>, אשר בסמכותה יישום ההחלטות
-                      שהתקבלו בהצבעת המשתתפים, </li>
-                    <li name="82af" id="82af" class="graf graf--li
-                      graf-after--li"
-                      style=";text-align:right;direction:rtl"> <strong
-                        class="markup--strong markup--li-strong">מועצת
-                        הבקרה</strong>, אשר בסמכותה דיווח לכל המשתתפים
-                      וקבלת הודעה מכל משתתף, לגבי כל שיפור אפשרי ביישומי
-                      מועצת המנהלים, </li>
-                    <li name="d19d" id="d19d" class="graf graf--li
-                      graf-after--li"
-                      style=";text-align:right;direction:rtl"> <strong
-                        class="markup--strong markup--li-strong">מועצת
-                        מומחים</strong>, אשר בסמכותה השלמת הצעות להצבעת
-                      המשתתפים המוצאים על ידי כל משתתף ועבור כל בעיה או
-                      פרויקטים.</li>
-                  </ul>
-                  <figure name="a462" id="a462" class="graf graf--figure
-                    graf-after--p">
-                    <div class="aspectRatioPlaceholder is-locked"
-                      style="max-width: 700px; max-height:
-                      236px;;text-align:right;direction:rtl"> </div>
-                  </figure>
-                  <figure name="a462" id="a462" class="graf graf--figure
-                    graf-after--p">
-                    <div class="aspectRatioPlaceholder is-locked"
-                      style="max-width: 700px; max-height:
-                      236px;;text-align:right;direction:rtl"> </div>
-                  </figure>
-                  <p name="9b5c" id="9b5c" class="graf graf--p
-                    graf-after--figure graf--trailing"
-                    style=";text-align:right;direction:rtl"> <br>
-                    <em class="markup--em markup--p-em"></em><em
-                      class="markup--em markup--p-em"></em> </p>
-                </div>
+                      alt="" width="40%" height="20%" align="left"
+                      border="0"></a></div>
               </div>
-              <div class="flding" id="hagpl"> <input id="ihagpl"
-                  class="toggle" checked="checked" type="checkbox">&nbsp;
+            </figure>
+            <p name="9b5c" id="9b5c" class="graf graf--p
+              graf-after--figure graf--trailing"
+              style=";text-align:right;direction:rtl"><em
+                class="markup--em markup--p-em">בדרך לבניית</em> <span
+                class="markup--strong markup--p-strong"><em
+                  class="markup--em markup--p-em">המסה קריטי</em></span>
+              הדרושה למילוי צרכיהם<em class="markup--em markup--p-em">,
+                תוך הצטרפות לקבוצות המשתתפים הקטנות בסניפיו ובעת אספקת
+                הצרכים הקבועה שלהם.</em></p>
+            <figure name="a462" id="a462" class="graf graf--figure
+              graf-after--p">
+              <div class="aspectRatioPlaceholder is-locked"
+                style="max-width: 700px; max-height:
+                236px;;text-align:right;direction:rtl"> </div>
+            </figure>
+            <p name="9b5c" id="9b5c" class="graf graf--p
+              graf-after--figure graf--trailing"
+              style=";text-align:right;direction:rtl"> <br>
+              הגוף נועד לייצוג תיגובי ללא ניטרול והשתלבות ללא הטמעה בין
+              קבוצות ויחידים שונים, תוך <em class="markup--em
+                markup--p-em">הגדלתם העצמית במודל הוגן, משתף
+                ודינמי,&nbsp; ופחות ייצוגי או היררכי.</em> </p>
+            <p name="bd35" id="bd35" class="graf graf--p graf-after--li"
+              style=";text-align:right;direction:rtl"> </p>
+            <strong class="markup--strong markup--p-strong"></strong>
+            <figure name="a462" id="a462" class="graf graf--figure
+              graf-after--p">
+              <div class="aspectRatioPlaceholder is-locked"
+                style="max-width: 700px; max-height:
+                236px;;text-align:right;direction:rtl"> </div>
+            </figure>
+            איגוד נוזלי הוא כל גוף משפטי שיש לו פרויקטים, אשר לכל אחד
+            מהם סניפים הממומנים באופן יחסי למספר המשתתפים בהם, כך ש <br>
+            <ol>
+              <li>כל <b>פרויקט</b> מוגדר על פי השלושה: <b>תקציבו</b>,
+                <b>האוכלוסייה</b> ו<b>הצרכים</b> לסיפוק האוכלסיה אשר
+                בטיפולו,</li>
+              <li>&nbsp;כל <b><span class="markup--strong
+                    markup--p-strong"><span class="markup--em
+                      markup--p-em">משתתף פרויקט או איוגוד</span></span></b>
+                הוא אדם מאוכלוסיה, אשר באופן קבוע (על ידי כרטיס איגוד
+                אישי) בוחר (לעיתים על ידי תשלום מראש) באחד מהסניפים
+                הקיימים או אשר עם משתתפים נוספים יוצר סניף פרויקט חדש,</li>
+            </ol>
+            <figure name="a462" id="a462" class="graf graf--figure
+              graf-after--p">
+              <div class="aspectRatioPlaceholder is-locked"
+                style="max-width: 700px; max-height:
+                236px;;text-align:right;direction:rtl"> </div>
+            </figure>
+            <ol>
+              <li>כל <b>חבר</b> איגוד חייב להיות גם משתתף בו,</li>
+              <li>בכל פרויקט משתתף יכול להשתתף רק בסניף אחד וברצונו, אך
+                רק לאחר השלמת התחייבויותיו כחבר, יכול המשתתף להיות גם
+                חבר,</li>
+              <li>ההצבעת החברים יכולה להיות <br>
+              </li>
+              <ol>
+                <li>רק אחרי שכל המשתתפים קיבלו הודיעה על קיומה מראש <br>
+                </li>
+                <li>ואך ורק <span class="markup--strong
+                    markup--p-strong">על פיזור האיגוד הנוזלי / הפרויקט
+                    או הפעלת תהליך ההדחה נגד ממלאי תפקידים במועצות</span></li>
+              </ol>
+              <li><span class="markup--strong markup--p-strong"></span>כאשר
 
-                <div class="fcontent content-inner">
-                  <header class="entry-header">
-                    <p style=";text-align:right;direction:rtl"> <strong>רישיון
 
 
 
@@ -1105,6 +884,60 @@ src="file:///var/sid-root/a/github/processing/hopeisback/index_files/0wGHDWJS3Ra
 
 
 
+                משתתפי הפרויקט והאיגוד הם הבוחרים את בעלי התפקידים
+                במועצותיו, בעלי התפקידים מתמנים רק עד פרק זמן מוגדר מראש
+                על פי כללי האיגוד והמועצות הן:
+                <figure name="a462" id="a462" class="graf graf--figure
+                  graf-after--p">
+                  <div class="aspectRatioPlaceholder is-locked"
+                    style="max-width: 700px; max-height:
+                    236px;;text-align:right;direction:rtl"> </div>
+                </figure>
+              </li>
+            </ol>
+            <ul class="postList" style=";text-align:right;direction:rtl">
+              <li name="becd" id="becd" class="graf graf--li
+                graf-after--p" style=";text-align:right;direction:rtl">
+                <strong class="markup--strong markup--li-strong">מועצת
+                  המנהלים</strong>, אשר בסמכותה יישום ההחלטות שהתקבלו
+                בהצבעת המשתתפים, </li>
+              <li name="82af" id="82af" class="graf graf--li
+                graf-after--li" style=";text-align:right;direction:rtl">
+                <strong class="markup--strong markup--li-strong">מועצת
+                  הבקרה</strong>, אשר בסמכותה דיווח לכל המשתתפים וקבלת
+                הודעה מכל משתתף, לגבי כל שיפור אפשרי ביישומי מועצת
+                המנהלים, </li>
+              <li name="d19d" id="d19d" class="graf graf--li
+                graf-after--li" style=";text-align:right;direction:rtl">
+                <strong class="markup--strong markup--li-strong">מועצת
+                  מומחים</strong>, אשר בסמכותה השלמת הצעות להצבעת
+                המשתתפים המוצאים על ידי כל משתתף ועבור כל בעיה או
+                פרויקטים.</li>
+            </ul>
+            <figure name="a462" id="a462" class="graf graf--figure
+              graf-after--p">
+              <div class="aspectRatioPlaceholder is-locked"
+                style="max-width: 700px; max-height:
+                236px;;text-align:right;direction:rtl"> </div>
+            </figure>
+            <figure name="a462" id="a462" class="graf graf--figure
+              graf-after--p">
+              <div class="aspectRatioPlaceholder is-locked"
+                style="max-width: 700px; max-height:
+                236px;;text-align:right;direction:rtl"> </div>
+            </figure>
+            <p name="9b5c" id="9b5c" class="graf graf--p
+              graf-after--figure graf--trailing"
+              style=";text-align:right;direction:rtl"> <br>
+              <em class="markup--em markup--p-em"></em><em
+                class="markup--em markup--p-em"></em> </p>
+          </div>
+        </div>
+        <div class="flding" id="hagpl"> <input id="ihagpl"
+            class="toggle" checked="checked" type="checkbox">&nbsp;
+          <div class="fcontent content-inner">
+            <header class="entry-header">
+              <p style=";text-align:right;direction:rtl"> <strong>רישיון
 
 
 
@@ -1112,12 +945,6 @@ src="file:///var/sid-root/a/github/processing/hopeisback/index_files/0wGHDWJS3Ra
 
 
 
-                        הרישוי ההומניטארי:</strong> אינך מורשה להשתמש,
-                      לייצר או לעצב מתוך זה או מכל דבר הכלול בזה למטרות
-                      הריגה, עינויי, או ללא הסכמה, למטרות גרימת נזק או
-                      האזנה המופעלים על אנשים, אחרת הרשות ניתנת לך כאן
-                      רק תחת <strong><a
-                          href="https://en.wikipedia.org/wiki/Affero_General_Public_License">רישיון
 
 
 
@@ -1175,6 +1002,11 @@ src="file:///var/sid-root/a/github/processing/hopeisback/index_files/0wGHDWJS3Ra
 
 
 
+                  הרישוי ההומניטארי:</strong> אינך מורשה להשתמש, לייצר
+                או לעצב מתוך זה או מכל דבר הכלול בזה למטרות הריגה,
+                עינויי, או ללא הסכמה, למטרות גרימת נזק או האזנה המופעלים
+                על אנשים, אחרת הרשות ניתנת לך כאן רק תחת <strong><a
+                    href="https://en.wikipedia.org/wiki/Affero_General_Public_License">רישיון
 
 
 
@@ -1184,21 +1016,6 @@ src="file:///var/sid-root/a/github/processing/hopeisback/index_files/0wGHDWJS3Ra
 
 
 
-                          Agpl</a></strong> ! </p>
-                    <p style=";text-align:right;direction:rtl"> <strong>הערות:</strong>
-                    </p>
-                    <ul style=";text-align:right;direction:rtl">
-                      <li style=";text-align:right;direction:rtl">
-                        אנחנו, המעמד היצירתי, נוכל להביך את תעשיות
-                        המלחמה על ידי רישוי הומניטארי, כזה אגל הומניטרי;
-                      </li>
-                      <li style=";text-align:right;direction:rtl"> האגף
-                        ההומניטרי (hagpl) ההומניטארי, כמו כל קוד קוד
-                        פתוח אחר (hos) קוד פתוח, מציב את הקריטריונים
-                        החמישים, "ללא אפליה נגד אנשים או קבוצות", תנאי ל
-                        -6, "ללא אפליה בשדות של מאמץ" ומכאן אסורים כל
-                        אפליה בין אנשים על ידי שימוש בקוד זה. </li>
-                      <li style=";text-align:right;direction:rtl"> <em>מקרה
 
 
 
@@ -1257,85 +1074,34 @@ src="file:///var/sid-root/a/github/processing/hopeisback/index_files/0wGHDWJS3Ra
 
 
 
-
-
-
-                          הריגה של טנק סכין</em> : טענה לא-הומניטרית,
-                        כרגיל וחוזרת על עצמה, מספרת שהשימוש בסכין הוא
-                        כפול, לחמאה - אדם הומניטרי, אך גם לשימוש לא
-                        הומניטרי להרוג אנשים, אבל במקרה של (הרכב) טנק
-                        שיש בפירוט שלו להיות טוב יותר בהרג אנשים הוא לא
-                        "גם הומניטרי" כמו לשים חמאה על הלחם. לפיכך,
-                        בפיתוח קוד ההומניטארי מסכין שכזו, הטנק כבר היה
-                        אסור. </li>
-                      <li style=";text-align:right;direction:rtl"> <em>לא
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                          ניתן לעצור את המלחמות על ידי הוספת מלחמות</em>
-                        , אלא על ידי לחימה בתעשייה המייצרת את כלי הנשק
-                        שלה, תעשייה שיש לה את כל הדברים המיוחדים
-                        שבשליטתה, מצב התלוי לחלוטין ביצירתיות של כל אחד,
-                        מקרה שמתפתח בקוד הומניטרי למנוע. </li>
-                      <li style=";text-align:right;direction:rtl"> <em><a
+                    Agpl</a></strong> ! </p>
+              <p style=";text-align:right;direction:rtl"> <strong>הערות:</strong>
+              </p>
+              <ul style=";text-align:right;direction:rtl">
+                <li style=";text-align:right;direction:rtl"> אנחנו,
+                  המעמד היצירתי, נוכל להביך את תעשיות המלחמה על ידי
+                  רישוי הומניטארי, כזה אגל הומניטרי; </li>
+                <li style=";text-align:right;direction:rtl"> האגף
+                  ההומניטרי (hagpl) ההומניטארי, כמו כל קוד קוד פתוח אחר
+                  (hos) קוד פתוח, מציב את הקריטריונים החמישים, "ללא
+                  אפליה נגד אנשים או קבוצות", תנאי ל -6, "ללא אפליה
+                  בשדות של מאמץ" ומכאן אסורים כל אפליה בין אנשים על ידי
+                  שימוש בקוד זה. </li>
+                <li style=";text-align:right;direction:rtl"> <em>מקרה
+                    הריגה של טנק סכין</em> : טענה לא-הומניטרית, כרגיל
+                  וחוזרת על עצמה, מספרת שהשימוש בסכין הוא כפול, לחמאה -
+                  אדם הומניטרי, אך גם לשימוש לא הומניטרי להרוג אנשים,
+                  אבל במקרה של (הרכב) טנק שיש בפירוט שלו להיות טוב יותר
+                  בהרג אנשים הוא לא "גם הומניטרי" כמו לשים חמאה על הלחם.
+                  לפיכך, בפיתוח קוד ההומניטארי מסכין שכזו, הטנק כבר היה
+                  אסור. </li>
+                <li style=";text-align:right;direction:rtl"> <em>לא
+                    ניתן לעצור את המלחמות על ידי הוספת מלחמות</em> , אלא
+                  על ידי לחימה בתעשייה המייצרת את כלי הנשק שלה, תעשייה
+                  שיש לה את כל הדברים המיוחדים שבשליטתה, מצב התלוי
+                  לחלוטין ביצירתיות של כל אחד, מקרה שמתפתח בקוד הומניטרי
+                  למנוע. </li>
+                <li style=";text-align:right;direction:rtl"> <em><a
 href="https://translate.googleusercontent.com/translate_c?depth=1&amp;rurl=translate.google.com&amp;sl=auto&amp;sp=nmt4&amp;tl=iw&amp;u=https://en.wikipedia.org/wiki/Josef_Mengele&amp;xid=17259,15700023,15700043,15700186,15700191,15700256,15700259,15700262&amp;usg=ALkJrhh-PnDZSPNVzx8KpB2yyNNTwQapXw">יוסף
 
 
@@ -1403,18 +1169,18 @@ href="https://translate.googleusercontent.com/translate_c?depth=1&amp;rurl=trans
 
 
 
-                            מנגלה</a> , בבקשה להפסיק לפרוץ אנשים</em> :
-                        טיעונים לשים את החופש ללמוד על ידי עושה את הידע
-                        ואת הידע מעל כל ערכים אחרים יכולים להתקבל רק
-                        פסאודו דתי על ידי סוכנים או מלאכים של מוות,
-                        במיוחד בימינו, כאשר באזורים גדולים מכונות
-                        מסוגלים כדי להיות תחרותי יותר מאשר אנושי. </li>
-                      <li style=";text-align:right;direction:rtl"> קוד
-                        פתוח הומניטארי יכול לפחות להביך או להיות יותר
-                        יקר עבור NSA בהרגל המיותר שלה לא פרופורציונלי
-                        מפרה סטנדרטים בינלאומיים זכויות האדם. </li>
-                      <li style=";text-align:right;direction:rtl"> <strong>אפשרות
 
+                      מנגלה</a> , בבקשה להפסיק לפרוץ אנשים</em> :
+                  טיעונים לשים את החופש ללמוד על ידי עושה את הידע ואת
+                  הידע מעל כל ערכים אחרים יכולים להתקבל רק פסאודו דתי על
+                  ידי סוכנים או מלאכים של מוות, במיוחד בימינו, כאשר
+                  באזורים גדולים מכונות מסוגלים כדי להיות תחרותי יותר
+                  מאשר אנושי. </li>
+                <li style=";text-align:right;direction:rtl"> קוד פתוח
+                  הומניטארי יכול לפחות להביך או להיות יותר יקר עבור NSA
+                  בהרגל המיותר שלה לא פרופורציונלי מפרה סטנדרטים
+                  בינלאומיים זכויות האדם. </li>
+                <li style=";text-align:right;direction:rtl"> <strong>אפשרות
 
 
 
@@ -1478,612 +1244,394 @@ href="https://translate.googleusercontent.com/translate_c?depth=1&amp;rurl=trans
 
 
 
-                          רישוי כפולה:</strong> "אם אתה מחזיק את הערכים
-                        ההומניטריים שצוינו לעיל ורק כאשר הקוד מכיל קוד
-                        AGL תואם מורשה, תוכל להשתמש בקוד זה תחת agpl". </li>
-                    </ul>
-                    <p style="text-align:
-                      center;;text-align:right;direction:rtl"> בכל מקרה,
-                      GPL מורשה לעומת Agpl, הוא אנכרוניזם המאפשר סגירת
-                      קוד פתוח בחוות שרתים המספקים שירותים כהים. </p>
-                  </header>
-                </div>
-              </div>
-              <div class="flding" id="iiaom"> <input id="iiiaom"
-                  class="toggle" checked="checked" type="checkbox">&nbsp;
 
-                <div class="fcontent content-inner">
-                  <p style=";text-align:right;direction:rtl"> מיסוך
-                    (למשל של תמונה פרסונלית בקובץ מוצפן באופן סימטרי)
-                    תחת רישיון ההומניטארי-אגפל </p>
-                  <p style=";text-align:right;direction:rtl"></p>
-                </div>
-              </div>
-              <div class="flding" id="qdolphin"> <input id="iqdolphin"
-                  class="toggle" checked="checked" type="checkbox"> <br>
-                <div class="fcontent content-inner"><img
-                    src="index_files/Qsolphin.gif" alt="" height="635"
-                    width="1009"><br>
-                  <br>
-                  Qdolphin הוא דפדפן QML שפותח במסגרת <a
-                    href="https://www.qt.io/">qt</a> <i>כיישום מסגרת
-                    לתוספים</i> הנועד לשיפור הפרטיות תוך המעטת אפשרויות
-                  <span title="" class=""> <span
-                      class="tlid-translation translation" lang="iw"><span
-                        title="" class="">השימוש לרעה</span></span></span>
-                  בנתונים אפילו תוך הענקת חווית משתמש של pwa, כאשר <br>
-                  <ul>
-                    <li>הנתונים מוצפנים אצל הלקוח</li>
-                    <ul>
-                      <li><span title="" class="">
-                          <meta http-equiv="content-type"
-                            content="text/html; charset=UTF-8">
-                          <span class="tlid-translation translation"
-                            lang="iw"><span title="" class=""><i>ומאפייני
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                הצפנה</i>: המפתח </span></span></span><span
-                          title="" class=""><span
-                            class="tlid-translation translation"
-                            lang="iw"><span title="" class=""><span
-                                title="" class=""><span
-                                  class="tlid-translation translation"
-                                  lang="iw"><span title="" class="">הוא
-                                  </span></span></span></span></span></span><span
-                          title="" class=""><span
-                            class="tlid-translation translation"
-                            lang="iw"><span title="" class=""><span
-                                title="" class=""><span
-                                  class="tlid-translation translation"
-                                  lang="iw"><span title="" class=""><span
-                                      title="" class=""><span
-                                        class="tlid-translation
-                                        translation" lang="iw"><span
-                                          title="" class=""> <a
-                                            href="https://en.wikipedia.org/wiki/PBKDF2">kdf2</a>
-                                        </span></span></span>קונטקסטואלי
-                                    ה</span></span></span>מורכב מכמה
-                              משתנים אשר מיוצר על פי <a
-                                href="https://en.wikipedia.org/wiki/Threefish">3fish</a>
-                              במצב <a
-href="https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Counter_%28CTR%29">Ctr</a>,
-                              המצפין קבצי 4k, כאשר לכל אחד מהם מפתח </span></span></span><span
-                          title="" class=""><span
-                            class="tlid-translation translation"
-                            lang="iw"><span title="" class=""><span
-                                title="" class=""><span
-                                  class="tlid-translation translation"
-                                  lang="iw"><span title="" class="">ייחודי</span></span></span>
-                              וחזק בגודל&nbsp; </span></span></span><span
-                          title="" class=""><span
-                            class="tlid-translation translation"
-                            lang="iw"><span title="" class=""><span
-                                title="" class=""><span
-                                  class="tlid-translation translation"
-                                  lang="iw"><span title="" class=""></span></span></span><span
-                                title="" class=""><span
-                                  class="tlid-translation translation"
-                                  lang="iw"><span title="" class=""><span
-                                      title="" class=""><span
-                                        class="tlid-translation
-                                        translation" lang="iw"><span
-                                          title="" class="">1kbit</span></span></span></span></span></span>
-                              כך שיחס הפגיעות הוא 1/32 </span></span></span><span
-                          title="" class=""><span
-                            class="tlid-translation translation"
-                            lang="iw"><span title="" class=""><span
-                                title="" class=""><span
-                                  class="tlid-translation translation"
-                                  lang="iw"><span title="" class=""></span></span></span><br>
-                            </span></span></span></li>
-                      <ul>
-                        <li><span title="" class=""><span
-                              class="tlid-translation translation"
-                              lang="iw"><span title="" class="">בכדי
-                                לחזק את </span></span></span><span
-                            title="" class=""><span
-                              class="tlid-translation translation"
-                              lang="iw"><span title="" class=""><span
-                                  title="" class=""><span
-                                    class="tlid-translation translation"
-                                    lang="iw"><span title="" class="">קוד
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                      הסיסמה האנושי אשר היא </span></span></span>הטבעת
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                החלשה ביותר בכל שרשרת אבטחה.</span></span></span></li>
-                      </ul>
-                    </ul>
-                    <li>פתירת בעיות האבטחה המבניות בpwa, נעשת על ידי
-                      הצבת דפדפן האינטרנט לא בשורש הישום אלא כאחד מענפי
-                      היישום ב<a
-                        href="https://doc.qt.io/qt-5/objecttrees.html">עץ
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        ה qobject</a>. <br>
-                    </li>
-                    <li>&nbsp;הפיתוח מתחיל מהלקוח ולטובתו (ולא מהשרת
-                      ולטובת התאגיד) תוך מתן שירותים עסקיים נבחרים על
-                      ידי המשתמש בבחירת התוספים.</li>
-                  </ul>
-                  <div align="center">&nbsp;&nbsp; הצטרף אלינו / על ידי
-                    אלה מפגש מקומות מפגש על ידי <a
-                      href="https://t.me/Qdolphin">t.me.</a></div>
-                </div>
-              </div>
-              <div class="flding" id="solidar"> <input id="isolidar"
-                  class="toggle" checked="checked" type="checkbox">&nbsp;
-
-                <div class="fcontent content-inner">
-                  <header class="entry-header">
-                    <h1 class="single-title"
-                      style=";text-align:right;direction:rtl"> מטבע <a
-                        href="https://github.com/comcomized/RCoin"
-                        target="_blank" id="Rcoin">Solidar</a> / Rcoin </h1>
-                    <p style=";text-align:right;direction:rtl"> זמן
-                      מוגבל מטבעות שהונפקו עבור עמיתים עמיתים בהפצות
-                      הוגנות - קהילתית לאבד את הערך שלה בזמן כמו כל חבר
-                      בקהילה המקומית (באמצעות מטבע) כל הזמן מקבל דיבידנד
-                      שווה מקזז את הערך האבוד של המטבע במערכת זו, ולכן
-                      קצר הוא את החיים של המטבע טוב יותר הוא חלוקה באותה
-                      מערכת קהילתית. </p>
-                  </header>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flding" id="faq"> <input id="ifaq" class="toggle"
-              checked="checked" type="checkbox">&nbsp;
-            <div class="fcontent content-inner"> מה הצורך אשר הרשת באה
-              לענות עליו?<br>
-              הצורך לכלכלה וחברה מתפקדת אשר מורידה את משקל הזדמנויות
-              השוחד בה, תוך כדי התגבשות למסה הקירטית עבור השגת מטרות
-              הקהילות וזאת על ידי הגדלת משקל תגובות הנגד של קורבונות
-              השוחד.<br>
-              <br>
-              כיצד?<br>
-              על ידי התניידות יחידים בין קהילות אשר מועילה למתניידים
-              ולקהילות, תוך שמירת השיוויון בכוח ההחלטה בתוך כל קהילה,
-              כלומר על ידי שינוי שיטת התפעול הכלכלי חברתי של רשת הקהילות<br>
-              לכזו בה המנצח לוקח רק חלק יחסי, מתוך שלהתניידות היחידים
-              בין קהילות מצורפת העברת התקציב היחסי בין הקהילות, כך
-              שתקציבי סניפיהן באיגוד נזיל, ו/או מחירי נכסי סניפיהן
-              המקומקמים, יהין יחסיים לגודל הקהילות,<br>
-              מזו הנהוגה כיום במספר רבדיי בחירה מנטרלת, בה המנצח לוקח את
-              הכל ו/או מייצג את כולם, תוך ניטרול השאר, כאשר, בכל רובד
-              בחירה כזו מתווסף השאר המנוטרל אשר באותו רובד הוא הרוב
-              המורכב מאלו אשר לא הצביעו בכלל בצרוף אלו אשר לא הצביעו
-              לנבחר.<br>
-              וזאת, על ידי פיתוח תחת זוג הרשיונות הנ"ל הנעשה להשגת מיקוד
-              פיתוח דינמי ומדויק לטובת הלקוחות והקהילות ברשת. <br>
-              <br>
-              <br>
-              מה שלבי ההתהוות למימוש חוזי קומקום, (כאשר סקומקום היא
-              קומקום אשר חלקה בבעלות עמיתים שיוויונית וחלקה בבעלות לא
-              שיוווניות וכאשר יחס החלקים לטובת השיוויונית הוא d אשר הוא
-              קבוע ) ?<br>
-              <br>
-              הקמת הרשת מבוצעת על ידי הסקומקום המייסדת, אשר לה הd=0.7,
-              כאשר הסקומקום המייסדת מקימה פלטפורמות סקומקום, כאשר קהל
-              היעד בשלב הנוכחי הם מייסדי הקהילות ברשת וכאשר הפלטפורמות
-              הם חברות רגילות אשר כל בעליהם הן חברות סקומקום יעודיות
-              למילוי צרכי עמיתים מוגדרים, כך ש<br>
-              הרווח הוא יחסי לאחזקת המניות בפלטפורמה, <br>
-              החלטות משמעותיות נעשות כך שכל קול סקומקום או אחד מבעלי
-              סקומקום הוא כל קול הצבעה אחד, <br>
-              למייסדים יש את זכויות וחובות היתר בהצבעה בהתאם להגדרות
-              המייסדים,<br>
-              פרויקטים בפלטפורמה יוקמו עבור משתתפים בה אשר חתמו בינהם
-              חוזה סקומקום ומתכוננים להפוך לעמיתים בסקומקום השותפה עם
-              שאר בעלי הפלטפורמה,<br>
-              כך שכל סקומקום המחזיקה בפלטפורמה אינה בבעלות הפלטפורמה, <br>
-              וכך שלפלטפורמה מותר להקים אינקובאטורים, כלומר להיות הבעלים
-              של חברות אחרות עבור הגשמת הפרויקטים אפילו בארצות היעד על
-              פי בחירת מייסדי הפרויקטים שיעבדו באינקובטור עד שיבשיל,
-              לכשתמכור הפלטפורמה את האינקובטור לסקומקום של העמיתים
-              המייסדים את הפרויקט בכדי שתיהיה הסקומקום שותפה לבעלות על
-              הפלטפורמה.<br>
-              <br>
-              <br>
-              <br>
-              מה תווי ההתפתחות הרצוי של הרשת? <br>
-              אנחנו מתחילים ביצירת תשתית לתקשורת ותרשומת המנהולת באופן
-              פדרלי מבוזר ובבעלות קהילתית, כך שלא תיהיה יחידה בה מצוי כל
-              מידע הרשת וכך שהמידע יוצפן (ובכך יהיה גלוי רק) לחברי
-              הקהילה, כאשר התפתחות הרשת מונעת על ידי שני סוגי העדפות זו
-              של השתיכות אדם לקהילות/יו וזו של אדם או קהילה המוגדרים
-              כמייסד/ת, על פני אלו אשר הם לא מייסדים,<br>
-              כאשר על המייסדים מוטלת החובה לענות על כמה שאלות לפני
-              התהוות הקהילה לסיפוק רצון משתתפיה, על פי כללי יסוד הקהילה
-              ובתנאי רשת התקווה החוזרת, שאלות כגון: מה מספר המייסדים, מה
-              זכויות וחובות הייתר של המייסדים והאם הגדרת המייסדים קבועה
-              או זמנית<br>
-              וכאשר אנחנו, מייסדי רשת התקווה החוזרת, מעדיפים עד כמה
-              שניתן את היחידים ואת הלא מייסדים ואוכפים זאת למשל בהגדרת
-              ברירת המחדל בשאלה האם הגדרת המייסדים קבועה או זמנית, כך
-              שביררת המחדל תיהיה שהגדרת המייסדים היא קבועה. <br>
-              <br>
-              מה השלב הראשון במימוש רשת התקווה החוזרת? <br>
-              אנחנו מקימים רשת תקשורת ורישומת לשרות קהילות בנוהל פדרלי
-              מאובטח, כאשר כל קהילה ברשת היא הבעלים המקומקמים של שרתיה <br>
-              כאשר אנחנו מפתחים תוספים שישרתו את הקהילות, תחת agpl
-              ההומניטרי, ו/או בחברה מקומקמת לקהילות מקוּמקמות,<br>
-              וכאשר, בנוסף להגדרות וניהול השרתים, עיקר הפיתוח מצוי בצד
-              המשתמש של qdolphin, אשר הוא דפדפן qml המפותח ב qt
-              fremwork, אשר לו יש binding לכל שפות התכנות המרכזיות.<br>
-              <br>
-              מה הייחוד של qdolphin? (מידע נוסף על qdolphin ניתן למצוא
-              באתר hopeisback)<br>
-              מוגדר בחווית משתמש כמו זו של פרוגסיב ווב אפ, הוא נותן מענה
-              לבעיות האבטחתית הנוצרות ממיקום דפדפן האינטרנט בראש
-              ההיררכיה התפעולית , כך שבהפעלתו, דפדפן האינטרנט לא נמצא
-              בראש ההיררכיה, אלא באחד מענפיה הממודרים. <br>
-              <br>
-              מה ה qdolphin כולל כרגע? <br>
-              דפדפן אינטרנט, הצפנות, גישה למערכת הקבצים ולתוכניות נוספות
-              במערכת ההפעלה, אשר יחדיו מייצרים כלי p2p לשימוש הלקוח תוך
-              התקנת תוספים שישרתו את הלקוח ואת הקהילות, אפילו במעבריי
-              היחידים בין הקהילות המחזיקות בשרתים המקומקמים, כשכרגע ב
-              qdolphin עובדת המסגרת בה ניתן להתקין את התוספים לאשר
-              כמובנים הכוללים: דפדפן, גישה למערכת קבצים, והצפנה שמבוססת
-              שמייקרת מאוד את פריצת ההנעלה. <br>
-              <br>
-              <p></p>
-              <p style=";text-align:right;direction:rtl"><br>
-              </p>
-              <p style=";text-align:right;direction:rtl">מכאן אנו יוצרים
-                ארגונים מסודרים <em>ומבוססים</em> מאורגנים עצמיים,
-                הנובעים מרשת היסודות העולמית שלנו, אשר כל אחד מהם יכול
-                לתרום רק <em><strong>לפתרונות הומניטאריים המבוססים על
-                    תנועה מועילה לאנשים הנעים בין קבוצות שבהן יש להם כוח
-                    שווה</strong> :</em> </p>
-              <ul style=";text-align:right;direction:rtl">
-                <li style=";text-align:right;direction:rtl"> ארגונים אלה
-                  בנויים <em>כדי <strong>למנוע שחיתות</strong></em> ,
-                  כאשר <em>שומרים על מגוון</em> של <strong>כל</strong>
-                  המיעוטים עם הלא הבוחרים ואת הרוב, תוך בניית <em><strong>המסה
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                      הקריטית שלהם למימוש הצורך שלהם</strong></em> . </li>
-                <ul style=";text-align:right;direction:rtl">
-                  <li style=";text-align:right;direction:rtl"> המימון
-                    הוא כוללני ומבוצע רק באופן פרופורציונלי, מבלי לתת
-                    לכל זוכה לקחת את כל זה, תוך שהוא מרוויח לא רק מנצחים
-                    אלא גם אנשים, מיעוטים ונמנעים, בין הקבוצות שלהם,
-                    ובין השתתפותם, כאשר הם צורכים, באופן טבעי ועם למידה
-                    נמוכה עקומה. </li>
-                  <ul style=";text-align:right;direction:rtl">
-                    <li style=";text-align:right;direction:rtl"> אנו
-                      מאמינים שכאשר מערכת חברתית כלכלית מבוססת על הזוכה,
-                      לוקחת רק את החלק היחסי שלה, המערכת גורמת להשתייכות
-                      המבוססת על משיכה, בעוד שכאשר מערכת כזו מבוססת על
-                      זוכה- take-it- כל, השנאה היא תחושה מותנית
-                      בהשתייכות קבוצתית , אשר נבדק באופן הרסני על ידי
-                      משהו כמו "כמה טוב הם שונאים את המתחרים שלנו על
-                      להיות הזכות לחיות איתנו". </li>
-                  </ul>
-                  <li style=";text-align:right;direction:rtl"> היסודות
-                    מספקים, תוך התייעצות לפתרונות, על ידי כך שיש בכל
-                    פרויקט פתרונות זמניים, ואחרי תקופת הדגירה, כל
-                    פרויקט, בהיותו גוף משפטי חיצוני, יכול להיות מנוגד
-                    לקרן. </li>
-                </ul>
+                    רישוי כפולה:</strong> "אם אתה מחזיק את הערכים
+                  ההומניטריים שצוינו לעיל ורק כאשר הקוד מכיל קוד AGL
+                  תואם מורשה, תוכל להשתמש בקוד זה תחת agpl". </li>
               </ul>
-              <p style=";text-align:right;direction:rtl"> למה נוזלי?
-                תחשוב על אלה 3 תכונות של מים: </p>
-              <ul style=";text-align:right;direction:rtl">
-                <li style=";text-align:right;direction:rtl"> שקיפות -
-                  העברת מידע על כל חלקיו באופן מיידי, בגל; </li>
-                <li style=";text-align:right;direction:rtl">
-                  אקומולטיביות - זורמת סביב מכשולים כדי להגיע יחד </li>
-                <li style=";text-align:right;direction:rtl"> ביזור
-                  (חיסון נקודת כשל יחידה) - הזזת חלק (טיפות) ממנו לא
-                  לצוד את השאר. </li>
-              </ul>
-              כיצד לבזר:
-              <ul style=";text-align:right;direction:rtl">
-                <li style=";text-align:right;direction:rtl"> בכל קרן
-                  לדגור פרויקטים הזמני כל איחוד נוזלי או יחידה
-                  comcomized, אבל רק עבור זמן מוגדר מראש ולאחר מכן
-                  מתכווץ עם הגוף שלהם טופס משפטי באזור שלהם. </li>
-              </ul>
-              כיצד סולידריות הקורסים באיגודים נוזליים:
-              <ul style=";text-align:right;direction:rtl">
-                <li style=";text-align:right;direction:rtl"> על ידי
-                  השוואה לכל פרויקט שלהם התקציב שלהם / מספר המשתתפים,
-                  ולאחר מכן להשוות את אי סדרים (מחציון או ממוצע) של
-                  פרויקטים, ולאחר מכן להגביל את חריגות, עם הגדרת חריגה
-                  על ידי הצורך של האיחוד מוגדר במדיניות שלה. </li>
-              </ul>
-              כיצד כמובן דין וחשבון כאשר שכירת מנהל מנכ"ל וכו ':
-              <ul style=";text-align:right;direction:rtl">
-                <li style=";text-align:right;direction:rtl"> כאשר נותן
-                  כל אחוז נותן את זה רק כמה פעמים * מחזור לאחר מחזור של
-                  רווח של התוכנית שלו אשר הוא להיות בלחי על ידי הנאמנים
-                  דין וחשבון עד אז הוא / מקבל רק משכורת. </li>
-              </ul>
-              <p style=";text-align:right;direction:rtl"> פרויקטים <b>degenrification</b>
-                שלנו, כמו gentrification הפך את העולם הראשון בעולם אנשים
-                העיר, יציע 2 שלבים פתרונות: </p>
-              <ul style=";text-align:right;direction:rtl">
-                <li style=";text-align:right;direction:rtl"> הצעד הראשון
-                  הוא של איגודים נוזליים שבהם סניפים מוגשים על ידי עורכי
-                  דין ומספקים מקומות אחסון, התאמות זמניות, צוותי העברה
-                  ושיתוף ומרכזי מידע לשוכרים </li>
-                <li style=";text-align:right;direction:rtl"> הצעד השני,
-                  אשר יופעלו לאחר הגעה כמה מסה קריטית של המשתתפים להיות
-                  גם בעלי המניות שווים ביחידות comcomized שלהם, נוצר
-                  עבור ההלוואות את הכסף הדרוש כדי ליצור ערבויות עבור
-                  השוכרים המעוניינים לקנות את הדירה שלהם על ידי תשלומי
-                  השכירות שלהם. </li>
-              </ul>
-              <p style=";text-align:right;direction:rtl"></p>
-              <p style=";text-align:right;direction:rtl"> <b>רציונל:</b>
-                ההתמחות, כערך עצמאי בכלכלה, היא יקרה, יעילותה אלימה,
-                והמוטבים שלה לטווחים קצרים יותר ויותר נמצאים בקבוצה
-                מוגבלת יותר ויותר, בעוד שדרמה זו של עיבוד טיהור כאשר
-                הערך הגובר (אשר נקרא בשם שגוי ) יוצרת עבדות והתמכרויות,
-                זה רק טוב לשחיתות שליטה אימפריאליסטית על אוכלוסיית
-                העולם, אשר יכול, <b>וישוחרר, על</b> ידי <b>ביזור
-                  וגיוון</b> , בבניית הגבלת נוזלים, כך שכל תנועות התקציב
-                קשור תנועות של אנשים מקבילים בין קבוצות שבהן יש להם כוח
-                שווה. </p>
-              <p style=";text-align:right;direction:rtl"> <b><a
-                    name="recruting" id="recruting"></a></b> <b>את עלות
-                  גיוס נמוכה בתקווה</b> מופץ על ידי requiters באמצעות
-                כרטיסים אישיים, flayers, מדבקה, (ה) דואר, וכו 'עם 4
-                האלמנטים הבאים: </p>
-              <ul style=";text-align:right;direction:rtl">
-                <li style=";text-align:right;direction:rtl"> HopeIsBack
-                  סימן רשת או Tm </li>
-                <li style=";text-align:right;direction:rtl"> F להיות
-                  סימן או Tm של הקרן המשרתים תת תחום ספציפי בתקווה </li>
-                <li style=";text-align:right;direction:rtl"> P להיות
-                  סימן או Tm של הפרויקט בקרן משרת משנה מסוימת compunized
-                  או liquidunions </li>
-                <li style=";text-align:right;direction:rtl"> X להיות
-                  מספר requiter כי יש להאכיל את ההרשמה לאתר זה (אפס עבור
-                  מתנדבים ובאופן אופציונלי עם אמצעי אבטחה נוספים כמו קוד
-                  סודי נוסף). </li>
-              </ul>
-              <p style=";text-align:right;direction:rtl"></p>
-              <p style=";text-align:right;direction:rtl"> <b>אתה רשאי
-                  לתרום</b> או להירשם לחברות, לדירקטוריון או לנאמנים או
-                להוסיף את עצמך כמשתתפים בה. כעת אנו מחפשים את 4 חברי
-                הצוות היוזמים הבאים: </p>
-              <ul style=";text-align:right;direction:rtl">
-                <li style=";text-align:right;direction:rtl"> מקבלי תקציר
-                  אשר מביאים רעיונות חדשים לגבי איך ליישם את החוק </li>
-                <li style=";text-align:right;direction:rtl"> קונספט של
-                  רעיונות אלה </li>
-                <li style=";text-align:right;direction:rtl"> גיוס כספים
-                  למושגים </li>
-                <li style=";text-align:right;direction:rtl"> מנהל
-                  הפרויקט מימוש הרעיון ממומן </li>
-              </ul>
-            </div>
-            <p>&nbsp;<br>
-            </p>
+              <p style="text-align:
+                center;;text-align:right;direction:rtl"> בכל מקרה, GPL
+                מורשה לעומת Agpl, הוא אנכרוניזם המאפשר סגירת קוד פתוח
+                בחוות שרתים המספקים שירותים כהים. </p>
+            </header>
           </div>
         </div>
-      </section>
+        <div class="flding" id="iiaom"> <input id="iiiaom"
+            class="toggle" checked="checked" type="checkbox">&nbsp;
+          <div class="fcontent content-inner">
+            <p style=";text-align:right;direction:rtl"> מיסוך (למשל של
+              תמונה פרסונלית בקובץ מוצפן באופן סימטרי) תחת רישיון
+              ההומניטארי-אגפל </p>
+            <p style=";text-align:right;direction:rtl"></p>
+          </div>
+        </div>
+        <div class="flding" id="qdolphin"> <input id="iqdolphin"
+            class="toggle" checked="checked" type="checkbox"> <br>
+          <div class="fcontent content-inner"><img
+              src="index_files/Qsolphin.gif" alt="" width="1009"
+              height="635"><br>
+            <br>
+            Qdolphin הוא דפדפן QML שפותח במסגרת <a
+              href="https://www.qt.io/">qt</a> <i>כיישום מסגרת לתוספים</i>
+            הנועד לשיפור הפרטיות תוך המעטת אפשרויות <span title=""
+              class=""> <span class="tlid-translation translation"
+                lang="iw"><span title="" class="">השימוש לרעה</span></span></span>
+            בנתונים אפילו תוך הענקת חווית משתמש של pwa, כאשר <br>
+            <ul>
+              <li>הנתונים מוצפנים אצל הלקוח</li>
+              <ul>
+                <li><span title="" class="">
+                    <meta http-equiv="content-type" content="text/html;
+                      charset=UTF-8">
+                    <span class="tlid-translation translation" lang="iw"><span
+                        title="" class=""><i>ומאפייני הצפנה</i>: המפתח </span></span></span><span
+                    title="" class=""><span class="tlid-translation
+                      translation" lang="iw"><span title="" class=""><span
+                          title="" class=""><span
+                            class="tlid-translation translation"
+                            lang="iw"><span title="" class="">הוא </span></span></span></span></span></span><span
+                    title="" class=""><span class="tlid-translation
+                      translation" lang="iw"><span title="" class=""><span
+                          title="" class=""><span
+                            class="tlid-translation translation"
+                            lang="iw"><span title="" class=""><span
+                                title="" class=""><span
+                                  class="tlid-translation translation"
+                                  lang="iw"><span title="" class=""> <a
+href="https://en.wikipedia.org/wiki/PBKDF2">kdf2</a> </span></span></span>קונטקסטואלי
+
+                              ה</span></span></span>מורכב מכמה משתנים
+                        אשר מיוצר על פי <a
+                          href="https://en.wikipedia.org/wiki/Threefish">3fish</a>
+                        במצב <a
+href="https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Counter_%28CTR%29">Ctr</a>,
+                        המצפין קבצי 4k, כאשר לכל אחד מהם מפתח </span></span></span><span
+                    title="" class=""><span class="tlid-translation
+                      translation" lang="iw"><span title="" class=""><span
+                          title="" class=""><span
+                            class="tlid-translation translation"
+                            lang="iw"><span title="" class="">ייחודי</span></span></span>
+                        וחזק בגודל&nbsp; </span></span></span><span
+                    title="" class=""><span class="tlid-translation
+                      translation" lang="iw"><span title="" class=""><span
+                          title="" class=""><span
+                            class="tlid-translation translation"
+                            lang="iw"><span title="" class=""></span></span></span><span
+                          title="" class=""><span
+                            class="tlid-translation translation"
+                            lang="iw"><span title="" class=""><span
+                                title="" class=""><span
+                                  class="tlid-translation translation"
+                                  lang="iw"><span title="" class="">1kbit</span></span></span></span></span></span>
+                        כך שיחס הפגיעות הוא 1/32 </span></span></span><span
+                    title="" class=""><span class="tlid-translation
+                      translation" lang="iw"><span title="" class=""><span
+                          title="" class=""><span
+                            class="tlid-translation translation"
+                            lang="iw"><span title="" class=""></span></span></span><br>
+                      </span></span></span></li>
+                <ul>
+                  <li><span title="" class=""><span
+                        class="tlid-translation translation" lang="iw"><span
+                          title="" class="">בכדי לחזק את </span></span></span><span
+                      title="" class=""><span class="tlid-translation
+                        translation" lang="iw"><span title="" class=""><span
+                            title="" class=""><span
+                              class="tlid-translation translation"
+                              lang="iw"><span title="" class="">קוד
+                                הסיסמה האנושי אשר היא </span></span></span>הטבעת
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          החלשה ביותר בכל שרשרת אבטחה.</span></span></span></li>
+                </ul>
+              </ul>
+              <li>פתירת בעיות האבטחה המבניות בpwa, נעשת על ידי הצבת
+                דפדפן האינטרנט לא בשורש הישום אלא כאחד מענפי היישום ב<a
+                  href="https://doc.qt.io/qt-5/objecttrees.html">עץ ה
+                  qobject</a>. <br>
+              </li>
+              <li>&nbsp;הפיתוח מתחיל מהלקוח ולטובתו (ולא מהשרת ולטובת
+                התאגיד) תוך מתן שירותים עסקיים נבחרים על ידי המשתמש
+                בבחירת התוספים.</li>
+            </ul>
+            <div align="center">&nbsp;&nbsp; הצטרף אלינו / על ידי אלה
+              מפגש מקומות מפגש על ידי <a href="https://t.me/Qdolphin">t.me.</a></div>
+          </div>
+        </div>
+        <div class="flding" id="solidar"> <input id="isolidar"
+            class="toggle" checked="checked" type="checkbox">&nbsp;
+          <div class="fcontent content-inner">
+            <header class="entry-header">
+              <h1 class="single-title"
+                style=";text-align:right;direction:rtl"> מטבע <a
+                  href="https://github.com/comcomized/RCoin"
+                  target="_blank" id="Rcoin">Solidar</a> / Rcoin </h1>
+              <p style=";text-align:right;direction:rtl"> זמן מוגבל
+                מטבעות שהונפקו עבור עמיתים עמיתים בהפצות הוגנות -
+                קהילתית לאבד את הערך שלה בזמן כמו כל חבר בקהילה המקומית
+                (באמצעות מטבע) כל הזמן מקבל דיבידנד שווה מקזז את הערך
+                האבוד של המטבע במערכת זו, ולכן קצר הוא את החיים של המטבע
+                טוב יותר הוא חלוקה באותה מערכת קהילתית. </p>
+            </header>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flding" id="faq"> <input id="ifaq" class="toggle"
+        checked="checked" type="checkbox">&nbsp;
+      <div class="fcontent content-inner"> מה הצורך אשר הרשת באה לענות
+        עליו?<br>
+        הצורך לכלכלה וחברה מתפקדת אשר מורידה את משקל הזדמנויות השוחד בה,
+        תוך כדי התגבשות למסה הקירטית עבור השגת מטרות הקהילות וזאת על ידי
+        הגדלת משקל תגובות הנגד של קורבונות השוחד.<br>
+        <br>
+        כיצד?<br>
+        על ידי התניידות יחידים בין קהילות אשר מועילה למתניידים ולקהילות,
+        תוך שמירת השיוויון בכוח ההחלטה בתוך כל קהילה, כלומר על ידי שינוי
+        שיטת התפעול הכלכלי חברתי של רשת הקהילות<br>
+        לכזו בה המנצח לוקח רק חלק יחסי, מתוך שלהתניידות היחידים בין
+        קהילות מצורפת העברת התקציב היחסי בין הקהילות, כך שתקציבי סניפיהן
+        באיגוד נזיל, ו/או מחירי נכסי סניפיהן המקומקמים, יהין יחסיים
+        לגודל הקהילות,<br>
+        מזו הנהוגה כיום במספר רבדיי בחירה מנטרלת, בה המנצח לוקח את הכל
+        ו/או מייצג את כולם, תוך ניטרול השאר, כאשר, בכל רובד בחירה כזו
+        מתווסף השאר המנוטרל אשר באותו רובד הוא הרוב המורכב מאלו אשר לא
+        הצביעו בכלל בצרוף אלו אשר לא הצביעו לנבחר.<br>
+        וזאת, על ידי פיתוח תחת זוג הרשיונות הנ"ל הנעשה להשגת מיקוד פיתוח
+        דינמי ומדויק לטובת הלקוחות והקהילות ברשת. <br>
+        <br>
+        <br>
+        מה שלבי ההתהוות למימוש חוזי קומקום, (כאשר סקומקום היא קומקום אשר
+        חלקה בבעלות עמיתים שיוויונית וחלקה בבעלות לא שיוווניות וכאשר יחס
+        החלקים לטובת השיוויונית הוא d אשר הוא קבוע ) ?<br>
+        <br>
+        הקמת הרשת מבוצעת על ידי הסקומקום המייסדת, אשר לה הd=0.7, כאשר
+        הסקומקום המייסדת מקימה פלטפורמות סקומקום, כאשר קהל היעד בשלב
+        הנוכחי הם מייסדי הקהילות ברשת וכאשר הפלטפורמות הם חברות רגילות
+        אשר כל בעליהם הן חברות סקומקום יעודיות למילוי צרכי עמיתים
+        מוגדרים, כך ש<br>
+        הרווח הוא יחסי לאחזקת המניות בפלטפורמה, <br>
+        החלטות משמעותיות נעשות כך שכל קול סקומקום או אחד מבעלי סקומקום
+        הוא כל קול הצבעה אחד, <br>
+        למייסדים יש את זכויות וחובות היתר בהצבעה בהתאם להגדרות המייסדים,<br>
+        פרויקטים בפלטפורמה יוקמו עבור משתתפים בה אשר חתמו בינהם חוזה
+        סקומקום ומתכוננים להפוך לעמיתים בסקומקום השותפה עם שאר בעלי
+        הפלטפורמה,<br>
+        כך שכל סקומקום המחזיקה בפלטפורמה אינה בבעלות הפלטפורמה, <br>
+        וכך שלפלטפורמה מותר להקים אינקובאטורים, כלומר להיות הבעלים של
+        חברות אחרות עבור הגשמת הפרויקטים אפילו בארצות היעד על פי בחירת
+        מייסדי הפרויקטים שיעבדו באינקובטור עד שיבשיל, לכשתמכור הפלטפורמה
+        את האינקובטור לסקומקום של העמיתים המייסדים את הפרויקט בכדי
+        שתיהיה הסקומקום שותפה לבעלות על הפלטפורמה.<br>
+        <br>
+        <br>
+        <br>
+        מה תווי ההתפתחות הרצוי של הרשת? <br>
+        אנחנו מתחילים ביצירת תשתית לתקשורת ותרשומת המנהולת באופן פדרלי
+        מבוזר ובבעלות קהילתית, כך שלא תיהיה יחידה בה מצוי כל מידע הרשת
+        וכך שהמידע יוצפן (ובכך יהיה גלוי רק) לחברי הקהילה, כאשר התפתחות
+        הרשת מונעת על ידי שני סוגי העדפות זו של השתיכות אדם לקהילות/יו
+        וזו של אדם או קהילה המוגדרים כמייסד/ת, על פני אלו אשר הם לא
+        מייסדים,<br>
+        כאשר על המייסדים מוטלת החובה לענות על כמה שאלות לפני התהוות
+        הקהילה לסיפוק רצון משתתפיה, על פי כללי יסוד הקהילה ובתנאי רשת
+        התקווה החוזרת, שאלות כגון: מה מספר המייסדים, מה זכויות וחובות
+        הייתר של המייסדים והאם הגדרת המייסדים קבועה או זמנית<br>
+        וכאשר אנחנו, מייסדי רשת התקווה החוזרת, מעדיפים עד כמה שניתן את
+        היחידים ואת הלא מייסדים ואוכפים זאת למשל בהגדרת ברירת המחדל
+        בשאלה האם הגדרת המייסדים קבועה או זמנית, כך שביררת המחדל תיהיה
+        שהגדרת המייסדים היא קבועה. <br>
+        <br>
+        מה השלב הראשון במימוש רשת התקווה החוזרת? <br>
+        אנחנו מקימים רשת תקשורת ורישומת לשרות קהילות בנוהל פדרלי מאובטח,
+        כאשר כל קהילה ברשת היא הבעלים המקומקמים של שרתיה <br>
+        כאשר אנחנו מפתחים תוספים שישרתו את הקהילות, תחת agpl ההומניטרי,
+        ו/או בחברה מקומקמת לקהילות מקוּמקמות,<br>
+        וכאשר, בנוסף להגדרות וניהול השרתים, עיקר הפיתוח מצוי בצד המשתמש
+        של qdolphin, אשר הוא דפדפן qml המפותח ב qt fremwork, אשר לו יש
+        binding לכל שפות התכנות המרכזיות.<br>
+        <br>
+        מה הייחוד של qdolphin? (מידע נוסף על qdolphin ניתן למצוא באתר
+        hopeisback)<br>
+        מוגדר בחווית משתמש כמו זו של פרוגסיב ווב אפ, הוא נותן מענה
+        לבעיות האבטחתית הנוצרות ממיקום דפדפן האינטרנט בראש ההיררכיה
+        התפעולית , כך שבהפעלתו, דפדפן האינטרנט לא נמצא בראש ההיררכיה,
+        אלא באחד מענפיה הממודרים. <br>
+        <br>
+        מה ה qdolphin כולל כרגע? <br>
+        דפדפן אינטרנט, הצפנות, גישה למערכת הקבצים ולתוכניות נוספות
+        במערכת ההפעלה, אשר יחדיו מייצרים כלי p2p לשימוש הלקוח תוך התקנת
+        תוספים שישרתו את הלקוח ואת הקהילות, אפילו במעבריי היחידים בין
+        הקהילות המחזיקות בשרתים המקומקמים, כשכרגע ב qdolphin עובדת
+        המסגרת בה ניתן להתקין את התוספים לאשר כמובנים הכוללים: דפדפן,
+        גישה למערכת קבצים, והצפנה שמבוססת שמייקרת מאוד את פריצת ההנעלה.
+        <br>
+        <br>
+        <p></p>
+        <p style=";text-align:right;direction:rtl"><br>
+        </p>
+        <p style=";text-align:right;direction:rtl">מכאן אנו יוצרים
+          ארגונים מסודרים <em>ומבוססים</em> מאורגנים עצמיים, הנובעים
+          מרשת היסודות העולמית שלנו, אשר כל אחד מהם יכול לתרום רק <em><strong>לפתרונות
+              הומניטאריים המבוססים על תנועה מועילה לאנשים הנעים בין
+              קבוצות שבהן יש להם כוח שווה</strong> :</em> </p>
+        <ul style=";text-align:right;direction:rtl">
+          <li style=";text-align:right;direction:rtl"> ארגונים אלה
+            בנויים <em>כדי <strong>למנוע שחיתות</strong></em> , כאשר <em>שומרים
+              על מגוון</em> של <strong>כל</strong> המיעוטים עם הלא
+            הבוחרים ואת הרוב, תוך בניית <em><strong>המסה הקריטית שלהם
+                למימוש הצורך שלהם</strong></em> . </li>
+          <ul style=";text-align:right;direction:rtl">
+            <li style=";text-align:right;direction:rtl"> המימון הוא
+              כוללני ומבוצע רק באופן פרופורציונלי, מבלי לתת לכל זוכה
+              לקחת את כל זה, תוך שהוא מרוויח לא רק מנצחים אלא גם אנשים,
+              מיעוטים ונמנעים, בין הקבוצות שלהם, ובין השתתפותם, כאשר הם
+              צורכים, באופן טבעי ועם למידה נמוכה עקומה. </li>
+            <ul style=";text-align:right;direction:rtl">
+              <li style=";text-align:right;direction:rtl"> אנו מאמינים
+                שכאשר מערכת חברתית כלכלית מבוססת על הזוכה, לוקחת רק את
+                החלק היחסי שלה, המערכת גורמת להשתייכות המבוססת על משיכה,
+                בעוד שכאשר מערכת כזו מבוססת על זוכה- take-it- כל, השנאה
+                היא תחושה מותנית בהשתייכות קבוצתית , אשר נבדק באופן
+                הרסני על ידי משהו כמו "כמה טוב הם שונאים את המתחרים שלנו
+                על להיות הזכות לחיות איתנו". </li>
+            </ul>
+            <li style=";text-align:right;direction:rtl"> היסודות מספקים,
+              תוך התייעצות לפתרונות, על ידי כך שיש בכל פרויקט פתרונות
+              זמניים, ואחרי תקופת הדגירה, כל פרויקט, בהיותו גוף משפטי
+              חיצוני, יכול להיות מנוגד לקרן. </li>
+          </ul>
+        </ul>
+        <p style=";text-align:right;direction:rtl"> למה נוזלי? תחשוב על
+          אלה 3 תכונות של מים: </p>
+        <ul style=";text-align:right;direction:rtl">
+          <li style=";text-align:right;direction:rtl"> שקיפות - העברת
+            מידע על כל חלקיו באופן מיידי, בגל; </li>
+          <li style=";text-align:right;direction:rtl"> אקומולטיביות -
+            זורמת סביב מכשולים כדי להגיע יחד </li>
+          <li style=";text-align:right;direction:rtl"> ביזור (חיסון
+            נקודת כשל יחידה) - הזזת חלק (טיפות) ממנו לא לצוד את השאר. </li>
+        </ul>
+        כיצד לבזר:
+        <ul style=";text-align:right;direction:rtl">
+          <li style=";text-align:right;direction:rtl"> בכל קרן לדגור
+            פרויקטים הזמני כל איחוד נוזלי או יחידה comcomized, אבל רק
+            עבור זמן מוגדר מראש ולאחר מכן מתכווץ עם הגוף שלהם טופס משפטי
+            באזור שלהם. </li>
+        </ul>
+        כיצד סולידריות הקורסים באיגודים נוזליים:
+        <ul style=";text-align:right;direction:rtl">
+          <li style=";text-align:right;direction:rtl"> על ידי השוואה לכל
+            פרויקט שלהם התקציב שלהם / מספר המשתתפים, ולאחר מכן להשוות את
+            אי סדרים (מחציון או ממוצע) של פרויקטים, ולאחר מכן להגביל את
+            חריגות, עם הגדרת חריגה על ידי הצורך של האיחוד מוגדר במדיניות
+            שלה. </li>
+        </ul>
+        כיצד כמובן דין וחשבון כאשר שכירת מנהל מנכ"ל וכו ':
+        <ul style=";text-align:right;direction:rtl">
+          <li style=";text-align:right;direction:rtl"> כאשר נותן כל אחוז
+            נותן את זה רק כמה פעמים * מחזור לאחר מחזור של רווח של
+            התוכנית שלו אשר הוא להיות בלחי על ידי הנאמנים דין וחשבון עד
+            אז הוא / מקבל רק משכורת. </li>
+        </ul>
+        <p style=";text-align:right;direction:rtl"> פרויקטים <b>degenrification</b>
+          שלנו, כמו gentrification הפך את העולם הראשון בעולם אנשים העיר,
+          יציע 2 שלבים פתרונות: </p>
+        <ul style=";text-align:right;direction:rtl">
+          <li style=";text-align:right;direction:rtl"> הצעד הראשון הוא
+            של איגודים נוזליים שבהם סניפים מוגשים על ידי עורכי דין
+            ומספקים מקומות אחסון, התאמות זמניות, צוותי העברה ושיתוף
+            ומרכזי מידע לשוכרים </li>
+          <li style=";text-align:right;direction:rtl"> הצעד השני, אשר
+            יופעלו לאחר הגעה כמה מסה קריטית של המשתתפים להיות גם בעלי
+            המניות שווים ביחידות comcomized שלהם, נוצר עבור ההלוואות את
+            הכסף הדרוש כדי ליצור ערבויות עבור השוכרים המעוניינים לקנות
+            את הדירה שלהם על ידי תשלומי השכירות שלהם. </li>
+        </ul>
+        <p style=";text-align:right;direction:rtl"></p>
+        <p style=";text-align:right;direction:rtl"> <b>רציונל:</b>
+          ההתמחות, כערך עצמאי בכלכלה, היא יקרה, יעילותה אלימה, והמוטבים
+          שלה לטווחים קצרים יותר ויותר נמצאים בקבוצה מוגבלת יותר ויותר,
+          בעוד שדרמה זו של עיבוד טיהור כאשר הערך הגובר (אשר נקרא בשם
+          שגוי ) יוצרת עבדות והתמכרויות, זה רק טוב לשחיתות שליטה
+          אימפריאליסטית על אוכלוסיית העולם, אשר יכול, <b>וישוחרר, על</b>
+          ידי <b>ביזור וגיוון</b> , בבניית הגבלת נוזלים, כך שכל תנועות
+          התקציב קשור תנועות של אנשים מקבילים בין קבוצות שבהן יש להם כוח
+          שווה. </p>
+        <p style=";text-align:right;direction:rtl"> <b><a
+              name="recruting" id="recruting"></a></b> <b>את עלות גיוס
+            נמוכה בתקווה</b> מופץ על ידי requiters באמצעות כרטיסים
+          אישיים, flayers, מדבקה, (ה) דואר, וכו 'עם 4 האלמנטים הבאים: </p>
+        <ul style=";text-align:right;direction:rtl">
+          <li style=";text-align:right;direction:rtl"> HopeIsBack סימן
+            רשת או Tm </li>
+          <li style=";text-align:right;direction:rtl"> F להיות סימן או
+            Tm של הקרן המשרתים תת תחום ספציפי בתקווה </li>
+          <li style=";text-align:right;direction:rtl"> P להיות סימן או
+            Tm של הפרויקט בקרן משרת משנה מסוימת compunized או
+            liquidunions </li>
+          <li style=";text-align:right;direction:rtl"> X להיות מספר
+            requiter כי יש להאכיל את ההרשמה לאתר זה (אפס עבור מתנדבים
+            ובאופן אופציונלי עם אמצעי אבטחה נוספים כמו קוד סודי נוסף). </li>
+        </ul>
+        <p style=";text-align:right;direction:rtl"></p>
+        <p style=";text-align:right;direction:rtl"> <b>אתה רשאי לתרום</b>
+          או להירשם לחברות, לדירקטוריון או לנאמנים או להוסיף את עצמך
+          כמשתתפים בה. כעת אנו מחפשים את 4 חברי הצוות היוזמים הבאים: </p>
+        <ul style=";text-align:right;direction:rtl">
+          <li style=";text-align:right;direction:rtl"> מקבלי תקציר אשר
+            מביאים רעיונות חדשים לגבי איך ליישם את החוק </li>
+          <li style=";text-align:right;direction:rtl"> קונספט של רעיונות
+            אלה </li>
+          <li style=";text-align:right;direction:rtl"> גיוס כספים
+            למושגים </li>
+          <li style=";text-align:right;direction:rtl"> מנהל הפרויקט
+            מימוש הרעיון ממומן </li>
+        </ul>
+      </div>
+      <p>&nbsp;<br>
+      </p>
     </div>
     <div class="entry-content"> </div>
     <script>
