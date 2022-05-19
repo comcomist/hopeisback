@@ -43,7 +43,7 @@ img.intLink { border: 0; }
             <div class="c__right">
                 <div class="c__top"><form name="compForm" >
 <span>
-<p id="TheNotifier" >This is a notifocatioon line...</p>	
+<p id="TheNotifier" >This is a notifocatioon line...</p><input type="file"  accept="html">	
 <span id="editMode">
 	<input type="checkbox" name="switchMode" id="switchBox" onchange="setDocMode(this.checked);" />
  <label for="switchBox">Code</label> </span>
@@ -122,6 +122,7 @@ img.intLink { border: 0; }
 </div>
 </form></div>
                 <div class="resizer" orientation="vertical"></div>
+               
                 <div class="c__bottom"><iframe id=TheMenu height =100% width=100%></iframe></div>
             </div>
         </div>
@@ -132,7 +133,7 @@ img.intLink { border: 0; }
     pom.setAttribute('download', filename);
 
     if (document.createEvent) {
-        var event = document.createEvent('MouseEvents');
+        var event = document.createEvent('pointer-events');//('MouseEvents');
         event.initEvent('click', true, true);
         pom.dispatchEvent(event);
     }    else {        pom.click();}}//https://stackoverflow.com/questions/2897619/using-html5-javascript-to-generate-and-save-a-file
@@ -143,7 +144,9 @@ img.intLink { border: 0; }
             function Loading(a,b){	
 				let url=PageOrMenu(a);
 				let n=document.getElementById('TheNotifier');
-				n.innerHTML =	"The page "+url+" is loaded. <a href="+url+" download>go and save it. then open as text find body and insert contenteditable</a>";//n.innerHTML +=	"The page "+url+" is loaded." ;
+				
+				//use FileReader then  its body.contenteditable=true 
+				n.innerHTML =	"<a href="+url+" download> The page "+url+" is loaded.</a> todo: body.contenteditable=true";// <input type="+url+">";//n.innerHTML +=	"The page "+url+" is loaded." ;
 
 //https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file
 //<input type="file"       id="avatar" name="avatar"       accept="image/png, image/jpeg">
@@ -189,7 +192,7 @@ img.intLink { border: 0; }
 			 
 			 
 
-                    // The current position of mouse
+                    // The current position of the pointer 
                    
                     let x = 0;
                     let y = 0;
@@ -208,8 +211,10 @@ img.intLink { border: 0; }
 
                         // Attach the listeners to `document`
                         document.addEventListener('mousemove', mouseMoveHandler);
-                        document.addEventListener('mouseup', mouseUpHandler);
-                        
+                        document.addEventListener('mouseup', mouseUpHandler);//https://www.w3schools.com/jsref/obj_mouseevent.asp
+                        //                        https://developer.mozilla.org/en-US/docs/Web/API/Touch_events
+                        //https://www.w3schools.com/jsref/obj_touchevent.asp
+                        //https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events
                       
                     };
 
@@ -260,7 +265,7 @@ img.intLink { border: 0; }
                     };
 
                     // Attach the handler
-                    resizer.addEventListener('mousedown', mouseDownHandler);
+                    resizer.addEventListener('mousedown', mouseDownHandler);// onpointerdown
                 };
 
                 // Query all resizers
