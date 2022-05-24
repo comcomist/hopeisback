@@ -4,15 +4,17 @@
         <title>Loader</title>
 		<style type="text/css">
 	     .container{display:flex;width: 100%;height: 100%;}
-            .c__left  {display:flex;width: 60%;}
+            .c__left  {display:flex;flex-direction: column;width: 60%;}
             .c__right {display:flex;flex:1;flex-direction: column;} 
             .c__top   {display:flex;height:40%;}
             .c__bottom{display:flex;flex:1;}   
 
             .resizer[orientation='horizontal'] {background-color:red;
-				     cursor:ew-resize;height:100%;width:0.4%;}
+				     cursor:ew-resize;
+				     height:100%;width:0.4%;}
             .resizer[orientation='vertical'] { background-color:green;
-                     cursor:ns-resize;height:0.4%;width:100%;}
+                     cursor:ns-resize;
+                     height:0.4%;width:100%;}
             textarea  {width: 100%;margin:0;padding:0.4%;border-width:0.4%;}
             .inBox   {margin:0;padding:4%;}        
        
@@ -38,12 +40,34 @@ img.intLink { border: 0; }
 </head>
 <body onload="initDoc();">
     <div class="container">
-            <div class="c__left"><iframe id=ThePage height =100% width=100%></iframe></div>
+            <div class="c__left"><span id=ThePageTitle>
+				<input type="file"  accept="html"><p id="TheNotifier" >This is a notifocatioon line...</p>	
+		        </span><iframe id=ThePage height =100%-ThePageTitle.height width=100% 
+		                       sandbox=allow-scripts></iframe></div>
+            <!-- 
+          
+            
+            height =100% width=100%
+            https://www.w3schools.com/tags/tag_iframe.asp
+            srcdoc
+            <iframe srcdoc=new URL('../cats', 'http://www.example.com/dogs');...
+             -->
             <div class="resizer" orientation="horizontal"></div>
+            <!--  ontouchstart="myFunction() 
+            
+    touchend - occurs when the user removes the finger from an element
+    touchmove - occurs when the user moves the finger across the screen
+    touchcancel - occurs when the touch is interrupted
+
+
+            -->
             <div class="c__right">
-                <div class="c__top"><form name="compForm" >
+                <div class="c__top">
+					
+					<a id=thePageUrl></a>
+					<form name="compForm" >
 <span>
-<p id="TheNotifier" >This is a notifocatioon line...</p><input type="file"  accept="html">	
+
 <span id="editMode">
 	<input type="checkbox" name="switchMode" id="switchBox" onchange="setDocMode(this.checked);" />
  <label for="switchBox">Code</label> </span>
@@ -99,7 +123,7 @@ img.intLink { border: 0; }
 </select>
 </div>
 <div id="toolBar2">
-<img class="intLink" title="Clean" onclick="if(validateMode()&&confirm('Are you sure?')){oDoc.innerHTML=sDefTxt};" src="data:image/gif;base64,R0lGODlhFgAWAIQbAD04KTRLYzFRjlldZl9vj1dusY14WYODhpWIbbSVFY6O7IOXw5qbms+wUbCztca0ccS4kdDQjdTLtMrL1O3YitHa7OPcsd/f4PfvrvDv8Pv5xv///////////////////yH5BAEKAB8ALAAAAAAWABYAAAV84CeOZGmeaKqubMteyzK547QoBcFWTm/jgsHq4rhMLoxFIehQQSAWR+Z4IAyaJ0kEgtFoLIzLwRE4oCQWrxoTOTAIhMCZ0tVgMBQKZHAYyFEWEV14eQ8IflhnEHmFDQkAiSkQCI2PDC4QBg+OAJc0ewadNCOgo6anqKkoIQA7" />
+<img clss="intLink" title="Clean" onclick="if(validateMode()&&confirm('Are you sure?')){oDoc.innerHTML=sDefTxt};" src="data:image/gif;base64,R0lGODlhFgAWAIQbAD04KTRLYzFRjlldZl9vj1dusY14WYODhpWIbbSVFY6O7IOXw5qbms+wUbCztca0ccS4kdDQjdTLtMrL1O3YitHa7OPcsd/f4PfvrvDv8Pv5xv///////////////////yH5BAEKAB8ALAAAAAAWABYAAAV84CeOZGmeaKqubMteyzK547QoBcFWTm/jgsHq4rhMLoxFIehQQSAWR+Z4IAyaJ0kEgtFoLIzLwRE4oCQWrxoTOTAIhMCZ0tVgMBQKZHAYyFEWEV14eQ8IflhnEHmFDQkAiSkQCI2PDC4QBg+OAJc0ewadNCOgo6anqKkoIQA7" />
 <img class="intLink" title="Print" onclick="printDoc();" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABGdBTUEAALGPC/xhBQAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9oEBxcZFmGboiwAAAAIdEVYdENvbW1lbnQA9syWvwAAAuFJREFUOMvtlUtsjFEUx//n3nn0YdpBh1abRpt4LFqtqkc3jRKkNEIsiIRIBBEhJJpKlIVo4m1RRMKKjQiRMJRUqUdKPT71qpIpiRKPaqdF55tv5vvusZjQTjOlseUkd3Xu/3dPzusC/22wtu2wRn+jG5So/OCDh8ycMJDflehMlkJkVK7KUYN+ufzA/RttH76zaVocDptRxzQtNi3mRWuPc+6cKtlXZ/sddP2uu9uXlmYXZ6Qm8v4Tz8lhF1H+zDQXt7S8oLMXtbF4e8QaFHjj3kbP2MzkktHpiTjp9VH6iHiA+whtAsX5brpwueMGdONdf/2A4M7ukDs1JW662+XkqTkeUoqjKtOjm2h53YFL15pSJ04Zc94wdtibr26fXlC2mzRvBccEbz2kiRFD414tKMlEZbVGT33+qCoHgha81SWYsew0r1uzfNylmtpx80pngQQ91LwVk2JGvGnfvZG6YcYRAT16GFtW5kKKfo1EQLtfh5Q2etT0BIWF+aitq4fDbk+ImYo1OxvGF03waFJQvBCkvDffRyEtxQiFFYgAZTHS0zwAGD7fG5TNnYNTp8/FzvGwJOfmgG7GOx0SAKKgQgDMgKBI0NJGMEImpGDk5+WACEwEd0ywblhGUZ4Hw5OdUekRBLT7DTgdEgxACsIznx8zpmWh7k4rkpJcuHDxCul6MDsmmBXDlWCH2+XozSgBnzsNCEE4euYV4pwCpsWYPW0UHDYBKSWu1NYjENDReqtKjwn2+zvtTc1vMSTB/mvev/WEYSlASsLimcOhOBJxw+N3aP/SjefNL5GePZmpu4kG7OPr1+tOfPyUu3BecWYKcwQcDFmwFKAUo90fhKDInBCAmvqnyMgqUEagQwCoHBDc1rjv9pIlD8IbVkz6qYViIBQGTJPx4k0XpIgEZoRN1Da0cij4VfR0ta3WvBXH/rjdCufv6R2zPgPH/e4pxSBCpeatqPrjNiso203/5s/zA171Mv8+w1LOAAAAAElFTkSuQmCC">
 <img class="intLink" title="Undo" onclick="formatDoc('undo');" src="data:image/gif;base64,R0lGODlhFgAWAOMKADljwliE33mOrpGjuYKl8aezxqPD+7/I19DV3NHa7P///////////////////////yH5BAEKAA8ALAAAAAAWABYAAARR8MlJq7046807TkaYeJJBnES4EeUJvIGapWYAC0CsocQ7SDlWJkAkCA6ToMYWIARGQF3mRQVIEjkkSVLIbSfEwhdRIH4fh/DZMICe3/C4nBQBADs=" />
 <img class="intLink" title="Redo" onclick="formatDoc('redo');" src="data:image/gif;base64,R0lGODlhFgAWAMIHAB1ChDljwl9vj1iE34Kl8aPD+7/I1////yH5BAEKAAcALAAAAAAWABYAAANKeLrc/jDKSesyphi7SiEgsVXZEATDICqBVJjpqWZt9NaEDNbQK1wCQsxlYnxMAImhyDoFAElJasRRvAZVRqqQXUy7Cgx4TC6bswkAOw==" />
@@ -122,31 +146,58 @@ img.intLink { border: 0; }
 </div>
 </form></div>
                 <div class="resizer" orientation="vertical"></div>
-               
-                <div class="c__bottom"><iframe id=TheMenu height =100% width=100%></iframe></div>
+                <div class="c__bottom"><iframe id=TheMenu sandbox="allow-downloads" 
+									height =100% width=100%></iframe></div>
             </div>
         </div>
        <script type="text/javascript">
-		   function download(filename, text) {//download('test.txt', 'Hello world!');
-    var pom = document.createElement('a');
-    pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-    pom.setAttribute('download', filename);
-
-    if (document.createEvent) {
-        var event = document.createEvent('pointer-events');//('MouseEvents');
-        event.initEvent('click', true, true);
-        pom.dispatchEvent(event);
-    }    else {        pom.click();}}//https://stackoverflow.com/questions/2897619/using-html5-javascript-to-generate-and-save-a-file
-		   
-            function PageOrMenu(a,b=true){return b?
-			  document.getElementById('ThePage').src=a:
-			  document.getElementById('TheMenu').src=a;}
+		   function download(filename, text) {
+			let a = document.createElement('a');
+			a.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+			a.setAttribute('download', filename);
+		    if (document.createEvent) {
+				let event = document.createEvent('pointer-events');//('MouseEvents');
+				event.initEvent('click', true, true);
+				a.dispatchEvent(event);
+			} else {a.click();}}//https://stackoverflow.com/questions/2897619/using-html5-javascript-to-generate-and-save-a-file		   
+            function PageOrMenu(a,b=true){
+				if(!b)return document.getElementById('TheMenu').src=a;
+				      return document.getElementById('ThePage').src=a;}//doc;
+			function iframes(f = window.frames){for(var i=0;i<f.length;i++){ // or = window.parent.frames;
+				f[i].document.body.style.background = "red";}} // do something with each subframe as frames[i]
             function Loading(a,b){	
+				PageOrMenu(b,false);
 				let url=PageOrMenu(a);
-				let n=document.getElementById('TheNotifier');
-				
+				let p = document.getElementsByTagName("iframe")[0].contentWindow;
+				let n = document.getElementById('TheNotifier');//
+			  	    n.innerHTML ="for editing it after <a href="+url+" download>saving</a>  <a href="+url+">"+ url+"</a>.";			
+			//			document.getElementById('')
+
+//x = window.frames[0];
+
+//x.document.getElementsByTagName("body")[0].contenteditable=true;// this would turn the 1st iframe in document blue.
+
+//			let p=document.getElementById('ThePage');
+//			x.document.getElementsByTagName("body")[0].style.backgroundColor = "blue";
+			}
+            function editing(its){its.body.contenteditable="true";}
+            function Init(editing){Loading(
+			"https://hopeisback.com/hameathel.html", "html-help.html");}			
+		
+		/*//download('test.txt', 'Hello world!');
+			  let url=new Request(a);//new URL( a);
+			  
+			  console.log(url.hostname); // "www.example.com"
+console.log(url.pathname);
+return document.getElementById('ThePage').srcdoc=url;//src=a://https://developer.mozilla.org/en-US/docs/Web/API/URL
+		*/	
+			
+		//	ThePageUrl.href = URL.createObjectURL(  new Blob(["hello there, just testing!?"]));
+          //  ThePageUrl.download = url;
+
+
 				//use FileReader then  its body.contenteditable=true 
-				n.innerHTML ="Edit by <a href="+url+" download>Downloading</a>  <a href="+url+">it</a>.";// <input type="+url+">";//n.innerHTML +=	"The page "+url+" is loaded." ;
+// <input type="+url+">";//n.innerHTML +=	"The page "+url+" is loaded." ;
  //document.getElementsByTagName('body').contenteditable=true;
 
 //https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file
@@ -167,13 +218,8 @@ img.intLink { border: 0; }
 				//body.innerHTML = "Some new HTML content";				
 //			let i = p.contentDocument || p.contentWindow.document;
    //console.log(p.contentDocument.body);//			contentEditable = true;	i.body.innerHTML="098";
-				PageOrMenu(b,false);}
-            function editing(its){its.body.contenteditable="true";
 				
-				}
-            function Init(editing){
-            	Loading("https://hopeisback.com/hameathel.html",
-            	        "html-help.html");
+            	//iframes();        
             	/*
             	 if(	editing)(its);
 				document.getElementById('TheNotifier').innerHTML      = "Notifier";
@@ -182,7 +228,7 @@ img.intLink { border: 0; }
  				//document.getElementsByName('TheInput')[0].placeholder = "Your Command?";
 		
 			
-				}
+				
             document.addEventListener('DOMContentLoaded', function () {
                    Init(); // The loading
            
