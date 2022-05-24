@@ -52,8 +52,8 @@ img.intLink { border: 0; }
             srcdoc
             <iframe srcdoc=new URL('../cats', 'http://www.example.com/dogs');...
              -->
-            <div class="resizer" orientation="horizontal"></div>
-            <!--  ontouchstart="myFunction() 
+            <div class="resizer" orientation="horizontal" ontouchstart="resizer()"></div>
+            <!--  ontouchstart="resizer() 
             
     touchend - occurs when the user removes the finger from an element
     touchmove - occurs when the user moves the finger across the screen
@@ -145,7 +145,7 @@ img.intLink { border: 0; }
 <img class="intLink" title="Paste" onclick="formatDoc('paste');" src="data:image/gif;base64,R0lGODlhFgAWAIQUAD04KTRLY2tXQF9vj414WZWIbXmOrpqbmpGjudClFaezxsa0cb/I1+3YitHa7PrkIPHvbuPs+/fvrvv8/f///////////////////////////////////////////////yH5BAEAAB8ALAAAAAAWABYAAAWN4CeOZGmeaKqubGsusPvBSyFJjVDs6nJLB0khR4AkBCmfsCGBQAoCwjF5gwquVykSFbwZE+AwIBV0GhFog2EwIDchjwRiQo9E2Fx4XD5R+B0DDAEnBXBhBhN2DgwDAQFjJYVhCQYRfgoIDGiQJAWTCQMRiwwMfgicnVcAAAMOaK+bLAOrtLUyt7i5uiUhADs=" />
 </div>
 </form></div>
-                <div class="resizer" orientation="vertical"></div>
+                <div class="resizer" orientation="vertical" ontouchstart="resizer()"></div>
                 <div class="c__bottom"><iframe id=TheMenu sandbox="allow-downloads" 
 									height =100% width=100%></iframe></div>
             </div>
