@@ -1,30 +1,51 @@
  <!DOCTYPE html><html lang="en"><head> 
 	<style> 
-		html, body {margin:0; height:100%;}
-        iframe     {height:100vh; width:100%;}  
-		.container {display:flex;}       
+		html, body      {margin:0; height:100%;}
+        iframe          {height:100vh; width:100%;}  
+		.container      {display:flex;}       
         .container__left{resize:horizontal; overflow: auto; 
-						 flex-wrap: wrap;overflow-wrap: break-all;}
+						  flex-wrap: wrap;overflow-wrap: break-all;}
        .container__right{flex:1; resize:horizontal; overflow: auto; 
-						 flex-wrap: wrap;overflow-wrap: break-all;}
+						  flex-wrap: wrap;overflow-wrap: break-all;}
     </style>
-    <script defer src="container.js"></script>
+    <script>{ const str = ["localos.html","hameathel.html"]; 	
+    function modh() { 
+    	left.style="width:"+sliderh.value+"%;";
+	    right.style="left:"+sliderh.value+"%;";}
+    function initFILE(){sliderh.value=0; 
+		modh();
+        sliderh.addEventListener('change',(e)=>{modh();});
+        iframeLoading(str[0],str[1]);}
+     
+    function iframeLoading(a,b){	
+	 document.getElementById('ileft').src=a;
+	 document.getElementById('iright').src=b;}//loadCSS("JavaScript2addCSSfile.css",document.getElementsByTagName('HEAD')[1]);
+	 			
+	function loadCSS(file,head = document.getElementsByTagName('HEAD')[0]){
+       // let head = document.getElementsByTagName('HEAD')[0];// Get HTML head element
+        let link = document.createElement('link');// Create new link Element
+        link.rel = 'stylesheet';// set the attributes for link element
+        link.type = 'text/css';
+        link.href = 'style.css';
+        head.appendChild(link);}}</script>
     <meta charset="utf-8" />
     <title>Container</title></head>
  <body onload="initFILE();">
    <input type="range" id="sliderh" style="width:100%" min="0" max="100" value="33.3" >
    <div class="container">   
 	 <div class="container__left" id="left" >
- 	   <iframe anonymous src="localos.html"    sandbox=allow-scripts></iframe>
+ 	   <iframe anonymous id=ileft     sandbox=allow-scripts></iframe>
      </div>
      <div class="container__right" id="right">
-	   <iframe anonymous id=ThePage  sandbox=allow-scripts></iframe>
+	   <iframe anonymous id=iright  sandbox=allow-scripts></iframe>
      </div></div></body></html>
      
      
      
      
-     <!-- ended here
+     <!-- ended here src="localos.html"
+     // Append link element to HTML head
+     src="container.js"
      <link rel="stylesheet" href="appdata.css">
         <span id="theEditor"><form name="compForm">	
 			 <span id="editMode">	<label for="switchBox"></label>  </span> 
