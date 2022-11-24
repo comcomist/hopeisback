@@ -15,11 +15,8 @@
     function initFILE(){sliderh.value=0; 
 		modh();
         sliderh.addEventListener('change',(e)=>{modh();});
-        iframeLoading(str[0],str[1]);}
-     
-    function iframeLoading(a,b){	
-	 document.getElementById('ileft').src=a;
-	 document.getElementById('iright').src=b;}//loadCSS("JavaScript2addCSSfile.css",document.getElementsByTagName('HEAD')[1]);
+	    document.getElementById('ileft') .src=str[0];
+	    document.getElementById('iright').src=str[1];}//loadCSS("JavaScript2addCSSfile.css",document.getElementsByTagName('HEAD')[1]);
 	 			
 	function loadCSS(file,head = document.getElementsByTagName('HEAD')[0]){
        // let head = document.getElementsByTagName('HEAD')[0];// Get HTML head element
