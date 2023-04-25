@@ -1,0 +1,8 @@
+		html, body      {margin:0; height:100%;}
+        iframe          {height:100vh; width:100%;}  
+		.container      {display:flex;}       
+        .container__left{resize:horizontal; overflow: auto; 
+						  flex-wrap: wrap;overflow-wrap: break-all;}
+       .container__right{flex:1; resize:horizontal; overflow: auto; 
+						  flex-wrap: wrap;overflow-wrap: break-all;}
+
