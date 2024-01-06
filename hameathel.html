@@ -1,440 +1,599 @@
-<!DOCTYPE html>
-<html style="direction: rtl;float: right;" lang="he_IL">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="index.css">
-    <title> אודות המאתחל namzezam נמ-זה-זהם הראי למה זה זמן</title>
+ <!DOCTYPE html><html lang="en"><head> 
+	<style> 
+		html, body      {margin:0; height:100%;}
+        iframe          {height:100vh; width:100%;}  
+		.container      {display:flex;}       
+        .container__left{resize:horizontal; overflow: auto; 
+						  flex-wrap: wrap;overflow-wrap: break-all;}
+       .container__right{flex:1; resize:horizontal; overflow: auto; 
+						  flex-wrap: wrap;overflow-wrap: break-all;}
+    </style>
+    <script>{ const str = ["namzezam2.html","hameathelcontent.html"]; 	
+    function modh() { 
+    	left.style="width:"+sliderh.value+"%;";
+	    right.style="left:"+sliderh.value+"%;";}
+    function initFILE(){sliderh.value=33.3; 
+		modh();
+        sliderh.addEventListener('change',(e)=>{modh();});
+	    document.getElementById('ileft') .src=str[0];
+	    document.getElementById('iright').src=str[1];}
+	    //CORS request not HTTP, so loaclly edit the pages onlt sepretly, so then on the server it will work 
+	    //https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSRequestNotHttp
+   }</script>
+    <meta charset="utf-8" />
+    
+     <title> אודות המאתחל namzezam נמ-זה-זהם הראי למה זה זמן</title>
     <link rel="icon" href="index_files/namzezam.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="slider.css">
-	<script src="slider.js"></script>
-	
     <meta name="description" content="מתוך ניסיוני רב השנים גם כמשורר,
       גם כממציא וגם כפעיל חברתי עצבתי את שלושת התשתיות השלובות הבאות
       ולהן נתונים כרגע מירב משאבי: ניצגי המתמזגים, אתר שיחרור למסיבות
       ערבות הדדית ורשת התקווה חוזרת.">
-    <meta property="og:image" content="index_files/namzezam.jpg">
-    <meta property="og:title" content=" אודות המאתחל namzezam נמ-זה-זהם
-      הראי למה זה זמן">
-    <meta property="og:description" content="מתוך ניסיוני רב השנים גם
-      כמשורר, גם כממציא וגם כפעיל חברתי עצבתי את שלושת התשתיות השלובות
-      הבאות ולהן נתונים כרגע מירב משאבי: ניצגי המתמזגים, אתר שיחרור
-      למסיבות ערבות הדדית ורשת התקווה חוזרת.">
-    <meta name="abstract" content="abstract">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta http-equiv="cache-control" content="max-age=0">
-    <meta http-equiv="cache-control" content="no-store">
-    <meta http-equiv="cache-control" content="no-cache">
-    <meta http-equiv="cache-control" content="no-transform">
-    <meta http-equiv="expires" content="0">
-    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="og:url to here">
-    <meta property="og:site_name" content="og:site_name">
-    <meta property="og:locale" content="he_IL">
-  </head>
-  <body onload="initSlider(100,'','localos.html');"
- 
-  onfocus="go2()">
-     <input type="range" id="sliderh" style="width:100%" min="0" max="100" value="33.3" >
+    </head>
+ <body onload="initFILE();">
+   <input type="range" id="sliderh" style="width:100%" min="0" max="100" value="33.3" >
    <div class="container">   
 	 <div class="container__left" id="left" >
- 	 
- 	 
-  
-   <!--  
-        
-        <span id="dataatribute" style="display: none"> </span>
-        class="fcontent content-inner"
-     <div class="flding" id="optionalTags" style="display: none" > 
-	   <input id="ithis" class="toggle" type="checkbox"> 
-		 <label for="ithis" class="lbl-toggle">Tags...</label>
-		   <span id="modifiabletags" class="fcontent content-inner" > 
-
-		       <button id="title" class="button button2" onClick=doneBedo("/n@title="); title="the name of thismpage">Title</button>
-</span>
-		     <div class="flding" id="this2" > 
-				<input id="ithis2" class="toggle" type="checkbox"> 
-					<label for="ithis2" class="lbl-toggle">Title this2</label>
-						<div class="fcontent content-inner"> 
-						<p> abcd2</p>
-			 </div></div>  
-	 <div align="center">
-	 <a href="http://www.example.com" target="_parent">Open Link in Parent Window</a>
-	 -->
-    <div> <a
-href="https://hopeisback-com.translate.goog/hameathel.html?_x_tr_sl=auto&amp;_x_tr_tl=en"><img
-          moz-do-not-send="true" src="index_files/lang.png" alt=""
-          width="52" border="2" height="51"></a><a
-        href="https://t.me/namzezam"><img moz-do-not-send="true"
-          src="index_files/telegram.png" alt="" width="47" border="2"
-          height="42"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-    </div>
-    <span class="entry-content">
-      <section class="main-content">
-        <div class="content-inner">
-          <h1 align="center">אודות המאתחל <a 
-         
-              href="http://namzezam.wikidot.com/" >namzezam</a>
-            (נמ-זה-זהם הוא הראי לשאלה מה זה זמן)</h1>
-          <span> <textarea id="searchItem" data-i="0" placeholder="Search" rows="1" cols="1" oninput="findit(this.value)"></textarea>
-            <span id="searchresults"></span></span></div>
-        <span id="searchmsg" onclick="cleaning()" style="cursor:pointer">
-        </span>
-        <!--<span id="modifiabletags" hidden="">
-              hidden  <button id="title" class="button button2"
-              onclick='doneBedo("/n@title=");' title="the name of
-              thismpage">Title</button> <button id="title1"
-              class="button button2" onclick='doneBedo("/n@title=");'
-              title="the name of thismpage">Title</button> <button
-              id="title2" class="button button2"
-              onclick='doneBedo("/n@title=");' title="the name of
-              thismpage">Title</button> <button id="title3"
-              class="button button2" onclick='doneBedo("/n@title=");'
-              title="the name of thismpage">Title</button> <button
-              id="title4" class="button button2"
-              onclick='doneBedo("/n@title=");' title="the name of
-              thismpage">Title</button> <button id="title5"
-              class="button button2" onclick='doneBedo("/n@title=");'
-              title="the name of thismpage">Title</button> <button
-              id="title6" class="button button2"
-              onclick='doneBedo("/n@title=");' title="the name of
-              thismpage">Title</button> <button id="title7"
-              class="button button2" onclick='doneBedo("/n@title=");'
-              title="the name of thismpage">Title</button> <button
-              id="title8" class="button button2"
-              onclick='doneBedo("/n@title=");' title="the name of
-              thismpage">Title</button> </span>
-          <h1 style="direction: rtl; text-align: center;"> </h1>
-          -->
-        <div class="flding" id="aboutme"> <input id="iaboutme"
-            class="toggle" checked="checked" type="checkbox"> <label
-            for="iaboutme" class="lbl-toggle"> <i><strong></strong></i></label>
-          <div class="fcontent content-inner" "entry-content"="">
-            <h2><span class="entry-content">
-                <h2><span class="entry-content">
-                    <h2><span class="entry-content">
-                        <h2><span class="entry-content">
-                            <h2><span class="entry-content">
-                                <h2><span class="entry-content">
-                                    <h2><span class="entry-content">
-                                        <h2><a
-                                            href="http://namzezam.wikidot.com/interviews"><img
-                                              moz-do-not-send="true"
-                                              src="index_files/namzezam.jpg"
-                                              alt="" width="180"
-                                              vspace="4" border="2"
-                                              hspace="20" height="207"
-                                              align="left"></a></h2>
-                                      </span></h2>
-                                  </span></h2>
-                              </span></h2>
-                          </span></h2>
-                      </span></h2>
-                  </span></h2>
-              </span><span class="entry-content"> </span></h2>
-            <h2>השינוי אפשרי ואנחנו השינוי הזה<br>
-              השונות כוחנו והסובלנות דרכנו<br>
-              כי כל הצבעים אנחנו<br>
-              אנחנו אור <br>
-              מול עיינכם ומול העינוי וההונאה<br>
-              בניסוי שליטת המכונה במכלול החי הכולל<br>
-              גם את בני האדם<br>
-              במדרגים חברתיים, דורסניים ומדירים.</h2>
-            <h2>אנא הפיצו ותירמו להמשך פעילותי. <br>
-            </h2>
-            <h2>מתוך ניסיוני רב השנים גם <a
-                href="http://namzezam.wikidot.com/poems:_start"
-                target="_blank">כמשורר,</a> גם <a
-                href="https://patents.google.com/patent/US20060155755"
-                target="_blank">כממציא</a> וגם כ<a
-                href="https://oplatz.net/" target="_blank">פעיל חברתי</a>
-              עצבתי את שלושת התשתיות השלובות הבאות ולהן נתונים כרגע מירב
-              משאבי: <span class="entry-content">
-                <h2><span class="entry-content">
-                    <h2><span class="entry-content">
-                        <h2><span class="entry-content"> </span></h2>
-                      </span></h2>
-                  </span></h2>
-              </span> <a href="https://comcomist.github.io/desegregation/"
-                target="_blank">&nbsp;&nbsp;&nbsp; ניצגי המתמזגים</a> -
-              רשת אוהלי טיפים מורשים וקבועים, סביבם ומתוך שיתוף הקהל,
-              מתקיימים ארועי סובלנות במיצגים הגורמים להתעלות<span
-                class="entry-content"></span>, כאשר אנשים מקהילות שונות
-              ואפילו מנוגדות פותרים את אתגרהם המשותפים ובכך, בהתמזגות
-              זו, אומנותם אומנות הניצג. התמזגות הניצג אפשרית בנושאים
-              רבים, למשל תוך שיתוף מאכלים ומשחקים, ממסורות/קהילות שונות,
-              גם עם שיח, תערוכות, ריקודים ועוד וגם במצבים
-              מדיטיווים/תפילתיים/רגילים/מיוחדים/סקסים ועוד. אל <a
-                moz-do-not-send="true"
-                href="https://chat.whatsapp.com/G4KVVFa1nw3HknX4ffOysR">שער
-
-
-
-
-
-
-
-                הניצגים</a>.<br>
-            </h2>
-            <h2><a href="https://comcomist.github.io/shihrur/" target="_blank">&nbsp;&nbsp;&nbsp;
-
-
-
-
-
-
-
-
-
-                שיחרור</a> -&nbsp; אתר מסיבות ערבות הדדית בנושאים
-              מסויימים. אנחנו מקשרים מסיבות עם מימון, מתוך ערבות הדדית,
-              כאשר נושאי הערבות מאופיינים על פי היותה: עם (כל) קבוצ/ות,
-              לקידום (כל) אתגר/ים, בזימון (כל) זמנ/ים/תנא/ים, במיקום
-              (כל) מקום/אתר ועל ידי (כל) אמצעי/אפליקציה. אל <a
-                moz-do-not-send="true"
-                href="https://chat.whatsapp.com/DPvlA5Nt7yD5FKffH3Tp8n">שער
-
-
-
-
-
-
-
-                השיחרור.</a><br>
-            </h2>
-            <h2>&nbsp;&nbsp;&nbsp; <a
-                href="https://hopeisback.com/index-heb.html"
-                target="_blank">רשת התקווה חוזרת</a> -&nbsp; מורידים
-              מחירים ומעלים עסקים קטנים ברשת קנייה מבוזרת ו/או בעלות
-              שיוויונית ומבוזרת. ביזור (פיזור סמכויות ואמצעיי) הרשת נובע
-              מתוך התנהלות אוטונומית של קהילות קטנות, כאשר לתנועה (של
-              החברים) בינהן מוצמד תקציבן ו/או ההחזקה בבעלות נכסהן, כך
-              שלמנוטרלים או לאלו אשר לא מצביעים, עדיין יש את האפשרות
-              ליצור או לעבור לקהילות אחרות, וכך ששיעור הניידות ברשת שקוף
-              לכולם בכדי לרפאה. זאת, בכדי לייצר את המסה הקריטית הדרושה
-              לנו החיים במערכות ענק, ביריוניות, ריכוזיות ואטומות
-              המנטרלות את רובנו בקבוצות מנוגדות ובאותיות הקטנות, תחת
-              שיגעונות ושגיעות מומחים מושחתים ושאר מפרשי סטטיסטיקות
-              מגוחכים המתאמצים להתפש סמכותיים ולרוב מייצרים ומצויים
-              במשובי הלם הכוללים נתק התמצאותי (דיסאורינטציה) מתמשך. אל <a
-                moz-do-not-send="true"
-                href="https://chat.whatsapp.com/HfAeGgFDrtbDXkAkLthdin">שער
-
-
-
-
-
-
-                רשת התקווה חוזרת</a>.<span class="entry-content">
-                <h2><span class="entry-content"> </span></h2>
-              </span></h2>
-            <ul>
-            </ul>
-            <ul>
-            </ul>
-            <ul>
-            </ul>
-            <ul>
-            </ul>
-          </div>
-        </div>
-        <a href="https://twitter.com/namzezam"><img alt=""
-            src="index_files/twitter.png" moz-do-not-send="true"
-            width="42" border="2" hspace="6" height="42" align="right"></a>
-        <input id="msgsubject" placeholder="נושא" type="text"><br>
-        <textarea id="msgbody" placeholder=" מסר.."></textarea> <br>
-        <a id="mailto" href="javascript:void(0);"
-onclick="this.href=sendform('mailto:contact@hopeisback.com?subject=Contacting%20HopeIsBack&amp;body=','msgsubject','msgbody',document.getElementsByClassName('cld-main').value);">
-          <button name="msgsend">שלח</button></a> </section>
-    </span>
-    <div id="smart-button-container">
-      <div style="text-align: center"><label for="description">This is a
-          donation for the continued activity of namZeZaM. Noting that
-          ... </label><input name="descriptionInput" id="description"
-          maxlength="127" type="text"></div>
-      <p id="descriptionError" style="visibility: hidden; color:red;
-        text-align: center;">Please enter a description</p>
-      <div style="text-align: center"><label for="amount">100 </label><input
-          name="amountInput" id="amount" type="number"><span> ILS</span></div>
-      <p id="priceLabelError" style="visibility: hidden; color:red;
-        text-align: center;">Please enter a price</p>
-      <div id="invoiceidDiv" style="text-align: center; display: none;"><label
-          for="invoiceid"> </label><input name="invoiceid"
-          maxlength="127" id="invoiceid" type="text"></div>
-      <p id="invoiceidError" style="visibility: hidden; color:red;
-        text-align: center;">Please enter an Invoice ID</p>
-      <div style="text-align: center; margin-top: 0.625rem;"
-        id="paypal-button-container"></div>
-    </div>
-    
-      <iframe anonymous id=ileft     sandbox=allow-scripts></iframe>
+ 	   <iframe anonymous id=ileft     sandbox=allow-scripts></iframe>
      </div>
      <div class="container__right" id="right">
+	   <iframe anonymous id=iright  sandbox=allow-scripts></iframe>
+     </div></div></body></html>
+     
+     
+     
+     
+     <!-- ended here src="localos.html"
+     	    //before loading get all StyleSheets (retrieved from <link> headers are placed first, sorted in header order).
+	    // disabled the <link and instead  <style the content> 
 	
+	    
+	    //loadCSS("JavaScript2addCSSfile.css",document.getElementsByTagName('HEAD')[1]);
+	 	//todo: all link..target="framename" or target="_blank" 
+		//document.styleSheets[0].disabled = false/true;
+       //document.scripts[0].disabled =
 
-	   <iframe anonymous id=iright  sandbox=allow-scripts></iframe> 
-     </div> </div>
-  
-    <script src="https://www.paypal.com/sdk/js?client-id=sb&amp;enable-funding=venmo&amp;currency=ILS" data-sdk-integration-source="button-factory"></script>
-    <script>
-  function initPayPalButton() {
-    var description = document.querySelector('#smart-button-container #description');
-    var amount = document.querySelector('#smart-button-container #amount');
-    var descriptionError = document.querySelector('#smart-button-container #descriptionError');
-    var priceError = document.querySelector('#smart-button-container #priceLabelError');
-    var invoiceid = document.querySelector('#smart-button-container #invoiceid');
-    var invoiceidError = document.querySelector('#smart-button-container #invoiceidError');
-    var invoiceidDiv = document.querySelector('#smart-button-container #invoiceidDiv');
+	function loadCSS(file,head = document.getElementsByTagName('HEAD')[0]){
+       // let head = document.getElementsByTagName('HEAD')[0];// Get HTML head element
+        let link = document.createElement('link');// Create new link Element
+        link.rel = 'stylesheet';// set the attributes for link element
+        link.type = 'text/css';
+        link.href = 'style.css';
+        head.appendChild(link);}
+     
+     // Append link element to HTML head
+     src="container.js"
+     <link rel="stylesheet" href="appdata.css">
+        <span id="theEditor"><form name="compForm">	
+			 <span id="editMode">	<label for="switchBox"></label>  </span> 
+             <span id="htmleditor">  </span>		
+             <div id="textBox" contenteditable="true"></div>
+        </form></span>
 
-    var elArr = [description, amount];
+     
+     <div class="resizer" id="dragMe"></div>
+     -->
+  <!--app.js appdata.js -->
+ <!--
+ 	     <span id="menu"><span id="base64part">
+			  </span>
+ 	         <b><i style="color:red" id="outputing"></i></b>
+ </span>
+ -->
+	 <!--
+	 <meta http-equiv="Content-Security-Policy" content="scheme-source 'filesystem'">
+-->
 
-    if (invoiceidDiv.firstChild.innerHTML.length > 1) {
-      invoiceidDiv.style.display = "block";
-    }
+		<!--	  
+			     <input id="inputing"   onkeydown="whichkey(event,value)">
 
-    var purchase_units = [{"amount":{"currency_code":"ILS","value":100,"breakdown":{"item_total":{"currency_code":"ILS","value":100}}},"items":[{"name":"item name","unit_amount":{"currency_code":"ILS","value":100},"quantity":"1","category":"DONATION"}]}]
-
-    function validate(event) {
-      return event.value.length > 0;
-    }
-
-    paypal.Buttons({
-      style: {
-        color: 'white',
-        shape: 'pill',
-        label: 'donate',
-        layout: 'vertical',
-        
-      },
-
-      onInit: function (data, actions) {
-        actions.disable();
-
-        if(invoiceidDiv.style.display === "block") {
-          elArr.push(invoiceid);
-        }
-
-        elArr.forEach(function (item) {
-          item.addEventListener('keyup', function (event) {
-            var result = elArr.every(validate);
-            if (result) {
-              actions.enable();
-            } else {
-              actions.disable();
-            }
-          });
-        });
-      },
-
-      onClick: function () {
-        if (description.value.length < 1) {
-          descriptionError.style.visibility = "visible";
-        } else {
-          descriptionError.style.visibility = "hidden";
-        }
-
-        if (amount.value.length < 1) {
-          priceError.style.visibility = "visible";
-        } else {
-          priceError.style.visibility = "hidden";
-        }
-
-        if (invoiceid.value.length < 1 && invoiceidDiv.style.display === "block") {
-          invoiceidError.style.visibility = "visible";
-        } else {
-          invoiceidError.style.visibility = "hidden";
-        }
-
-        purchase_units[0].description = description.value;
-        purchase_units[0].amount.value = amount.value;
-        purchase_units[0].amount.breakdown.item_total.value = amount.value;
-        purchase_units[0].items[0].unit_amount.value = amount.value;
-
-        if(invoiceid.value !== '') {
-          purchase_units[0].invoice_id = invoiceid.value;
-        }
-      },
-
-      createOrder: function (data, actions) {
-        return actions.order.create({
-          purchase_units: purchase_units,
-        });
-      },
-
-      onApprove: function (data, actions) {
-        return actions.order.capture().then(function (orderData) {
-
-          // Full available details
-          console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-
-          // Show a success message within this page, e.g.
-          const element = document.getElementById('paypal-button-container');
-          element.innerHTML = '';
-          element.innerHTML = '<h3>Thank you for your payment!</h3>';
-
-          // Or go to another URL:  actions.redirect('thank_you.html');
-          
-        });
-      },
-
-      onError: function (err) {
-        console.log(err);
-      }
-    }).render('#paypal-button-container');
-  }
-  initPayPalButton();
-  </script>
-    <script defer="defer" type="text/javascript" src="modify.js"></script>
-    <script defer="defer" type="text/javascript" src="index.js"></script>
-  </body>
-</html>
-<!-- <a href="javascript:void(0);" onclick="go();"> -->
-<!--
-        'registering');"> -->
-<!--id="hopeisback-network-foundations"
-            <textarea id="searchItem"  rows="1" cols="1" oninput="findit(this.value)" type="text"  placeholder="Describe yourself here..."> 
-			 </textarea>		 
-		  <input id="searchItem" oninput="findit(this.value)" placeholder="search" type="text"> 
+			  <button id="inputingDo" onclick="dothis(inputing.value)">Do</button>
+  	-->
+   
+	<!--
+	<input type="checkbox" title="NonTextable file" name="base64do" id="base64do" onchange="base64dof(this.checked);" /> 
+	<label for="base64do"></label>
+   -->
+   
+   <!--
+   <input type="file" id="fileToLoad" onchange="loadingFile(this.files[0])"> 
+-->
       
-      2nd section could be here. 
-    
-    <div class="entry-content"></div><script></script>
-		 <img
-            src="index_files/contactus.png" alt=".."
-            title=".." width="42" height="42" border="0"></a>
-        <a href="javascript:void(0);"
-          onclick="go('publishhouseplatform');"> <img
-            alt="0"
-            src="index_files/Creators-Platform-of-Artist-and-Devlopers.png"
-            title="0" width="42" height="42"
-            border="0"></a> <a href="javascript:void(0);"
-          onclick="go('greencomcom');"> <img alt="2"
-src="index_files/Citizens-Green-Platform-Preventing-Climates-eXtinction.png"
-            title="2" width="42"
-            height="42" border="0"></a> <a
-          href="https://hopeisback.com/lang.html"> <img
-            src="index_files/lang.png" alt="translations"
-            title="translations" width="42" height="42" border="0"></a>
-        <a href="https://hopeisback.com/index.xml"> <img alt="1"
-            src="index_files/rss.png" title="the hopeisback rss and
-            channels. " width="42" height="42" border="0"></a> <a
-          href="https://t.me/joinchat/Gb7q5lLa-2DWLMrL"> </a><a
-          href="https://t.me/joinchat/xlDaV5d9EJFkNTQ0"><img
-            src="index_files/telegram.png" alt="5"
-            title="5" moz-do-not-send="true"
-            width="42" height="42" border="0"></a> <a
-          href="https://twitter.com/hopeisbackn"> </a><a
-          href="https://twitter.com/hopeisbackn"><img alt="-1"
-            src="index_files/twitter.png" title="-1" width="42" height="42" border="0"></a>&nbsp;
+	<!--
+	<input type="checkbox" title="Html source" name="switchMode" id="switchBox" onchange="setDocMode(this.checked);" /> 
+	-->
 
-        <a href="https://www.facebook.com/pg/HopeIsBackNet/events/"> </a><a
-          href="https://www.facebook.com/groups/hopeisback.heb.0"><img
-            src="index_files/f.png" alt="3" title="3" width="42" height="42" border="0"></a> <a
-          href="https://chat.whatsapp.com/HfAeGgFDrtbDXkAkLthdin"><img
-            src="index_files/whatsup.png" alt="4"   title="4" width="42" height="42"
-            border="0"></a>
-            </label></div> </head>
-    -->
+<!--
+   <div id="toolBar1">
+	
+<select onchange="formatDoc('formatblock',this[this.selectedIndex].value);this.selectedIndex=0;">
+<option selected>- formatting -</option>
+<option value="h1">Title 1 &lt;h1&gt;</option>
+<option value="h2">Title 2 &lt;h2&gt;</option>
+<option value="h3">Title 3 &lt;h3&gt;</option>
+<option value="h4">Title 4 &lt;h4&gt;</option>
+<option value="h5">Title 5 &lt;h5&gt;</option>
+<option value="h6">Subtitle &lt;h6&gt;</option>
+<option value="p">Paragraph &lt;p&gt;</option>
+<option value="pre">Preformatted &lt;pre&gt;</option>
+</select>
+<select onchange="formatDoc('fontname',this[this.selectedIndex].value);this.selectedIndex=0;">
+<option class="heading" selected>- font -</option>
+<option>Arial</option>
+<option>Arial Black</option>
+<option>Courier New</option>
+<option>Times New Roman</option>
+</select>
+<select onchange="formatDoc('fontsize',this[this.selectedIndex].value);this.selectedIndex=0;">
+<option class="heading" selected>- size -</option>
+<option value="1">Very small</option>
+<option value="2">A bit small</option>
+<option value="3">Normal</option>
+<option value="4">Medium-large</option>
+<option value="5">Big</option>
+<option value="6">Very big</option>
+<option value="7">Maximum</option>
+</select>
+<select onchange="formatDoc('forecolor',this[this.selectedIndex].value);this.selectedIndex=0;">
+<option class="heading" selected>- color -</option>
+<option value="red">Red</option>
+<option value="blue">Blue</option>
+<option value="green">Green</option>
+<option value="black">Black</option>
+</select>
+<select onchange="formatDoc('backcolor',this[this.selectedIndex].value);this.selectedIndex=0;">
+<option class="heading" selected>- background -</option>
+<option value="red">Red</option>
+<option value="green">Green</option>
+<option value="black">Black</option>
+</select>
+</div>
+
+<div id="toolBar2">
+<img class="intLink" title="Clean" onclick="if(validateMode()&&confirm('Are you sure?')){oDoc.innerHTML=sDefTxt};" src="data:image/gif;base64,R0lGODlhFgAWAIQbAD04KTRLYzFRjlldZl9vj1dusY14WYODhpWIbbSVFY6O7IOXw5qbms+wUbCztca0ccS4kdDQjdTLtMrL1O3YitHa7OPcsd/f4PfvrvDv8Pv5xv///////////////////yH5BAEKAB8ALAAAAAAWABYAAAV84CeOZGmeaKqubMteyzK547QoBcFWTm/jgsHq4rhMLoxFIehQQSAWR+Z4IAyaJ0kEgtFoLIzLwRE4oCQWrxoTOTAIhMCZ0tVgMBQKZHAYyFEWEV14eQ8IflhnEHmFDQkAiSkQCI2PDC4QBg+OAJc0ewadNCOgo6anqKkoIQA7" />
+<img class="intLink" title="Print" onclick="printDoc();" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABGdBTUEAALGPC/xhBQAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9oEBxcZFmGboiwAAAAIdEVYdENvbW1lbnQA9syWvwAAAuFJREFUOMvtlUtsjFEUx//n3nn0YdpBh1abRpt4LFqtqkc3jRKkNEIsiIRIBBEhJJpKlIVo4m1RRMKKjQiRMJRUqUdKPT71qpIpiRKPaqdF55tv5vvusZjQTjOlseUkd3Xu/3dPzusC/22wtu2wRn+jG5So/OCDh8ycMJDflehMlkJkVK7KUYN+ufzA/RttH76zaVocDptRxzQtNi3mRWuPc+6cKtlXZ/sddP2uu9uXlmYXZ6Qm8v4Tz8lhF1H+zDQXt7S8oLMXtbF4e8QaFHjj3kbP2MzkktHpiTjp9VH6iHiA+whtAsX5brpwueMGdONdf/2A4M7ukDs1JW662+XkqTkeUoqjKtOjm2h53YFL15pSJ04Zc94wdtibr26fXlC2mzRvBccEbz2kiRFD414tKMlEZbVGT33+qCoHgha81SWYsew0r1uzfNylmtpx80pngQQ91LwVk2JGvGnfvZG6YcYRAT16GFtW5kKKfo1EQLtfh5Q2etT0BIWF+aitq4fDbk+ImYo1OxvGF03waFJQvBCkvDffRyEtxQiFFYgAZTHS0zwAGD7fG5TNnYNTp8/FzvGwJOfmgG7GOx0SAKKgQgDMgKBI0NJGMEImpGDk5+WACEwEd0ywblhGUZ4Hw5OdUekRBLT7DTgdEgxACsIznx8zpmWh7k4rkpJcuHDxCul6MDsmmBXDlWCH2+XozSgBnzsNCEE4euYV4pwCpsWYPW0UHDYBKSWu1NYjENDReqtKjwn2+zvtTc1vMSTB/mvev/WEYSlASsLimcOhOBJxw+N3aP/SjefNL5GePZmpu4kG7OPr1+tOfPyUu3BecWYKcwQcDFmwFKAUo90fhKDInBCAmvqnyMgqUEagQwCoHBDc1rjv9pIlD8IbVkz6qYViIBQGTJPx4k0XpIgEZoRN1Da0cij4VfR0ta3WvBXH/rjdCufv6R2zPgPH/e4pxSBCpeatqPrjNiso203/5s/zA171Mv8+w1LOAAAAAElFTkSuQmCC">
+<img class="intLink" title="Undo" onclick="formatDoc('undo');" src="data:image/gif;base64,R0lGODlhFgAWAOMKADljwliE33mOrpGjuYKl8aezxqPD+7/I19DV3NHa7P///////////////////////yH5BAEKAA8ALAAAAAAWABYAAARR8MlJq7046807TkaYeJJBnES4EeUJvIGapWYAC0CsocQ7SDlWJkAkCA6ToMYWIARGQF3mRQVIEjkkSVLIbSfEwhdRIH4fh/DZMICe3/C4nBQBADs=" />
+<img class="intLink" title="Redo" onclick="formatDoc('redo');" src="data:image/gif;base64,R0lGODlhFgAWAMIHAB1ChDljwl9vj1iE34Kl8aPD+7/I1////yH5BAEKAAcALAAAAAAWABYAAANKeLrc/jDKSesyphi7SiEgsVXZEATDICqBVJjpqWZt9NaEDNbQK1wCQsxlYnxMAImhyDoFAElJasRRvAZVRqqQXUy7Cgx4TC6bswkAOw==" />
+<img class="intLink" title="Remove formatting" onclick="formatDoc('removeFormat')" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABGdBTUEAALGPC/xhBQAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAAd0SU1FB9oECQMCKPI8CIIAAAAIdEVYdENvbW1lbnQA9syWvwAAAuhJREFUOMtjYBgFxAB501ZWBvVaL2nHnlmk6mXCJbF69zU+Hz/9fB5O1lx+bg45qhl8/fYr5it3XrP/YWTUvvvk3VeqGXz70TvbJy8+Wv39+2/Hz19/mGwjZzuTYjALuoBv9jImaXHeyD3H7kU8fPj2ICML8z92dlbtMzdeiG3fco7J08foH1kurkm3E9iw54YvKwuTuom+LPt/BgbWf3//sf37/1/c02cCG1lB8f//f95DZx74MTMzshhoSm6szrQ/a6Ir/Z2RkfEjBxuLYFpDiDi6Af///2ckaHBp7+7wmavP5n76+P2ClrLIYl8H9W36auJCbCxM4szMTJac7Kza////R3H1w2cfWAgafPbqs5g7D95++/P1B4+ECK8tAwMDw/1H7159+/7r7ZcvPz4fOHbzEwMDwx8GBgaGnNatfHZx8zqrJ+4VJBh5CQEGOySEua/v3n7hXmqI8WUGBgYGL3vVG7fuPK3i5GD9/fja7ZsMDAzMG/Ze52mZeSj4yu1XEq/ff7W5dvfVAS1lsXc4Db7z8C3r8p7Qjf///2dnZGxlqJuyr3rPqQd/Hhyu7oSpYWScylDQsd3kzvnH738wMDzj5GBN1VIWW4c3KDon7VOvm7S3paB9u5qsU5/x5KUnlY+eexQbkLNsErK61+++VnAJcfkyMTIwffj0QwZbJDKjcETs1Y8evyd48toz8y/ffzv//vPP4veffxpX77z6l5JewHPu8MqTDAwMDLzyrjb/mZm0JcT5Lj+89+Ybm6zz95oMh7s4XbygN3Sluq4Mj5K8iKMgP4f0////fv77//8nLy+7MCcXmyYDAwODS9jM9tcvPypd35pne3ljdjvj26+H2dhYpuENikgfvQeXNmSl3tqepxXsqhXPyc666s+fv1fMdKR3TK72zpix8nTc7bdfhfkEeVbC9KhbK/9iYWHiErbu6MWbY/7//8/4//9/pgOnH6jGVazvFDRtq2VgiBIZrUTIBgCk+ivHvuEKwAAAAABJRU5ErkJggg==">
+<img class="intLink" title="Bold" onclick="formatDoc('bold');" src="data:image/gif;base64,R0lGODlhFgAWAID/AMDAwAAAACH5BAEAAAAALAAAAAAWABYAQAInhI+pa+H9mJy0LhdgtrxzDG5WGFVk6aXqyk6Y9kXvKKNuLbb6zgMFADs=" />
+<img class="intLink" title="Italic" onclick="formatDoc('italic');" src="data:image/gif;base64,R0lGODlhFgAWAKEDAAAAAF9vj5WIbf///yH5BAEAAAMALAAAAAAWABYAAAIjnI+py+0Po5x0gXvruEKHrF2BB1YiCWgbMFIYpsbyTNd2UwAAOw==" />
+<img class="intLink" title="Underline" onclick="formatDoc('underline');" src="data:image/gif;base64,R0lGODlhFgAWAKECAAAAAF9vj////////yH5BAEAAAIALAAAAAAWABYAAAIrlI+py+0Po5zUgAsEzvEeL4Ea15EiJJ5PSqJmuwKBEKgxVuXWtun+DwxCCgA7" />
+<img class="intLink" title="Left align" onclick="formatDoc('justifyleft');" src="data:image/gif;base64,R0lGODlhFgAWAID/AMDAwAAAACH5BAEAAAAALAAAAAAWABYAQAIghI+py+0Po5y02ouz3jL4D4JMGELkGYxo+qzl4nKyXAAAOw==" />
+<img class="intLink" title="Center align" onclick="formatDoc('justifycenter');" src="data:image/gif;base64,R0lGODlhFgAWAID/AMDAwAAAACH5BAEAAAAALAAAAAAWABYAQAIfhI+py+0Po5y02ouz3jL4D4JOGI7kaZ5Bqn4sycVbAQA7" />
+<img class="intLink" title="Right align" onclick="formatDoc('justifyright');" src="data:image/gif;base64,R0lGODlhFgAWAID/AMDAwAAAACH5BAEAAAAALAAAAAAWABYAQAIghI+py+0Po5y02ouz3jL4D4JQGDLkGYxouqzl43JyVgAAOw==" />
+<img class="intLink" title="Numbered list" onclick="formatDoc('insertorderedlist');" src="data:image/gif;base64,R0lGODlhFgAWAMIGAAAAADljwliE35GjuaezxtHa7P///////yH5BAEAAAcALAAAAAAWABYAAAM2eLrc/jDKSespwjoRFvggCBUBoTFBeq6QIAysQnRHaEOzyaZ07Lu9lUBnC0UGQU1K52s6n5oEADs=" />
+<img class="intLink" title="Dotted list" onclick="formatDoc('insertunorderedlist');" src="data:image/gif;base64,R0lGODlhFgAWAMIGAAAAAB1ChF9vj1iE33mOrqezxv///////yH5BAEAAAcALAAAAAAWABYAAAMyeLrc/jDKSesppNhGRlBAKIZRERBbqm6YtnbfMY7lud64UwiuKnigGQliQuWOyKQykgAAOw==" />
+<img class="intLink" title="Quote" onclick="formatDoc('formatblock','blockquote');" src="data:image/gif;base64,R0lGODlhFgAWAIQXAC1NqjFRjkBgmT9nqUJnsk9xrFJ7u2R9qmKBt1iGzHmOrm6Sz4OXw3Odz4Cl2ZSnw6KxyqO306K63bG70bTB0rDI3bvI4P///////////////////////////////////yH5BAEKAB8ALAAAAAAWABYAAAVP4CeOZGmeaKqubEs2CekkErvEI1zZuOgYFlakECEZFi0GgTGKEBATFmJAVXweVOoKEQgABB9IQDCmrLpjETrQQlhHjINrTq/b7/i8fp8PAQA7" />
+<img class="intLink" title="Delete indentation" onclick="formatDoc('outdent');" src="data:image/gif;base64,R0lGODlhFgAWAMIHAAAAADljwliE35GjuaezxtDV3NHa7P///yH5BAEAAAcALAAAAAAWABYAAAM2eLrc/jDKCQG9F2i7u8agQgyK1z2EIBil+TWqEMxhMczsYVJ3e4ahk+sFnAgtxSQDqWw6n5cEADs=" />
+<img class="intLink" title="Add indentation" onclick="formatDoc('indent');" src="data:image/gif;base64,R0lGODlhFgAWAOMIAAAAADljwl9vj1iE35GjuaezxtDV3NHa7P///////////////////////////////yH5BAEAAAgALAAAAAAWABYAAAQ7EMlJq704650B/x8gemMpgugwHJNZXodKsO5oqUOgo5KhBwWESyMQsCRDHu9VOyk5TM9zSpFSr9gsJwIAOw==" />
+<img class="intLink" title="Hyperlink" onclick="var sLnk=prompt('Write the URL here','http:\/\/');if(sLnk&&sLnk!=''&&sLnk!='http://'){formatDoc('createlink',sLnk)}" src="data:image/gif;base64,R0lGODlhFgAWAOMKAB1ChDRLY19vj3mOrpGjuaezxrCztb/I19Ha7Pv8/f///////////////////////yH5BAEKAA8ALAAAAAAWABYAAARY8MlJq7046827/2BYIQVhHg9pEgVGIklyDEUBy/RlE4FQF4dCj2AQXAiJQDCWQCAEBwIioEMQBgSAFhDAGghGi9XgHAhMNoSZgJkJei33UESv2+/4vD4TAQA7" />
+<img class="intLink" title="Cut" onclick="formatDoc('cut');" src="data:image/gif;base64,R0lGODlhFgAWAIQSAB1ChBFNsRJTySJYwjljwkxwl19vj1dusYODhl6MnHmOrpqbmpGjuaezxrCztcDCxL/I18rL1P///////////////////////////////////////////////////////yH5BAEAAB8ALAAAAAAWABYAAAVu4CeOZGmeaKqubDs6TNnEbGNApNG0kbGMi5trwcA9GArXh+FAfBAw5UexUDAQESkRsfhJPwaH4YsEGAAJGisRGAQY7UCC9ZAXBB+74LGCRxIEHwAHdWooDgGJcwpxDisQBQRjIgkDCVlfmZqbmiEAOw==" />
+<img class="intLink" title="Copy" onclick="formatDoc('copy');" src="data:image/gif;base64,R0lGODlhFgAWAIQcAB1ChBFNsTRLYyJYwjljwl9vj1iE31iGzF6MnHWX9HOdz5GjuYCl2YKl8ZOt4qezxqK63aK/9KPD+7DI3b/I17LM/MrL1MLY9NHa7OPs++bx/Pv8/f///////////////yH5BAEAAB8ALAAAAAAWABYAAAWG4CeOZGmeaKqubOum1SQ/kPVOW749BeVSus2CgrCxHptLBbOQxCSNCCaF1GUqwQbBd0JGJAyGJJiobE+LnCaDcXAaEoxhQACgNw0FQx9kP+wmaRgYFBQNeAoGihCAJQsCkJAKOhgXEw8BLQYciooHf5o7EA+kC40qBKkAAAGrpy+wsbKzIiEAOw==" />
+<img class="intLink" title="Paste" onclick="formatDoc('paste');" src="data:image/gif;base64,R0lGODlhFgAWAIQUAD04KTRLY2tXQF9vj414WZWIbXmOrpqbmpGjudClFaezxsa0cb/I1+3YitHa7PrkIPHvbuPs+/fvrvv8/f///////////////////////////////////////////////yH5BAEAAB8ALAAAAAAWABYAAAWN4CeOZGmeaKqubGsusPvBSyFJjVDs6nJLB0khR4AkBCmfsCGBQAoCwjF5gwquVykSFbwZE+AwIBV0GhFog2EwIDchjwRiQo9E2Fx4XD5R+B0DDAEnBXBhBhN2DgwDAQFjJYVhCQYRfgoIDGiQJAWTCQMRiwwMfgicnVcAAAMOaK+bLAOrtLUyt7i5uiUhADs=" />
+</div>
+
+-->
+
+<!-- ? appdata.css ? loading (appdata)-> loadingFile (app)-->
+   
+					
+<!-- Control in header, Local  in left, resizer, Remote in right,Format  in footer
+ ----
+horizontal 
+<iframe id=TheMenu sandbox="allow-downloads" height=100% width=100%></iframe>
+<div class="container">
+            <div class="c__left">
+		        <iframe id=ThePage height =30% width=100% sandbox=allow-scripts></iframe></div> 
+		    <div class="resizer" orientation="vertical" ontouchstart="resizer()"></div>            
+            <div class="c__right">
+                <div class="c__bottom">
+					<iframe id=TheMenu sandbox="allow-downloads" height=100% width=100%></iframe>
+				</div>
+	        </div></div>
+<footer></footer>
+	    height =30%     --> 
+<!-- either ThePage or compForm-->
+    <!-- ended here  appdata.js
+  <iframe id=ThePage width=100% sandbox=allow-scripts></iframe>
+
+ <script type="text/javascript" >
+{let oDoc, sDefTxt, onbase64 ,base64n;
+let base64nameMeta=[],base64nameing=[];//for later saveing as base62.js
+
+ const str = ["Welcome - This app.html is made to be useful from any device , op or browser, by using the wasm tech,\
+    of whcih files are turn to base64 strings and qt framework.\
+   On the left, you can open file, procces it and save (:s) it or add (:a) a file as a named (base64) string.Currently "+base64n+" strings of files are added.\
+    On the right you can browse remote site (l:), starting with about namzezam the author or operate plugins.\
+    The api is of one or more plugin in one js file of which discription is in its head as comment starting and ending with @#@.\
+    ubder the humanitarian-agpl-license https://hopeisback.com/#hagpl  ",   // [0]welcoming msg 
+   "https://hopeisback.com/hameathel.html"									// [1]first url
+     ]; 
+	 
+function initFILE() {base64n=0; onbase64=false;
+  oDoc = document.getElementById("textBox");
+  sDefTxt = oDoc.innerHTML;
+  if (document.compForm.switchMode.checked){setDocMode(true);}
+   put(str[0]);////put(" Welcome. on the left open file The "+base64n+"th and save or add it after you procces it");
+   }
+function hideid(id) {document.getElementById(id).style.display = "none";}
+function showid(id) {document.getElementById(id).style.display = "block";}
+function base64dof(){onbase64=(onbase64)?false:true;}	//switch mode
+
+function saving(content,nane){
+    let textToSaveAsBlob   = new Blob([content], {type:"text/plain"});
+    let textToSaveAsURL    = window.URL.createObjectURL(textToSaveAsBlob);
+    let downloadLink       = document.createElement("a");
+    downloadLink.download  = nane;
+    downloadLink.innerHTML = "Download File";
+    downloadLink.href 	   = textToSaveAsURL;
+    downloadLink.onclick   = destroyClickedElement;
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();}
+function addthis(content,name){
+	base64nameMeta=[base64n]  = name;
+	base64nameing=[base64n]  = content;
+	base64n++;}
+function put(s){outputing.innerHTML=s;}	
+function saveoraddthis(){ 
+	let content = document.getElementById('textBox').innerHTML,
+	    name    = document.getElementById('inputing').value;
+	    put("The "+base64n+"th ");
+	 if(!name){ put(base64n+" paste its loaction and enter");
+			   return;}
+	if(base64do.checked){	
+		if(!content && base64n){for(let i=0;i<base64n;i++) 
+                  	content+='let '+base64nameMeta[i]+'="'+base64nameing[i]+'"\n';
+         	base64n=0;
+			saving(content,name);
+			inputingDo.innerHTML=base64n+" paste its loaction and enter";
+			}
+			/** each line is a js string of which name is able to be mapped from its url 
+       eg for normalizing to string punctuation mapping? 
+	 _0_  _
+	 _1_  /
+	 _2_  \
+	 _3_  :
+	 _4_  .
+	 _5_  .
+	*/ //todo overloading function fetch(url){return the  64base to blob of that sting by its name ..
+		else addthis(content,name);}
+   else  saving(content,name);}
+	  
+function loading(file){let f = new FileReader();
+    f.onload = function(fileLoadedEvent){if(onbase64){}    
+		document.getElementById("textBox").innerHTML = fileLoadedEvent.target.result;}
+    if(onbase64) f.readAsDataURL(file);	//loactingstring();//(base64n)?"Having "+base64n+". Add this under the name":"Save as";
+    else         f.readAsText(file, "UTF-8");      }
+/// Editor ///
+function destroyClickedElement(event){document.body.removeChild(event.target);}
+
+function formatDoc(sCmd, sValue) {
+  if (validateMode()) { document.execCommand(sCmd, false, sValue); oDoc.focus(); }}
+
+function validateMode() {
+  if (!document.compForm.switchMode.checked) { return true ; }
+  alert("Uncheck \"Show HTML\".");
+  oDoc.focus();
+  return false;}
+
+function setDocMode(bToSource) {
+  var oContent;
+  if (bToSource) {hideid("htmleditor");
+    oContent = document.createTextNode(oDoc.innerHTML);
+    oDoc.innerHTML = "";
+    var oPre = document.createElement("pre");
+    oDoc.contentEditable = false;
+    oPre.id = "sourceText";
+    oPre.contentEditable = true;
+    oPre.appendChild(oContent);
+    oDoc.appendChild(oPre);
+    document.execCommand("defaultParagraphSeparator", false, "div");
+  } else {
+    if (document.all) {
+      oDoc.innerHTML = oDoc.innerText;
+    } else {
+      oContent = document.createRange();
+      oContent.selectNodeContents(oDoc.firstChild);
+      oDoc.innerHTML = oContent.toString();
+      showid("htmleditor");
+    }
+    oDoc.contentEditable = true;
+  }
+  oDoc.focus();}
+
+function printDoc() {
+  if (!validateMode()) { return; }
+  var oPrintWin = window.open("","_blank","width=450,height=470,left=400,top=100,menubar=yes,toolbar=no,location=no,scrollbars=yes");
+  oPrintWin.document.open();
+  oPrintWin.document.write("<!doctype html><html><head><title>Print<\/title><\/head><body onload=\"print();\">" + oDoc.innerHTML + "<\/body><\/html>");
+  oPrintWin.document.close();}
+  
+  /////////////spliter.js   <script type="text/javascript" src="spliter.js">  Security Error: Content at moz-nullprincipal:{27e8d6c8-5fa7-4c3a-995b-78529c83b574}?file:///processing/whoarewe.space/pager2pro/data.html may not load or link to file:///processing/whoarewe.space/pager2pro/spliter.js. 
+
+  
+   function initDoc() {}
+ function Init(editing){
+	// hideid("theEditor") ;
+	 Loading("https://hopeisback.com/hameathel.html", "file.html");}	//"html-help.html"
+ function download2(text, name, type) {
+  var a = document.getElementById("a");
+  var file = new Blob([text], {type: type});
+  a.href = URL.createObjectURL(file);
+  a.download = name;}
+ 
+ function download(filename, text) {
+			let a = document.createElement('a');
+			a.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+			a.setAttribute('download', filename);
+		    if (document.createEvent) {
+				let event = document.createEvent('pointer-events');//('MouseEvents');
+				event.initEvent('click', true, true);
+				a.dispatchEvent(event);
+			} else {a.click();}}//https://stackoverflow.com/questions/2897619/using-html5-javascript-to-generate-and-save-a-file		   
+            
+            
+            
+            function PageOrMenu(a,b=true){
+				//if(!b)return document.getElementById('TheMenu').src=a;
+				      return document.getElementById('ThePage').src=a;}//doc;
+			function iframes(f = window.frames){for(var i=0;i<f.length;i++){ // or = window.parent.frames;
+				f[i].document.body.style.background = "red";}} // do something with each subframe as frames[i]
+            function Loading(a,b){	
+				PageOrMenu(b,false);
+				let url=PageOrMenu(a);
+				let p = document.getElementsByTagName("iframe")[0].contentWindow;
+				download2(url, url+'myfilename.txt', 'text/plain');}
+			    document.addEventListener('DOMContentLoaded', function(){Init(); // The loading
+                  const resizable = function (resizer) {
+                    const direction = resizer.getAttribute('orientation') || 'horizontal';
+                    const prevSibling = resizer.previousElementSibling;
+                    const nextSibling = resizer.nextElementSibling;
+                    // The current position of the pointer 
+                    let x = 0;
+                    let y = 0;
+                    let prevSiblingHeight = 0;
+                    let prevSiblingWidth = 0;
+                    // Handle the mousedown event that's triggered when user drags the resizer
+                    const mouseDownHandler = function (e) {
+                        // Get the current mouse position
+                        x = e.clientX;
+                        y = e.clientY;
+                        const rect = prevSibling.getBoundingClientRect();
+                        prevSiblingHeight = rect.height;
+                        prevSiblingWidth = rect.width;
+
+                        // Attach the listeners to `document`
+                        document.addEventListener('mousemove', mouseMoveHandler);
+                        document.addEventListener('mouseup', mouseUpHandler);//https://www.w3schools.com/jsref/obj_mouseevent.asp
+                        //                        https://developer.mozilla.org/en-US/docs/Web/API/Touch_events
+                        //https://www.w3schools.com/jsref/obj_touchevent.asp
+                        //https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events
+                      
+                    };
+
+                    const mouseMoveHandler = function (e) {
+                        // How far the mouse has been moved
+                        const dx = e.clientX - x;
+                        const dy = e.clientY - y;
+
+                        switch (direction) {
+                            case 'vertical':
+                                const h =
+                                    ((prevSiblingHeight + dy) * 100) /
+                                    resizer.parentNode.getBoundingClientRect().height;
+                                prevSibling.style.height = `${h}%`;
+                                break;
+                            case 'horizontal':
+                            default:
+                                const w =
+                                    ((prevSiblingWidth + dx) * 100) / resizer.parentNode.getBoundingClientRect().width;
+                                prevSibling.style.width = `${w}%`;
+                                break;
+                        }
+
+                        const cursor = direction === 'horizontal' ? 'col-resize' : 'row-resize';
+                        resizer.style.cursor = cursor;
+                        document.body.style.cursor = cursor;
+
+                        prevSibling.style.userSelect = 'none';
+                        prevSibling.style.pointerEvents = 'none';
+
+                        nextSibling.style.userSelect = 'none';
+                        nextSibling.style.pointerEvents = 'none';
+                    };
+
+                    const mouseUpHandler = function () {
+                        resizer.style.removeProperty('cursor');
+                        document.body.style.removeProperty('cursor');
+
+                        prevSibling.style.removeProperty('user-select');
+                        prevSibling.style.removeProperty('pointer-events');
+
+                        nextSibling.style.removeProperty('user-select');
+                        nextSibling.style.removeProperty('pointer-events');
+
+                        // Remove the handlers of `mousemove` and `mouseup`
+                        document.removeEventListener('mousemove', mouseMoveHandler);
+                        document.removeEventListener('mouseup', mouseUpHandler);
+                    };
+                    resizer.addEventListener('mousedown', mouseDownHandler);};// Attach the handler// onpointerdown
+                document.querySelectorAll('.resizer').forEach(function (ele){resizable(ele);});});// Query all resizers
+            
+///sec 1 ////////    
+  		    function hiding(e){document.getElementById(e).style.display = 'none';}
+		    function showing(e){document.getElementById(e).style.display = 'block';}            
+            function PageOrMenu(a,b=true){
+			//	if(!b)return document.getElementById('TheMenu').src=a;
+				      return document.getElementById('ThePage').src=a;}//doc;
+			function iframes(f = window.frames){for(var i=0;i<f.length;i++){ // or = window.parent.frames;
+				f[i].document.body.style.background = "red";}} // do something with each subframe as frames[i]
+            function Loading(a,b){	
+				PageOrMenu(b,false);
+				let url=PageOrMenu(a);
+				let p = document.getElementsByTagName("iframe")[0].contentWindow;}
+}
+</script>
+
+
+</body></html>
+
+ another ended here
+
+<span id="saveoradd">
+	<input type="checkbox" title="save or add" name="saveoradd" id="saveoradd"  /> 
+	<label for="saveoradd"></label>
+   </span>
+   
+/*
+  width: 540px;
+  height: 200px;
+  border: 1px #000000 solid;
+  padding: 12px;
+  */
+	  // base64nameing[base64n] =//https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API
+	// it can be given by the user when copy the url and paste in the saveas id=loacting @146
+		//	base64nameMeta[base64n++] =content;//for later saveing as base62.js 
+	
+	
+		//let content=fileLoadedEvent.target;//.result;
+
+
+//		loacting.outerHTML=loactingstring();//(base64n)?"Having "+base64n+". Add this under the name":"Save as";
+
+//     loacting.innerHTML="<"+(base64n)?"Having "+base64n+". Add this under the name":"Save as";
+      // loacting.innerHTML="<"+(base64n)?base64n+"Add under the name":"Save as";
+        //content.size +
+        //;//textFromFileLoaded;
+
+		//loacting.innerHTML="<"+(base64n)?base64n+"Add under the name":"Save as";
+		//(base64n)?base64n+"nane as":"save as";
+		// to ad ok bottom
+    
+/*
+function loadingOLD(file){let f = new FileReader();
+    f.onload = function(fileLoadedEvent){
+		if(onbase64)
+		{  // base64nameing[base64n] =//https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API
+	// it can be given by the user when copy the url and paste in the saveas id=loacting @146
+		//	base64nameMeta[base64n++] =content;//for later saveing as base62.js 
+	
+	}
+		//let content=fileLoadedEvent.target;//.result;
+
+        document.getElementById("textBox").innerHTML = fileLoadedEvent.target.result;
+//		loacting.outerHTML=loactingstring();//(base64n)?"Having "+base64n+". Add this under the name":"Save as";
+
+//     loacting.innerHTML="<"+(base64n)?"Having "+base64n+". Add this under the name":"Save as";
+      // loacting.innerHTML="<"+(base64n)?base64n+"Add under the name":"Save as";
+        //content.size +
+        }//;//textFromFileLoaded;
+    if(onbase64) {f.readAsDataURL(file);
+		inputingDo.innerHTML="copy to here the loaction";//loactingstring();//(base64n)?"Having "+base64n+". Add this under the name":"Save as";
+		//loacting.innerHTML="<"+(base64n)?base64n+"Add under the name":"Save as";
+		//(base64n)?base64n+"nane as":"save as";
+		}// to ad ok bottom
+    else         {f.readAsText(file, "UTF-8");}
+    
+    }
+    
+
+
+function loading(file){let f = new FileReader();
+    f.onload = function(fileLoadedEvent){	if(onbase64){  }
+        document.getElementById("textBox").innerHTML = fileLoadedEvent.target.result;
+            }
+    if(onbase64) {f.readAsDataURL(file);
+		          inputingDo.innerHTML="copy to here the loaction";}//loactingstring();//(base64n)?"Having "+base64n+". Add this under the name":"Save as";
+    else         {f.readAsText(file, "UTF-8");}    }
+*/
+
+saving(document.getElementById('textBox').innerHTML,document.getElementById('inputing').value)
+
+</span> 
+    
+		// if(base64n){} //now save them as base64.js
+	
+//base64n=0;//reset v		
+		// base64nameing[base64n] =//https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API
+	// it can be given by the user when copy the url and paste in the saveas id=loacting @146
+		//	base64nameMeta[base64n++] =content;//for later saveing as base62.js 
+	
+	
+		//let content=fileLoadedEvent.target;//.result;
+
+//		loacting.outerHTML=loactingstring();//(base64n)?"Having "+base64n+". Add this under the name":"Save as";
+
+//     loacting.innerHTML="<"+(base64n)?"Having "+base64n+". Add this under the name":"Save as";
+      // loacting.innerHTML="<"+(base64n)?base64n+"Add under the name":"Save as";
+        //content.size +
+        //;//textFromFileLoaded;
+    
+		//loacting.innerHTML="<"+(base64n)?base64n+"Add under the name":"Save as";
+		//(base64n)?base64n+"nane as":"save as";
+		// to ad ok bottom
+
+
+
+
+		//loacting
+		//inputing.outerHTML=loactingstring();
+		//(base64n)?"Having "+base64n+". Add this under the name":"Save as";
+	
+	//loacting.outerHTML=(base64n)?"Having"+base64n+". Add this under the name" :"Save as";
+	//(base64n)?base64n+"nane as":"save as";
+	//const root = await navigator.storage.getDirectory();
+ //if(theUrl){ loading(theUrl);}// loading local.txt
+	  
+	 	  //load this url into
+	
+//
+//hideid("line1st");
+	//hideid("htmleditor");
+
+//??  <script src = "adds-included.js">		
+		// import {Theurl}from "adds-included.js";	               
+
+//https://thiscouldbebetter.wordpress.com/2012/12/18/loading-editing-and-saving-a-text-file-in-html5-using-javascrip/
+//function loactingstring(){return (base64n)?"Having "+base64n+". Add this under the name":"Save as";}
+    
+   // let textFromFileLoaded = fileLoadedEvent.target.result;
+  //document.getElementById("inputTextToSave").value = textFromFileLoaded;  
+        
+/////https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content
+	<button onclick="saving(document.getElementById('inputTextToSave').value,document.getElementById('inputing').value)"
+	
+<div >  <button  onclick="setDocMode(false);">Source</button>  <button  onclick="">Command</button>  <button  onclick="">Log</button></div>
+-- inputTextToSave -> textBox             <span><textarea id="inputTextToSave" ></textarea>   </span>         
+
+<span id="CommandMode">
+	<input type="checkbox" name="switchMode" id="CommandMode" onchange="Command(this.checked);" />
+ <label for="CommandMode">Command</label> </span>
+<span id="logMode">
+	<input type="checkbox" name="switchMode" id="logMode" onchange="Log(this.checked);" />
+ <label for="logMode">Log</label> </span>
+ https://thiscouldbebetter.wordpress.com/2012/12/18/loading-editing-and-saving-a-text-file-in-html5-using-javascrip/
+<span>
+<span id="editMode">
+	<input type="checkbox" name="switchMode" id="switchBox" onchange="setDocMode(this.checked);" />
+ <label for="switchBox">Code2</label> </span>
+</script>
+//let textToSave         = document.getElementById("inputTextToSave").value;
+    
+  //  let fileNameToSaveAs   = document.getElementById("inputing").value;
+  
+//file=document.getElementById("fileToLoad").files[0]){
+   // var fileToLoad = document.getElementById("fileToLoad").files[0];
+         <button onclick="loading()">Load</button>
+
+<td>Content:</td>
+cols="80" rows="25"
+
+function loading0(file){let fileReader = new FileReader();
+    fileReader.onload = function(fileLoadedEvent){
+        let textFromFileLoaded = fileLoadedEvent.target.result;
+  //document.getElementById("inputTextToSave").value = textFromFileLoaded;  
+        document.getElementById("textBox").innerHTML = textFromFileLoaded;
+          };
+    fileReader.readAsText(file, "UTF-8");}
+
+ --> 
